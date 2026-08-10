@@ -1,0 +1,631 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Die vollständige Speisekarte von Love Kebab in Essen-Rüttenscheid: Döner & Dürüm, Teller, Steinofenpizza, Pide & Lahmacun, Salate, Spezialitäten, Beilagen und Getränke.">
+  <meta name="theme-color" content="#0a0908">
+  <title>Speisekarte — Love Kebab</title>
+
+  <link rel="icon" type="image/png" href="images/logo.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+
+  <script>document.documentElement.classList.add('js');</script>
+</head>
+<body data-page-title="menu.pageTitle" data-page-desc="menu.pageDescription">
+
+  <a href="#main" class="skip-link" data-i18n="skip">Zum Inhalt springen</a>
+
+  <!-- ================= NAVIGATION ================= -->
+  <header class="site-header" id="site-header">
+    <nav class="nav" aria-label="Hauptnavigation" data-i18n-aria="nav.ariaLabel">
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="navOverlay" aria-label="Menü öffnen">
+        <span class="nav-toggle-bar"></span>
+        <span class="nav-toggle-bar"></span>
+        <span class="nav-toggle-bar"></span>
+      </button>
+
+      <ul class="nav-links" id="nav-menu">
+        <li><a href="index.html" data-i18n="nav.home">Startseite</a></li>
+        <li><a href="menu.html" class="is-active" data-i18n="nav.menu">Speisekarte</a></li>
+        <li><a href="index.html#ueber-uns" data-i18n="nav.about">Über uns</a></li>
+        <li><a href="index.html#kontakt" data-i18n="nav.contact">Kontakt</a></li>
+      </ul>
+
+      <a href="index.html" class="nav-logo" aria-label="Love Kebab — Startseite" data-i18n-aria="nav.logoAria">
+        <img src="images/logo.png" alt="Love Kebab Logo" width="80" height="80" class="nav-logo-img">
+      </a>
+
+      <div class="nav-actions">
+        <button class="lang-toggle" id="lang-toggle" type="button" aria-label="Sprache wechseln / Switch language">
+          <span class="lang-option" data-lang="de">DE</span><span class="lang-sep">/</span><span class="lang-option" data-lang="en">EN</span>
+        </button>
+        <a href="tel:+4920179917572" class="btn btn--cta btn--sm" data-i18n="nav.call">Anrufen</a>
+        <a href="https://wa.me/4920179917572" class="nav-whatsapp" aria-label="WhatsApp schreiben" data-i18n-aria="nav.whatsappAria" target="_blank" rel="noopener noreferrer">
+          <svg viewBox="0 0 24 24" width="21" height="21" aria-hidden="true" fill="currentColor">
+            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.435 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+          </svg>
+        </a>
+        <a href="https://www.pamukkalekebaphaus.de/#cat2" class="btn btn--gold btn--sm nav-order" data-i18n="nav.order" target="_blank" rel="noopener noreferrer">Bestellen</a>
+      </div>
+    </nav>
+  </header>
+
+  <div class="nav-overlay" id="navOverlay">
+    <div class="nav-overlay-top">
+      <img src="images/logo.png" alt="Love Kebab Logo" class="nav-overlay-logo">
+      <button class="nav-overlay-close" type="button" aria-label="Menü schließen">&#10005;</button>
+    </div>
+    <nav class="nav-overlay-links" aria-label="Mobile Navigation">
+      <a href="index.html" data-i18n="nav.home">Startseite</a>
+      <a href="menu.html" class="is-active" data-i18n="nav.menu">Speisekarte</a>
+      <a href="index.html#ueber-uns" data-i18n="nav.about">Über uns</a>
+      <a href="index.html#kontakt" data-i18n="nav.contact">Kontakt</a>
+    </nav>
+    <a href="https://www.pamukkalekebaphaus.de/#cat2" class="btn btn--gold btn--lg" data-i18n="nav.order" target="_blank" rel="noopener noreferrer">Bestellen</a>
+  </div>
+
+  <main id="main">
+
+    <!-- ================= MENU HERO ================= -->
+    <section class="menu-hero">
+      <div class="container menu-hero-inner">
+        <p class="eyebrow reveal" data-i18n="nav.menu">Speisekarte</p>
+        <h1 class="menu-hero-title reveal" style="--d:80ms" data-i18n="menu.heroTitle">Speisekarte</h1>
+        <p class="menu-hero-sub reveal" style="--d:160ms" data-i18n="menu.heroSub">Alles frisch zubereitet — direkt vom Spieß oder aus dem Steinofen.</p>
+      </div>
+    </section>
+
+    <!-- ================= QUICK JUMP ================= -->
+    <nav class="menu-jump" aria-label="Speisekarte Kategorien">
+      <div class="menu-jump-inner">
+        <a class="menu-jump-link" href="#kebab-durum" data-i18n="menu.jump.kebabDurum">Kebab &amp; Dürüm</a>
+        <a class="menu-jump-link" href="#wings" data-i18n="menu.jump.wings">Wings</a>
+        <a class="menu-jump-link" href="#fries" data-i18n="menu.jump.fries">Fries</a>
+        <a class="menu-jump-link" href="#teller" data-i18n="menu.jump.teller">Teller</a>
+        <a class="menu-jump-link" href="#pizza" data-i18n="menu.jump.pizza">Pizza</a>
+        <a class="menu-jump-link" href="#pide-lahmacun" data-i18n="menu.jump.pideLahmacun">Pide &amp; Lahmacun</a>
+        <a class="menu-jump-link" href="#salads" data-i18n="menu.jump.salads">Salate</a>
+        <a class="menu-jump-link" href="#specialties" data-i18n="menu.jump.specialties">Spezialitäten</a>
+        <a class="menu-jump-link" href="#sides" data-i18n="menu.jump.sides">Beilagen</a>
+        <a class="menu-jump-link" href="#drinks" data-i18n="menu.jump.drinks">Getränke</a>
+      </div>
+    </nav>
+
+    <!-- ================= KEBAB & DÜRÜM ================= -->
+    <section class="section section--dark menu-cat" id="kebab-durum">
+      <div class="container">
+        <div class="section-header">
+          <p class="eyebrow reveal" data-i18n="menu.cat.kebabDurumEyebrow">Frisch vom Spieß</p>
+          <h2 class="section-title reveal" style="--d:80ms" data-i18n="menu.cat.kebabDurumTitle">Kebab &amp; Dürüm</h2>
+        </div>
+        <div class="product-grid">
+          <article class="product-card reveal" style="--d:0ms">
+            <div class="product-media"><img src="images/doner-kebab-photo.jpg" alt="Döner Kebap" loading="lazy"></div>
+            <div class="product-body">
+              <h3 class="product-name">Döner Kebap</h3>
+              <p class="product-desc" data-i18n="menu.item.donerKebap.desc">Dönerfleisch im warmen Fladenbrot mit knackigem Salat und Soße nach Wahl.</p>
+              <span class="product-price">8,00 €</span>
+            </div>
+          </article>
+          <article class="product-card reveal" style="--d:60ms">
+            <div class="product-media"><img src="images/durum.jpg" alt="Dürüm" loading="lazy"></div>
+            <div class="product-body">
+              <h3 class="product-name">Dürüm</h3>
+              <p class="product-desc" data-i18n="menu.item.duerum.desc">Dönerfleisch und Salat fest gerollt im weichen Dürüm-Fladen.</p>
+              <span class="product-price">9,00 €</span>
+            </div>
+          </article>
+          <article class="product-card reveal" style="--d:120ms">
+            <div class="product-media"><img src="images/falafel-wrap.jpg" alt="Falafel Tasche" loading="lazy"></div>
+            <div class="product-body">
+              <h3 class="product-name">Falafel Tasche</h3>
+              <p class="product-desc" data-i18n="menu.item.falafelTasche.desc">Knusprige Kichererbsen-Falafel im Fladenbrot mit frischem Salat und Soße.</p>
+              <span class="product-price">7,00 €</span>
+            </div>
+          </article>
+          <article class="product-card reveal" style="--d:180ms">
+            <div class="product-media"><img src="images/sucuk.jpg" alt="Sucuk Tasche" loading="lazy"></div>
+            <div class="product-body">
+              <h3 class="product-name">Sucuk Tasche</h3>
+              <p class="product-desc" data-i18n="menu.item.sucukTasche.desc">Gegrillte türkische Sucuk-Wurst im Fladenbrot mit Salat und Soße.</p>
+              <span class="product-price">8,00 €</span>
+            </div>
+          </article>
+          <article class="product-card reveal" style="--d:0ms">
+            <div class="product-media"><img src="images/veggie-wrap.jpg" alt="Salat Tasche" loading="lazy"></div>
+            <div class="product-body">
+              <h3 class="product-name">Salat Tasche</h3>
+              <p class="product-desc" data-i18n="menu.item.salatTasche.desc">Fladenbrot gefüllt mit knackigem, gemischtem Salat und Soße nach Wahl.</p>
+              <span class="product-price">6,00 €</span>
+            </div>
+          </article>
+          <article class="product-card reveal" style="--d:60ms">
+            <div class="product-media"><img src="images/pomm-doner.jpg" alt="Pomm Döner" loading="lazy"></div>
+            <div class="product-body">
+              <h3 class="product-name">Pomm Döner</h3>
+              <p class="product-desc" data-i18n="menu.item.pommDoener.desc">Dönerfleisch auf knusprigen Pommes mit Salat und Soße.</p>
+              <span class="product-price">8,00 €</span>
+            </div>
+          </article>
+          <article class="product-card reveal" style="--d:120ms">
+            <div class="product-media"><img src="images/doner-kebab-photo.jpg" alt="Dönerfleisch (Portion)" loading="lazy"></div>
+            <div class="product-body">
+              <h3 class="product-name">Dönerfleisch (Portion)</h3>
+              <p class="product-desc" data-i18n="menu.item.doenerfleischPortion.desc">Eine großzügige Portion frisch geschnittenes Dönerfleisch, ohne Brot.</p>
+              <span class="product-price">10,00 €</span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= WINGS ================= -->
+    <!-- NOTE: prices below are estimates — confirm actual pricing with client before launch -->
+    <section class="section section--light menu-cat" id="wings">
+      <div class="container">
+        <div class="section-header">
+          <p class="eyebrow reveal" data-i18n="menu.cat.wingsEyebrow">Frisch frittiert</p>
+          <h2 class="section-title reveal" style="--d:80ms" data-i18n="menu.cat.wingsTitle">Wings</h2>
+        </div>
+        <div class="product-grid">
+          <article class="product-card reveal" style="--d:0ms">
+            <div class="product-media"><img src="images/wings.jpg" alt="Love Kebab Wings" loading="lazy"></div>
+            <div class="product-body">
+              <h3 class="product-name">Love Kebab Wings</h3>
+              <p class="product-desc" data-i18n="menu.item.loveKebabWings.desc">Chicken Wings mariniert in unserer eigenen Gewürzmischung — der Love-Kebab-Klassiker.</p>
+              <span class="product-price">7,00 €</span>
+            </div>
+          </article>
+          <article class="product-card reveal" style="--d:60ms">
+            <div class="product-media"><img src="images/wings.jpg" alt="Buffalo Wings" loading="lazy"></div>
+            <div class="product-body">
+              <h3 class="product-name">Buffalo Wings</h3>
+              <p class="product-desc" data-i18n="menu.item.buffaloWings.desc">Knusprige Chicken Wings in scharfer Buffalo-Soße.</p>
+              <span class="product-price">7,00 €</span>
+            </div>
+          </article>
+          <article class="product-card reveal" style="--d:120ms">
+            <div class="product-media"><img src="images/wings.jpg" alt="Garlic Parmesan Wings" loading="lazy"></div>
+            <div class="product-body">
+              <h3 class="product-name">Garlic Parmesan Wings</h3>
+              <p class="product-desc" data-i18n="menu.item.garlicParmesanWings.desc">Chicken Wings in Knoblauch-Butter mit frisch geriebenem Parmesan.</p>
+              <span class="product-price">7,50 €</span>
+            </div>
+          </article>
+          <article class="product-card reveal" style="--d:180ms">
+            <div class="product-media"><img src="images/wings.jpg" alt="BBQ Wings" loading="lazy"></div>
+            <div class="product-body">
+              <h3 class="product-name">BBQ Wings</h3>
+              <p class="product-desc" data-i18n="menu.item.bbqWings.desc">Chicken Wings mit rauchiger BBQ-Glasur.</p>
+              <span class="product-price">7,00 €</span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= FRIES ================= -->
+    <!-- NOTE: prices below are estimates — confirm actual pricing with client before launch.
+         This is separate from the basic "Pommes frites" in the Sides section further down —
+         that stays as the cheap plain add-on; this category is the hand-cut, headline product. -->
+    <section class="section section--dark menu-cat" id="fries">
+      <div class="container">
+        <div class="section-header">
+          <p class="eyebrow reveal" data-i18n="menu.cat.friesEyebrow">Handgeschnitten</p>
+          <h2 class="section-title reveal" style="--d:80ms" data-i18n="menu.cat.friesTitle">Fries</h2>
+        </div>
+        <div class="product-grid">
+          <article class="product-card reveal" style="--d:0ms">
+            <div class="product-media"><img src="images/hand-cut-fries.jpg" alt="Hand-Cut Fries" loading="lazy"></div>
+            <div class="product-body">
+              <h3 class="product-name">Hand-Cut Fries</h3>
+              <p class="product-desc" data-i18n="menu.item.handCutFries.desc">Frisch handgeschnittene Pommes, gesalzen — nie aus der Tiefkühltruhe.</p>
+              <span class="product-price">4,50 €</span>
+            </div>
+          </article>
+          <article class="product-card reveal" style="--d:60ms">
+            <div class="product-media"><img src="images/parmesan-fries.jpg" alt="Parmesan Fries" loading="lazy"></div>
+            <div class="product-body">
+              <h3 class="product-name">Parmesan Fries</h3>
+              <p class="product-desc" data-i18n="menu.item.parmesanFries.desc">Handgeschnittene Pommes mit Parmesan und frischen Kräutern.</p>
+              <span class="product-price">5,50 €</span>
+            </div>
+          </article>
+          <article class="product-card reveal" style="--d:120ms">
+            <div class="product-media"><img src="images/loaded-fries.jpg" alt="Loaded Fries" loading="lazy"></div>
+            <div class="product-body">
+              <h3 class="product-name">Loaded Fries</h3>
+              <p class="product-desc" data-i18n="menu.item.loadedFries.desc">Handgeschnittene Pommes mit Dönerfleisch, Käse und Soße nach Wahl.</p>
+              <span class="product-price">9,00 €</span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= TELLER ================= -->
+    <section class="section section--light menu-cat" id="teller">
+      <div class="container">
+        <div class="section-header">
+          <p class="eyebrow reveal" data-i18n="menu.cat.tellerEyebrow">Für den großen Hunger</p>
+          <h2 class="section-title reveal" style="--d:80ms" data-i18n="menu.cat.tellerTitle">Teller</h2>
+        </div>
+        <div class="product-grid">
+          <article class="product-card reveal" style="--d:0ms">
+            <div class="product-media"><img src="images/iskender.jpg" alt="Iskender" loading="lazy"></div>
+            <div class="product-body">
+              <h3 class="product-name">Iskender</h3>
+              <p class="product-desc" data-i18n="menu.item.iskender.desc">Dönerfleisch auf Fladenbrot, Tomatensoße, zerlassene Butter und Joghurt.</p>
+              <span class="product-price">15,00 €</span>
+            </div>
+          </article>
+          <article class="product-card reveal" style="--d:60ms">
+            <div class="product-media"><img src="images/doner-teller.jpg" alt="Döner Teller" loading="lazy"></div>
+            <div class="product-body">
+              <h3 class="product-name">Döner Teller</h3>
+              <p class="product-desc" data-i18n="menu.item.doenerTeller.desc">Dönerfleisch serviert mit Reis oder Pommes und frischem Salat.</p>
+              <span class="product-price">14,00 €</span>
+            </div>
+          </article>
+          <article class="product-card reveal" style="--d:120ms">
+            <div class="product-media"><img src="images/sucuk.jpg" alt="Sucuk Teller" loading="lazy"></div>
+            <div class="product-body">
+              <h3 class="product-name">Sucuk Teller</h3>
+              <p class="product-desc" data-i18n="menu.item.sucukTeller.desc">Gegrillte Sucuk-Wurst mit Reis oder Pommes und frischem Salat.</p>
+              <span class="product-price">14,00 €</span>
+            </div>
+          </article>
+          <article class="product-card reveal" style="--d:180ms">
+            <div class="product-media"><img src="images/falafel-wrap.jpg" alt="Falafel Teller" loading="lazy"></div>
+            <div class="product-body">
+              <h3 class="product-name">Falafel Teller</h3>
+              <p class="product-desc" data-i18n="menu.item.falafelTeller.desc">Knusprige Falafel mit Reis oder Pommes und frischem Salat.</p>
+              <span class="product-price">13,00 €</span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= PIZZA ================= -->
+    <section class="section section--dark menu-cat" id="pizza">
+      <div class="container">
+        <div class="section-header">
+          <p class="eyebrow reveal" data-i18n="menu.cat.pizzaEyebrow">Steinofen, Ø 30 cm</p>
+          <h2 class="section-title reveal" style="--d:80ms" data-i18n="menu.cat.pizzaTitle">Pizza</h2>
+        </div>
+        <div class="product-grid">
+          <article class="product-card reveal" style="--d:0ms">
+            <div class="product-media"><img src="images/pizza-salami.jpg" alt="Pizza Dönerfleisch" loading="lazy"></div>
+            <div class="product-body">
+              <h3 class="product-name">Pizza Dönerfleisch</h3>
+              <p class="product-desc" data-i18n="menu.item.pizzaDoenerfleisch.desc">Tomatensoße, Mozzarella und frisch geschnittenes Dönerfleisch.</p>
+              <span class="product-price">12,00 €</span>
+            </div>
+          </article>
+          <article class="product-card reveal" style="--d:60ms">
+            <div class="product-media"><img src="images/margherita.jpg" alt="Pizza Margherita" loading="lazy"></div>
+            <div class="product-body">
+              <h3 class="product-name">Pizza Margherita</h3>
+              <p class="product-desc" data-i18n="menu.item.pizzaMargherita.desc">Tomatensoße und zerlaufener Mozzarella, direkt aus dem Steinofen.</p>
+              <span class="product-price">8,00 €</span>
+            </div>
+          </article>
+          <article class="product-card reveal" style="--d:120ms">
+            <div class="product-media"><img src="images/funghi.jpg" alt="Pizza Funghi" loading="lazy"></div>
+            <div class="product-body">
+              <h3 class="product-name">Pizza Funghi</h3>
+              <p class="product-desc" data-i18n="menu.item.pizzaFunghi.desc">Tomatensoße, Mozzarella und frische Champignons.</p>
+              <span class="product-price">10,00 €</span>
+            </div>
+          </article>
+          <article class="product-card reveal" style="--d:180ms">
+            <div class="product-media"><img src="images/hawaii.jpg" alt="Pizza Hawaii" loading="lazy"></div>
+            <div class="product-body">
+              <h3 class="product-name">Pizza Hawaii</h3>
+              <p class="product-desc" data-i18n="menu.item.pizzaHawaii.desc">Tomatensoße, Mozzarella, Schinken und Ananas.</p>
+              <span class="product-price">10,00 €</span>
+            </div>
+          </article>
+          <article class="product-card reveal" style="--d:0ms">
+            <div class="product-media"><img src="images/vegetarian-pizza.jpg" alt="Pizza Vegetarisch" loading="lazy"></div>
+            <div class="product-body">
+              <h3 class="product-name">Pizza Vegetarisch</h3>
+              <p class="product-desc" data-i18n="menu.item.pizzaVegetarisch.desc">Tomatensoße, Mozzarella und eine Mischung aus frischem Gemüse.</p>
+              <span class="product-price">10,00 €</span>
+            </div>
+          </article>
+          <article class="product-card reveal" style="--d:60ms">
+            <div class="product-media"><img src="images/pizza-salami.jpg" alt="Pizza Salami" loading="lazy"></div>
+            <div class="product-body">
+              <h3 class="product-name">Pizza Salami</h3>
+              <p class="product-desc" data-i18n="menu.item.pizzaSalami.desc">Tomatensoße, Mozzarella und würzige Salami.</p>
+              <span class="product-price">11,00 €</span>
+            </div>
+          </article>
+          <article class="product-card reveal" style="--d:120ms">
+            <div class="product-media"><img src="images/tuna-pizza.jpg" alt="Pizza Tonno" loading="lazy"></div>
+            <div class="product-body">
+              <h3 class="product-name">Pizza Tonno</h3>
+              <p class="product-desc" data-i18n="menu.item.pizzaTonno.desc">Tomatensoße, Mozzarella, Thunfisch und Zwiebeln.</p>
+              <span class="product-price">11,00 €</span>
+            </div>
+          </article>
+          <article class="product-card reveal" style="--d:180ms">
+            <div class="product-media"><img src="images/pizza-salami.jpg" alt="Pizza mit Knoblauchwurst (Sucuk)" loading="lazy"></div>
+            <div class="product-body">
+              <h3 class="product-name">Pizza mit Knoblauchwurst (Sucuk)</h3>
+              <p class="product-desc" data-i18n="menu.item.pizzaSucuk.desc">Tomatensoße, Mozzarella und gegrillte türkische Sucuk-Wurst.</p>
+              <span class="product-price">12,00 €</span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= PIDE & LAHMACUN ================= -->
+    <section class="section section--light menu-cat" id="pide-lahmacun">
+      <div class="container">
+        <div class="section-header">
+          <p class="eyebrow reveal" data-i18n="menu.cat.pideLahmacunEyebrow">Frisch aus dem Steinofen</p>
+          <h2 class="section-title reveal" style="--d:80ms" data-i18n="menu.cat.pideLahmacunTitle">Pide &amp; Lahmacun</h2>
+        </div>
+        <div class="product-grid">
+          <article class="product-card reveal" style="--d:0ms">
+            <div class="product-media"><img src="images/lahmacun-fleisch-salat.jpg" alt="Lahmacun mit Fleisch und Salat" loading="lazy"></div>
+            <div class="product-body">
+              <h3 class="product-name">Lahmacun mit Fleisch und Salat</h3>
+              <p class="product-desc" data-i18n="menu.item.lahmacunFleischSalat.desc">Lahmacun beladen mit extra Dönerfleisch und frischem Salat.</p>
+              <span class="product-price">10,00 €</span>
+            </div>
+          </article>
+          <article class="product-card reveal" style="--d:60ms">
+            <div class="product-media"><img src="images/lahmacun-plain.jpg" alt="Lahmacun" loading="lazy"></div>
+            <div class="product-body">
+              <h3 class="product-name">Lahmacun</h3>
+              <p class="product-desc" data-i18n="menu.item.lahmacun.desc">Dünner türkischer Fladen mit würzigem Hackfleisch, frisch gebacken.</p>
+              <span class="product-price">5,00 €</span>
+            </div>
+          </article>
+          <article class="product-card reveal" style="--d:120ms">
+            <div class="product-media"><img src="images/lahmacun-salat.jpg" alt="Lahmacun mit Salat" loading="lazy"></div>
+            <div class="product-body">
+              <h3 class="product-name">Lahmacun mit Salat</h3>
+              <p class="product-desc" data-i18n="menu.item.lahmacunSalat.desc">Klassischer Lahmacun gerollt mit knackigem, frischem Salat.</p>
+              <span class="product-price">8,00 €</span>
+            </div>
+          </article>
+          <article class="product-card reveal" style="--d:180ms">
+            <div class="product-media"><img src="images/pide-kiymali.jpg" alt="Kiymali Pide" loading="lazy"></div>
+            <div class="product-body">
+              <h3 class="product-name">Kiymali Pide</h3>
+              <p class="product-desc" data-i18n="menu.item.kiymaliPide.desc">Schiffchen-Pide belegt mit würzigem Hackfleisch und Käse.</p>
+              <span class="product-price">11,00 €</span>
+            </div>
+          </article>
+          <article class="product-card reveal" style="--d:0ms">
+            <div class="product-media"><img src="images/pide-peynirli.jpg" alt="Peynirli Pide" loading="lazy"></div>
+            <div class="product-body">
+              <h3 class="product-name">Peynirli Pide</h3>
+              <p class="product-desc" data-i18n="menu.item.peynirliPide.desc">Schiffchen-Pide beladen mit geschmolzenem türkischem Käse.</p>
+              <span class="product-price">10,00 €</span>
+            </div>
+          </article>
+          <article class="product-card reveal" style="--d:60ms">
+            <div class="product-media"><img src="images/pide-sucuk.jpg" alt="Sucuk Pide" loading="lazy"></div>
+            <div class="product-body">
+              <h3 class="product-name">Sucuk Pide</h3>
+              <p class="product-desc" data-i18n="menu.item.sucukPide.desc">Schiffchen-Pide mit gegrillter Sucuk-Wurst und Käse.</p>
+              <span class="product-price">11,00 €</span>
+            </div>
+          </article>
+          <article class="product-card reveal" style="--d:120ms">
+            <div class="product-media"><img src="images/pide-kiymali.jpg" alt="Dönerli Pide" loading="lazy"></div>
+            <div class="product-body">
+              <h3 class="product-name">Dönerli Pide</h3>
+              <p class="product-desc" data-i18n="menu.item.doenerliPide.desc">Schiffchen-Pide mit Dönerfleisch und zerlaufenem Käse.</p>
+              <span class="product-price">11,00 €</span>
+            </div>
+          </article>
+          <article class="product-card reveal" style="--d:180ms">
+            <div class="product-media"><img src="images/pide-peynirli.jpg" alt="Vegetaria Pide" loading="lazy"></div>
+            <div class="product-body">
+              <h3 class="product-name">Vegetaria Pide</h3>
+              <p class="product-desc" data-i18n="menu.item.vegetariaPide.desc">Schiffchen-Pide mit Spinat, Käse und frischem Gemüse.</p>
+              <span class="product-price">10,00 €</span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= SALADS ================= -->
+    <section class="section section--dark menu-cat" id="salads">
+      <div class="container">
+        <div class="section-header">
+          <p class="eyebrow reveal" data-i18n="menu.cat.saladsEyebrow">Leicht, aber nicht klein</p>
+          <h2 class="section-title reveal" style="--d:80ms" data-i18n="menu.cat.saladsTitle">Salate</h2>
+        </div>
+        <div class="product-grid">
+          <article class="product-card reveal" style="--d:0ms">
+            <div class="product-media"><img src="images/garden-salad.jpg" alt="Dönersalat" loading="lazy"></div>
+            <div class="product-body">
+              <h3 class="product-name">Dönersalat</h3>
+              <p class="product-desc" data-i18n="menu.item.doenersalat.desc">Gemischter Salat mit warmem, frisch geschnittenem Dönerfleisch.</p>
+              <span class="product-price">8,00 €</span>
+            </div>
+          </article>
+          <article class="product-card reveal" style="--d:60ms">
+            <div class="product-media"><img src="images/garden-salad.jpg" alt="Gemischter Salat" loading="lazy"></div>
+            <div class="product-body">
+              <h3 class="product-name">Gemischter Salat</h3>
+              <p class="product-desc" data-i18n="menu.item.gemischterSalat.desc">Knackiger gemischter Salat mit leichtem Haus-Dressing.</p>
+              <span class="product-price">7,00 €</span>
+            </div>
+          </article>
+          <article class="product-card reveal" style="--d:120ms">
+            <div class="product-media"><img src="images/tuna-salad.jpg" alt="Thunfischsalat" loading="lazy"></div>
+            <div class="product-body">
+              <h3 class="product-name">Thunfischsalat</h3>
+              <p class="product-desc" data-i18n="menu.item.thunfischsalat.desc">Gemischter Salat mit Thunfisch und Zwiebeln.</p>
+              <span class="product-price">8,00 €</span>
+            </div>
+          </article>
+          <article class="product-card reveal" style="--d:180ms">
+            <div class="product-media"><img src="images/falafel-wrap.jpg" alt="Gemischter Salat mit Falafel" loading="lazy"></div>
+            <div class="product-body">
+              <h3 class="product-name">Gemischter Salat mit Falafel</h3>
+              <p class="product-desc" data-i18n="menu.item.gemischterSalatFalafel.desc">Gemischter Salat mit knuspriger Falafel.</p>
+              <span class="product-price">8,00 €</span>
+            </div>
+          </article>
+          <article class="product-card reveal" style="--d:0ms">
+            <div class="product-media"><img src="images/grilled-veg.jpg" alt="Gemischter Salat mit gebratenem Gemüse" loading="lazy"></div>
+            <div class="product-body">
+              <h3 class="product-name">Gemischter Salat mit gebratenem Gemüse</h3>
+              <p class="product-desc" data-i18n="menu.item.gemischterSalatGemuese.desc">Gemischter Salat mit in der Pfanne gebratenem Saisongemüse.</p>
+              <span class="product-price">8,00 €</span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= SPECIALTIES ================= -->
+    <section class="section section--light menu-cat" id="specialties">
+      <div class="container">
+        <div class="section-header">
+          <p class="eyebrow reveal" data-i18n="menu.cat.specialtiesEyebrow">Hausgemachte Spezialitäten</p>
+          <h2 class="section-title reveal" style="--d:80ms" data-i18n="menu.cat.specialtiesTitle">Spezialitäten</h2>
+        </div>
+        <div class="product-grid">
+          <article class="product-card reveal" style="--d:0ms">
+            <div class="product-media"><img src="images/mezze-platter.jpg" alt="Luxus Vorspeisenteller" loading="lazy"></div>
+            <div class="product-body">
+              <h3 class="product-name">Luxus Vorspeisenteller</h3>
+              <p class="product-desc" data-i18n="menu.item.luxusVorspeisenteller.desc">Ein großzügiger Teller zum Teilen mit unseren besten hausgemachten Vorspeisen.</p>
+              <span class="product-price">10,00 €</span>
+            </div>
+          </article>
+          <article class="product-card reveal" style="--d:60ms">
+            <div class="product-media"><img src="images/pastry-rolls.jpg" alt="Hausgemachte Blätterteigrollen" loading="lazy"></div>
+            <div class="product-body">
+              <h3 class="product-name">Hausgemachte Blätterteigrollen</h3>
+              <p class="product-desc" data-i18n="menu.item.blaetterteigrollen.desc">Knusprige hausgemachte Blätterteigrollen, gefüllt und frisch frittiert.</p>
+              <span class="product-price">8,00 €</span>
+            </div>
+          </article>
+          <article class="product-card reveal" style="--d:120ms">
+            <div class="product-media"><img src="images/baked-cheese.jpg" alt="Überbackener Weißkäseteller" loading="lazy"></div>
+            <div class="product-body">
+              <h3 class="product-name">Überbackener Weißkäseteller</h3>
+              <p class="product-desc" data-i18n="menu.item.weisskaeseteller.desc">Türkischer Weißkäse goldbraun überbacken.</p>
+              <span class="product-price">8,00 €</span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= SIDES ================= -->
+    <section class="section section--dark menu-cat" id="sides">
+      <div class="container">
+        <div class="section-header">
+          <p class="eyebrow reveal" data-i18n="menu.cat.sidesEyebrow">Imbiss</p>
+          <h2 class="section-title reveal" style="--d:80ms" data-i18n="menu.cat.sidesTitle">Beilagen</h2>
+        </div>
+        <div class="list-grid">
+          <div class="list-row"><span class="list-row-name">Pommes frites</span><span class="list-row-price">3,50 €</span></div>
+          <div class="list-row"><span class="list-row-name">Pommes frites Spezial</span><span class="list-row-price">5,00 €</span></div>
+          <div class="list-row"><span class="list-row-name">Currywurst</span><span class="list-row-price">4,00 €</span></div>
+          <div class="list-row"><span class="list-row-name">Currywurst mit Pommes</span><span class="list-row-price">7,50 €</span></div>
+          <div class="list-row"><span class="list-row-name">Mayonnaise</span><span class="list-row-price">0,80 €</span></div>
+          <div class="list-row"><span class="list-row-name">Ketchup</span><span class="list-row-price">0,80 €</span></div>
+          <div class="list-row"><span class="list-row-name">Weißkäse</span><span class="list-row-price">1,00 €</span></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= DRINKS ================= -->
+    <section class="section section--light menu-cat" id="drinks">
+      <div class="container">
+        <div class="section-header">
+          <p class="eyebrow reveal" data-i18n="menu.cat.drinksEyebrow">Getränke</p>
+          <h2 class="section-title reveal" style="--d:80ms" data-i18n="menu.cat.drinksTitle">Getränke</h2>
+        </div>
+        <div class="list-grid">
+          <div class="list-row"><span class="list-row-name">Ayran</span><span class="list-row-price">2,00 €</span></div>
+          <div class="list-row"><span class="list-row-name">Coca-Cola</span><span class="list-row-price">3,00 €</span></div>
+          <div class="list-row"><span class="list-row-name">Coca-Cola Zero</span><span class="list-row-price tbd" data-i18n="menu.askInStore">Bitte im Laden fragen</span></div>
+          <div class="list-row"><span class="list-row-name">Fanta</span><span class="list-row-price">3,00 €</span></div>
+          <div class="list-row"><span class="list-row-name">Sprite</span><span class="list-row-price tbd" data-i18n="menu.askInStore">Bitte im Laden fragen</span></div>
+          <div class="list-row"><span class="list-row-name">Mezzo Mix</span><span class="list-row-price tbd" data-i18n="menu.askInStore">Bitte im Laden fragen</span></div>
+          <div class="list-row"><span class="list-row-name">Gazoz</span><span class="list-row-price">2,50 €</span></div>
+          <div class="list-row"><span class="list-row-name">Stilles Wasser</span><span class="list-row-price">2,50 €</span></div>
+          <div class="list-row"><span class="list-row-name">Mineralwasser</span><span class="list-row-price tbd" data-i18n="menu.askInStore">Bitte im Laden fragen</span></div>
+          <div class="list-row"><span class="list-row-name">Pils</span><span class="list-row-price">2,90 €</span></div>
+          <div class="list-row"><span class="list-row-name">Efes Bier</span><span class="list-row-price tbd" data-i18n="menu.askInStore">Bitte im Laden fragen</span></div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ================= FOOTER ================= -->
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <img src="images/logo.png" alt="Love Kebab" width="58" height="58" class="footer-logo">
+        <p class="footer-legal">Love Kebab · Pamukkale Kebap Haus<br>Essen-Rüttenscheid</p>
+      </div>
+
+      <nav class="footer-nav" aria-label="Footer Navigation">
+        <a href="index.html" data-i18n="nav.home">Startseite</a>
+        <a href="menu.html" data-i18n="nav.menu">Speisekarte</a>
+        <a href="index.html#ueber-uns" data-i18n="nav.about">Über uns</a>
+        <a href="index.html#kontakt" data-i18n="nav.contact">Kontakt</a>
+      </nav>
+
+      <div class="footer-social">
+        <a href="#" aria-label="Instagram (folgt)" data-i18n-aria="footer.instagramAria" target="_blank" rel="noopener noreferrer">
+          <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor" aria-hidden="true">
+            <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/>
+          </svg>
+        </a>
+        <a href="#" aria-label="TikTok (folgt)" data-i18n-aria="footer.tiktokAria" target="_blank" rel="noopener noreferrer">
+          <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor" aria-hidden="true">
+            <path d="M19.59 6.69a4.83 4.83 0 01-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 01-2.88 2.5 2.89 2.89 0 01-2.89-2.89 2.89 2.89 0 012.89-2.89c.28 0 .54.04.79.1v-3.5a6.37 6.37 0 00-.79-.05A6.34 6.34 0 003.15 15.2a6.34 6.34 0 0010.86 4.48V13.4a8.28 8.28 0 005.58 2.17V12.1a4.85 4.85 0 01-3.77-1.41z"/>
+          </svg>
+        </a>
+        <a href="https://www.facebook.com/Pamukkale.essen" aria-label="Facebook" target="_blank" rel="noopener noreferrer">
+          <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor" aria-hidden="true">
+            <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+          </svg>
+        </a>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="container footer-bottom-inner">
+        <p>© <span id="year">2026</span> Love Kebab. <span data-i18n="footer.rights">Alle Rechte vorbehalten.</span></p>
+        <nav class="footer-legal-links" aria-label="Rechtliches">
+          <a href="#" data-i18n="footer.imprint">Impressum</a>
+          <a href="#" data-i18n="footer.privacy">Datenschutz</a>
+        </nav>
+      </div>
+    </div>
+  </footer>
+
+  <button class="scroll-top" id="scroll-top" type="button" aria-label="Nach oben scrollen">
+    <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true">
+      <path d="M12 19V5M5 12l7-7 7 7"/>
+    </svg>
+  </button>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

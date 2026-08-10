@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Love Kebab — Döner mit Liebe in Essen-Rüttenscheid. 100 % frisches Fleisch, hausgemachte Soßen, echtes Street-Food-Gefühl.">
+  <meta name="theme-color" content="#0a0908">
+  <title>Love Kebab — Döner mit Liebe | Essen-Rüttenscheid</title>
+
+  <!-- NOTE: confirm final brand name with client before launch — logo says "Love Kebab",
+       business is currently registered as "Pamukkale Kebap Haus". Rebrand finalizes September. -->
+
+  <link rel="icon" type="image/png" href="images/logo.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css?v=10">
+
+  <!-- progressive enhancement flag: entrance animations only arm when JS runs,
+       so content is never invisible if scripts fail -->
+  <script>document.documentElement.classList.add('js');</script>
+</head>
+<body>
+
+  <a href="#main" class="skip-link" data-i18n="skip">Zum Inhalt springen</a>
+
+  <!-- ================= NAVIGATION ================= -->
+  <header class="site-header" id="site-header">
+    <nav class="nav" aria-label="Hauptnavigation" data-i18n-aria="nav.ariaLabel">
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="navOverlay" aria-label="Menü öffnen">
+        <span class="nav-toggle-bar"></span>
+        <span class="nav-toggle-bar"></span>
+        <span class="nav-toggle-bar"></span>
+      </button>
+
+      <ul class="nav-links" id="nav-menu">
+        <li><a href="#start" data-i18n="nav.home">Startseite</a></li>
+        <li><a href="menu.html" data-i18n="nav.menu">Speisekarte</a></li>
+        <li><a href="#ueber-uns" data-i18n="nav.about">Über uns</a></li>
+        <li><a href="#kontakt" data-i18n="nav.contact">Kontakt</a></li>
+      </ul>
+
+      <a href="#start" class="nav-logo" aria-label="Love Kebab — Startseite" data-i18n-aria="nav.logoAria">
+        <img src="images/logo.png" alt="Love Kebab Logo" width="80" height="80" class="nav-logo-img">
+      </a>
+
+      <div class="nav-actions">
+        <button class="lang-toggle" id="lang-toggle" type="button" aria-label="Sprache wechseln / Switch language">
+          <span class="lang-option" data-lang="de">DE</span><span class="lang-sep">/</span><span class="lang-option" data-lang="en">EN</span>
+        </button>
+        <a href="tel:+4920179917572" class="nav-call" aria-label="Anrufen" data-i18n-aria="nav.callAria">
+          <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.75">
+            <path d="M5 4h4l1.5 4.5-2.2 1.7a12.5 12.5 0 005.5 5.5l1.7-2.2L20 15v4a2 2 0 01-2 2A15 15 0 013 6a2 2 0 012-2z"/>
+          </svg>
+        </a>
+        <a href="https://www.pamukkalekebaphaus.de/#cat2" class="btn btn--gold btn--sm nav-order" data-i18n="nav.order" target="_blank" rel="noopener noreferrer">Bestellen</a>
+      </div>
+    </nav>
+  </header>
+
+  <div class="nav-overlay" id="navOverlay">
+    <div class="nav-overlay-top">
+      <img src="images/logo.png" alt="Love Kebab Logo" class="nav-overlay-logo">
+      <button class="nav-overlay-close" type="button" aria-label="Menü schließen">&#10005;</button>
+    </div>
+    <nav class="nav-overlay-links" aria-label="Mobile Navigation">
+      <a href="#start" data-i18n="nav.home">Startseite</a>
+      <a href="menu.html" data-i18n="nav.menu">Speisekarte</a>
+      <a href="#ueber-uns" data-i18n="nav.about">Über uns</a>
+      <a href="#kontakt" data-i18n="nav.contact">Kontakt</a>
+    </nav>
+    <a href="https://www.pamukkalekebaphaus.de/#cat2" class="btn btn--gold btn--lg" data-i18n="nav.order" target="_blank" rel="noopener noreferrer">Bestellen</a>
+  </div>
+
+  <main id="main">
+
+    <!-- ================= HERO ================= -->
+    <section class="hero" id="start" aria-label="Willkommen bei Love Kebab" data-i18n-aria="hero.sectionAria">
+      <div class="hero-texture" aria-hidden="true"></div>
+      <div class="hero-glow" aria-hidden="true"></div>
+      <p class="hero-ghost" aria-hidden="true">Rüttenscheid</p>
+
+      <div class="hero-inner">
+        <div class="hero-stage">
+          <div class="hero-visual" aria-hidden="true">
+            <div class="hero-image-wrap" id="hero-image-wrap">
+              <img class="hero-image" src="images/hero.png" width="1536" height="1024" alt="" loading="eager" fetchpriority="high">
+            </div>
+          </div>
+
+          <div class="hero-content">
+            <p class="hero-kicker" data-i18n="hero.kicker">Döner · Wings · Hand-Cut Fries</p>
+
+            <h1 class="hero-title">
+              <span class="line">
+                <span class="word" style="--i:0" data-i18n="hero.word0">Mit</span>
+                <span class="word" style="--i:1" data-i18n="hero.word1">Liebe</span>
+              </span>
+              <span class="line">
+                <span class="word word--accent" style="--i:2" data-i18n="hero.word2">gemacht.</span>
+              </span>
+            </h1>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= MARQUEE DIVIDER ================= -->
+    <div class="marquee" aria-hidden="true">
+      <div class="marquee-track">
+        <span class="marquee-group">
+          <span data-i18n="marquee.love">Döner mit Liebe</span><i>★</i>
+          <span data-i18n="marquee.fresh">100&#8202;% frisch</span><i>★</i>
+          <span data-i18n="values.sauceTitle">Hausgemachte Soßen</span><i>★</i>
+          <span data-i18n="place.name">Essen-Rüttenscheid</span><i>★</i>
+          <span data-i18n="marquee.love">Döner mit Liebe</span><i>★</i>
+          <span data-i18n="marquee.fresh">100&#8202;% frisch</span><i>★</i>
+          <span data-i18n="values.sauceTitle">Hausgemachte Soßen</span><i>★</i>
+          <span data-i18n="place.name">Essen-Rüttenscheid</span><i>★</i>
+        </span>
+        <span class="marquee-group" aria-hidden="true">
+          <span data-i18n="marquee.love">Döner mit Liebe</span><i>★</i>
+          <span data-i18n="marquee.fresh">100&#8202;% frisch</span><i>★</i>
+          <span data-i18n="values.sauceTitle">Hausgemachte Soßen</span><i>★</i>
+          <span data-i18n="place.name">Essen-Rüttenscheid</span><i>★</i>
+          <span data-i18n="marquee.love">Döner mit Liebe</span><i>★</i>
+          <span data-i18n="marquee.fresh">100&#8202;% frisch</span><i>★</i>
+          <span data-i18n="values.sauceTitle">Hausgemachte Soßen</span><i>★</i>
+          <span data-i18n="place.name">Essen-Rüttenscheid</span><i>★</i>
+        </span>
+      </div>
+    </div>
+
+    <!-- ================= ÜBER UNS / STORY ================= -->
+    <section class="section section--light story" id="ueber-uns">
+      <div class="container">
+        <div class="story-grid">
+        <div class="story-content">
+          <p class="eyebrow reveal" data-i18n="story.eyebrow">Unsere Geschichte</p>
+          <h2 class="section-title reveal" style="--d:80ms" data-i18n="story.title">Döner, wie er<br>sein sollte.</h2>
+          <p class="section-body reveal" style="--d:160ms" data-i18n="story.body1">
+            Bei Love Kebab treffen frische Zutaten auf jahrelange Erfahrung.
+            Mitten in Rüttenscheid schneiden wir jeden Döner auf Bestellung
+            vom Spieß — ehrlich, frisch und mit Liebe zubereitet.
+          </p>
+          <ul class="story-stats reveal" style="--d:320ms">
+            <li>
+              <span class="stat-value">7/7</span>
+              <span class="stat-label" data-i18n="story.stat1">Jeden Tag geöffnet</span>
+            </li>
+            <li>
+              <span class="stat-value">100&#8202;%</span>
+              <span class="stat-label" data-i18n="story.stat2">Frisch</span>
+            </li>
+            <li>
+              <span class="stat-value">10+</span>
+              <span class="stat-label" data-i18n="story.stat3">Jahre in Rüttenscheid</span>
+            </li>
+          </ul>
+        </div>
+
+        <div class="story-image reveal" style="--d:160ms">
+          <img class="story-photo" src="images/store-interior.jpg" alt="Theke und Küche bei Love Kebab" width="1042" height="924" loading="lazy">
+        </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= SPEISEKARTE ================= -->
+    <!-- Homepage teaser: 4 featured items. Full priced menu lives in menu.html -->
+    <section class="section section--dark menu-preview" id="speisekarte">
+      <div class="container">
+        <div class="section-header">
+          <p class="eyebrow reveal" data-i18n="menu.eyebrow">Unsere Klassiker</p>
+          <h2 class="section-title reveal" style="--d:80ms" data-i18n="menu.title">Frisch für dich<br>zubereitet.</h2>
+        </div>
+
+        <div class="menu-carousel">
+          <button type="button" class="menu-arrow menu-arrow--prev" aria-label="Previous" data-i18n-aria="menu.prev">
+            <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 18l-6-6 6-6"/></svg>
+          </button>
+          <div class="product-grid" id="menu-grid">
+          <article class="product-card reveal" style="--d:0ms">
+            <div class="product-media">
+              <img src="images/wings.jpg" alt="Wings" loading="lazy">
+            </div>
+            <div class="product-body">
+              <h3 class="product-name">Wings</h3>
+              <p class="product-desc" data-i18n="menu.descWings">Mariniert in unserer eigenen Gewürzmischung — frisch frittiert.</p>
+            </div>
+          </article>
+
+          <article class="product-card reveal" style="--d:90ms">
+            <div class="product-media">
+              <img src="images/parmesan-fries.jpg" alt="Parmesan Fries" loading="lazy">
+            </div>
+            <div class="product-body">
+              <h3 class="product-name" data-i18n="menu.parmFriesName">Parmesan Fries</h3>
+              <p class="product-desc" data-i18n="menu.descParmFries">Handgeschnitten, mit Parmesan und frischen Kräutern.</p>
+            </div>
+          </article>
+
+          <article class="product-card reveal" style="--d:180ms">
+            <div class="product-media">
+              <img src="images/doner-kebab-photo.jpg" alt="Döner Kebab" loading="lazy">
+            </div>
+            <div class="product-body">
+              <h3 class="product-name">Döner Kebab</h3>
+              <p class="product-desc" data-i18n="menu.descDoner">Der Klassiker im frischen Fladenbrot — direkt vom Spieß.</p>
+            </div>
+          </article>
+
+          <article class="product-card reveal" style="--d:270ms">
+            <div class="product-media">
+              <img src="images/durum.jpg" alt="Dürüm" loading="lazy">
+            </div>
+            <div class="product-body">
+              <h3 class="product-name">Dürüm</h3>
+              <p class="product-desc" data-i18n="menu.descDurum">Im warmen, dünnen Fladenbrot gerollt — perfekt für unterwegs.</p>
+            </div>
+          </article>
+          </div>
+          <button type="button" class="menu-arrow menu-arrow--next" aria-label="Next" data-i18n-aria="menu.next">
+            <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 6l6 6-6 6"/></svg>
+          </button>
+        </div>
+
+        <div class="menu-footer reveal">
+          <a href="menu.html" class="btn btn--outline" data-i18n="menu.fullMenuCta">Vollständige Speisekarte ansehen&#8202;&#8594;</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= WARUM LOVE KEBAB ================= -->
+    <section class="section section--light values" id="warum">
+      <div class="container">
+        <div class="section-header">
+          <p class="eyebrow reveal" data-i18n="values.eyebrow">Warum Love Kebab</p>
+          <h2 class="section-title reveal" style="--d:80ms" data-i18n="values.title">Qualität, die man<br>schmeckt.</h2>
+        </div>
+
+        <div class="values-carousel">
+          <button type="button" class="values-arrow values-arrow--prev" aria-label="Previous" data-i18n-aria="values.prev">
+            <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 18l-6-6 6-6"/></svg>
+          </button>
+          <div class="values-grid" id="values-grid">
+          <div class="value-card reveal" style="--d:0ms">
+            <span class="value-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="1.75">
+                <path d="M12 3c1 2.5-1.5 3.5-1.5 5.5 0 1.2.9 2 1.5 2.5M12 3c4.5 2 7 5.6 7 9.5A7 7 0 015 12.5C5 8.6 7.5 5 12 3z"/>
+                <path d="M12 21a3.5 3.5 0 003.5-3.5c0-1.8-1.6-2.6-3.5-4.5-1.9 1.9-3.5 2.7-3.5 4.5A3.5 3.5 0 0012 21z"/>
+              </svg>
+            </span>
+            <h3 class="value-title" data-i18n="hero.trust1">100&#8202;% frisches Fleisch</h3>
+            <p class="value-desc" data-i18n="values.meatDesc">Täglich frisch geliefert und mariniert — nie aus der Tiefkühltruhe.</p>
+          </div>
+          <div class="value-card reveal" style="--d:110ms">
+            <span class="value-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="1.75">
+                <path d="M9 2h6M10 2v3.5c0 .8-2.5 2-2.5 4V19a2.5 2.5 0 002.5 2.5h4A2.5 2.5 0 0016.5 19v-9.5c0-2-2.5-3.2-2.5-4V2"/>
+                <path d="M7.5 13.5h9"/>
+              </svg>
+            </span>
+            <h3 class="value-title" data-i18n="values.sauceTitle">Hausgemachte Soßen</h3>
+            <p class="value-desc" data-i18n="values.sauceDesc">Eigene Rezepte, jeden Tag frisch angerührt — das schmeckt man.</p>
+          </div>
+          <div class="value-card reveal" style="--d:220ms">
+            <span class="value-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="1.75">
+                <path d="M12 20.5l-1.3-1.18C6.1 15.16 3.5 12.8 3.5 9.9 3.5 7.5 5.4 5.6 7.8 5.6c1.35 0 2.65.63 3.5 1.62l.7.8.7-.8a4.63 4.63 0 013.5-1.62c2.4 0 4.3 1.9 4.3 4.3 0 2.9-2.6 5.26-7.2 9.42L12 20.5z"/>
+              </svg>
+            </span>
+            <h3 class="value-title" data-i18n="values.loveTitle">Mit Liebe gemacht</h3>
+            <p class="value-desc" data-i18n="values.loveDesc">Jeder Döner wird auf Bestellung geschnitten und mit voller Aufmerksamkeit gebaut.</p>
+          </div>
+          </div>
+          <button type="button" class="values-arrow values-arrow--next" aria-label="Next" data-i18n-aria="values.next">
+            <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 6l6 6-6 6"/></svg>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= PROZESS (horizontal scroll-jack) ================= -->
+    <section class="process" id="process" aria-label="Ein Blick in unsere Küche" data-i18n-aria="process.ariaLabel">
+      <div class="process-pin">
+        <div class="process-header container">
+          <p class="eyebrow" data-i18n="process.eyebrow">Galerie</p>
+          <h2 class="section-title" data-i18n="process.title">Ein Blick in unsere Küche</h2>
+        </div>
+
+        <div class="process-viewport">
+          <div class="process-track" id="process-track">
+            <article class="process-step">
+              <span class="step-ghost" aria-hidden="true">01</span>
+              <div class="step-content">
+                <span class="step-number" data-i18n="process.step1">Schritt 01</span>
+                <h3 class="step-title" data-i18n="process.title1">Frisches Fleisch</h3>
+                <p class="step-desc" data-i18n="process.desc1">Täglich frisch geliefert — Qualität, die man sieht und schmeckt.</p>
+              </div>
+              <div class="img-placeholder img-placeholder--step">
+                <span class="ph-label" data-i18n="process.photo1">Foto: Frisches Fleisch</span>
+              </div>
+            </article>
+
+            <article class="process-step">
+              <span class="step-ghost" aria-hidden="true">02</span>
+              <div class="step-content">
+                <span class="step-number" data-i18n="process.step2">Schritt 02</span>
+                <h3 class="step-title" data-i18n="process.title2">Eigene Gewürzmischung</h3>
+                <p class="step-desc" data-i18n="process.desc2">Hausgemachte Marinade nach bewährtem Familienrezept.</p>
+              </div>
+              <div class="img-placeholder img-placeholder--step">
+                <span class="ph-label" data-i18n="process.photo2">Foto: Gewürzmischung</span>
+              </div>
+            </article>
+
+            <article class="process-step">
+              <span class="step-ghost" aria-hidden="true">03</span>
+              <div class="step-content">
+                <span class="step-number" data-i18n="process.step3">Schritt 03</span>
+                <h3 class="step-title" data-i18n="process.title3">Langsam gegart am Spieß</h3>
+                <p class="step-desc" data-i18n="process.desc3">Stundenlang am Drehspieß — saftig innen, knusprig außen.</p>
+              </div>
+              <div class="img-placeholder img-placeholder--step">
+                <span class="ph-label" data-i18n="process.photo3">Foto: Dönerspieß</span>
+              </div>
+            </article>
+
+            <article class="process-step">
+              <span class="step-ghost" aria-hidden="true">04</span>
+              <div class="step-content">
+                <span class="step-number" data-i18n="process.step4">Schritt 04</span>
+                <h3 class="step-title" data-i18n="process.title4">Frisch für dich geschnitten</h3>
+                <p class="step-desc" data-i18n="process.desc4">Auf Bestellung geschnitten, frisch belegt und mit Liebe serviert.</p>
+              </div>
+              <div class="img-placeholder img-placeholder--step">
+                <span class="ph-label" data-i18n="process.photo4">Foto: Frisch geschnitten</span>
+              </div>
+            </article>
+          </div>
+        </div>
+
+        <div class="process-progress" aria-hidden="true">
+          <div class="process-bar"><span class="process-bar-fill" id="process-bar-fill"></span></div>
+          <div class="process-dots" id="process-dots">
+            <span class="process-dot active"></span>
+            <span class="process-dot"></span>
+            <span class="process-dot"></span>
+            <span class="process-dot"></span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= STANDORT / KONTAKT ================= -->
+    <section class="section section--light contact" id="kontakt">
+      <div class="container">
+        <div class="section-header section-header--left">
+          <p class="eyebrow reveal" data-i18n="contact.eyebrow">Standort</p>
+          <h2 class="section-title reveal" style="--d:80ms" data-i18n="contact.title">Besuch uns in<br>Rüttenscheid.</h2>
+        </div>
+
+        <div class="contact-grid">
+          <div class="contact-info reveal">
+            <address class="contact-address">
+              <p>
+                <span class="contact-icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.75">
+                    <path d="M12 21s-7-5.1-7-11a7 7 0 0114 0c0 5.9-7 11-7 11z"/>
+                    <circle cx="12" cy="10" r="2.5"/>
+                  </svg>
+                </span>
+                <span>Rüttenscheider Straße 133<br>45130 Essen</span>
+              </p>
+              <p>
+                <span class="contact-icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.75">
+                    <path d="M5 4h4l1.5 4.5-2.2 1.7a12.5 12.5 0 005.5 5.5l1.7-2.2L20 15v4a2 2 0 01-2 2A15 15 0 013 6a2 2 0 012-2z"/>
+                  </svg>
+                </span>
+                <a href="tel:+4920179917572">+49 201 799 175 72</a>
+              </p>
+            </address>
+
+            <a href="https://wa.me/4920179917572" class="btn btn--whatsapp" target="_blank" rel="noopener noreferrer">
+              <svg viewBox="0 0 24 24" width="19" height="19" aria-hidden="true" fill="currentColor">
+                <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.435 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+              </svg>
+              <span data-i18n="contact.whatsapp">WhatsApp schreiben</span>
+            </a>
+
+            <div class="hours">
+              <h3 class="hours-title" data-i18n="contact.hoursTitle">Öffnungszeiten</h3>
+              <table class="hours-table">
+                <tbody>
+                  <tr data-day="1"><th scope="row" data-i18n="days.mon">Montag</th><td>11:00&#8202;–&#8202;22:00</td></tr>
+                  <tr data-day="2"><th scope="row" data-i18n="days.tue">Dienstag</th><td>11:00&#8202;–&#8202;22:00</td></tr>
+                  <tr data-day="3"><th scope="row" data-i18n="days.wed">Mittwoch</th><td>11:00&#8202;–&#8202;22:00</td></tr>
+                  <tr data-day="4"><th scope="row" data-i18n="days.thu">Donnerstag</th><td>11:00&#8202;–&#8202;22:00</td></tr>
+                  <tr data-day="5"><th scope="row" data-i18n="days.fri">Freitag</th><td>11:00&#8202;–&#8202;05:00</td></tr>
+                  <tr data-day="6"><th scope="row" data-i18n="days.sat">Samstag</th><td>11:00&#8202;–&#8202;05:00</td></tr>
+                  <tr data-day="0" class="is-closed"><th scope="row" data-i18n="days.sun">Sonntag</th><td data-i18n="hours.closed">Geschlossen</td></tr>
+                </tbody>
+              </table>
+              <p class="hours-note" data-i18n="contact.hoursNote">Öffnungszeiten können an Feiertagen abweichen.</p>
+            </div>
+          </div>
+
+          <div class="contact-map reveal" style="--d:120ms">
+            <iframe
+              title="Love Kebab Standort auf Google Maps"
+              data-i18n-title="contact.mapTitle"
+              src="https://maps.google.com/maps?q=R%C3%BCttenscheider+Str.+133,+45130+Essen&t=&z=16&ie=UTF8&iwloc=&output=embed"
+              width="100%"
+              height="100%"
+              style="border:0;"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ================= FOOTER ================= -->
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <img src="images/logo.png" alt="Love Kebab" width="58" height="58" class="footer-logo">
+        <p class="footer-legal">Love Kebab · Pamukkale Kebap Haus<br>Essen-Rüttenscheid</p>
+      </div>
+
+      <nav class="footer-nav" aria-label="Footer Navigation">
+        <a href="#start" data-i18n="nav.home">Startseite</a>
+        <a href="menu.html" data-i18n="nav.menu">Speisekarte</a>
+        <a href="#ueber-uns" data-i18n="nav.about">Über uns</a>
+        <a href="#kontakt" data-i18n="nav.contact">Kontakt</a>
+      </nav>
+
+      <div class="footer-social">
+        <a href="#" aria-label="Instagram (folgt)" data-i18n-aria="footer.instagramAria" target="_blank" rel="noopener noreferrer">
+          <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor" aria-hidden="true">
+            <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/>
+          </svg>
+        </a>
+        <a href="#" aria-label="TikTok (folgt)" data-i18n-aria="footer.tiktokAria" target="_blank" rel="noopener noreferrer">
+          <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor" aria-hidden="true">
+            <path d="M19.59 6.69a4.83 4.83 0 01-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 01-2.88 2.5 2.89 2.89 0 01-2.89-2.89 2.89 2.89 0 012.89-2.89c.28 0 .54.04.79.1v-3.5a6.37 6.37 0 00-.79-.05A6.34 6.34 0 003.15 15.2a6.34 6.34 0 0010.86 4.48V13.4a8.28 8.28 0 005.58 2.17V12.1a4.85 4.85 0 01-3.77-1.41z"/>
+          </svg>
+        </a>
+        <a href="https://www.facebook.com/Pamukkale.essen" aria-label="Facebook" target="_blank" rel="noopener noreferrer">
+          <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor" aria-hidden="true">
+            <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+          </svg>
+        </a>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="container footer-bottom-inner">
+        <p>© <span id="year">2026</span> Love Kebab. <span data-i18n="footer.rights">Alle Rechte vorbehalten.</span></p>
+        <nav class="footer-legal-links" aria-label="Rechtliches">
+          <a href="#" data-i18n="footer.imprint">Impressum</a>
+          <a href="#" data-i18n="footer.privacy">Datenschutz</a>
+        </nav>
+      </div>
+    </div>
+  </footer>
+
+  <button class="scroll-top" id="scroll-top" type="button" aria-label="Nach oben scrollen">
+    <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true">
+      <path d="M12 19V5M5 12l7-7 7 7"/>
+    </svg>
+  </button>
+
+  <script src="js/main.js?v=9"></script>
+</body>
+</html>
