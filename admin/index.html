@@ -4,6 +4,10 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Content Manager</title>
+  <!-- Absolute path so the config still loads even if someone opens
+       /admin without the trailing slash (Vercel serves that URL directly
+       instead of redirecting to /admin/, which breaks a relative fetch). -->
+  <link href="/admin/config.yml" type="text/yaml" rel="cms-config-url">
 </head>
 <body>
   <script src="https://unpkg.com/decap-cms@^3.0.0/dist/decap-cms.js"></script>
