@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300">
+  <rect width="400" height="300" fill="#1c1a18"/>
+  <g stroke="#f7b72b" stroke-width="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round" opacity="0.55">
+    <circle cx="160" cy="150" r="46"/>
+    <circle cx="160" cy="150" r="30"/>
+    <path d="M232 110v80M224 110v28a8 8 0 0 0 8 8 8 8 0 0 0 8-8v-28M248 110v80M248 110c-9 0-16 9-16 24s7 24 16 24"/>
+  </g>
+  <text x="200" y="222" font-family="Helvetica, Arial, sans-serif" font-size="15" letter-spacing="2" fill="#8a8580" text-anchor="middle">FOTO FOLGT</text>
+</svg>

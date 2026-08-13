@@ -661,6 +661,9 @@
 
     var container = section.querySelector('[data-menu-grid]');
     if (!container || !cat.items) return;
+    // keep the container's layout class in sync with the data — lets a
+    // category switch between the photo-card grid and a plain price list
+    container.className = (cat.layout === 'list' ? 'list-grid' : 'product-grid');
     container.innerHTML = '';
 
     cat.items.forEach(function (item, i) {
@@ -676,12 +679,15 @@
         var card = document.createElement('article');
         card.className = 'product-card reveal';
         card.style.setProperty('--d', (i % 4) * 60 + 'ms');
+        var cardPriceHtml = item.askInStore
+          ? '<span class="product-price tbd">' + translations['menu.askInStore'][currentLang] + '</span>'
+          : '<span class="product-price">' + (item.price || '') + '</span>';
         card.innerHTML =
           '<div class="product-media"><img src="' + item.image + '" alt="' + (item.imageAlt || item.name || '') + '" loading="lazy"></div>' +
           '<div class="product-body">' +
             '<h3 class="product-name">' + item.name + '</h3>' +
             (item.desc ? '<p class="product-desc">' + item.desc + '</p>' : '') +
-            '<span class="product-price">' + (item.price || '') + '</span>' +
+            cardPriceHtml +
           '</div>';
         container.appendChild(card);
       }

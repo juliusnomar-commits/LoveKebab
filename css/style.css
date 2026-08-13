@@ -932,6 +932,14 @@ html.js .hero-image-wrap { opacity: 0; animation: heroImageIn 1.1s var(--ease-ex
   color: var(--gold-400);
 }
 
+.product-price.tbd {
+  font-family: var(--font-body);
+  font-weight: 500;
+  font-size: var(--fs-xs);
+  color: var(--text-muted-dark);
+}
+.section--light .product-price.tbd { color: var(--text-muted-light); }
+
 /* ------------------------------------------------------------- menu page */
 .menu-hero {
   padding-top: calc(var(--nav-height) + var(--sp-8));
