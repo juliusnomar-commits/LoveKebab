@@ -1,0 +1,154 @@
+{
+  "categories": [
+    {
+      "id": "kebab-durum",
+      "eyebrow": "Frisch vom Spieß",
+      "title": "Kebab & Dürüm",
+      "jumpLabel": "Kebab & Dürüm",
+      "layout": "grid",
+      "items": [
+        { "name": "Döner Kebap", "image": "images/doner-kebab-photo.jpg", "imageAlt": "Döner Kebap", "desc": "Dönerfleisch im warmen Fladenbrot mit knackigem Salat und Soße nach Wahl.", "price": "8,00 €" },
+        { "name": "Dürüm", "image": "images/durum.jpg", "imageAlt": "Dürüm", "desc": "Dönerfleisch und Salat fest gerollt im weichen Dürüm-Fladen.", "price": "9,00 €" },
+        { "name": "Falafel Tasche", "image": "images/falafel-wrap.jpg", "imageAlt": "Falafel Tasche", "desc": "Knusprige Kichererbsen-Falafel im Fladenbrot mit frischem Salat und Soße.", "price": "7,00 €" },
+        { "name": "Sucuk Tasche", "image": "images/sucuk.jpg", "imageAlt": "Sucuk Tasche", "desc": "Gegrillte türkische Sucuk-Wurst im Fladenbrot mit Salat und Soße.", "price": "8,00 €" },
+        { "name": "Salat Tasche", "image": "images/veggie-wrap.jpg", "imageAlt": "Salat Tasche", "desc": "Fladenbrot gefüllt mit knackigem, gemischtem Salat und Soße nach Wahl.", "price": "6,00 €" },
+        { "name": "Pomm Döner", "image": "images/pomm-doner.jpg", "imageAlt": "Pomm Döner", "desc": "Dönerfleisch auf knusprigen Pommes mit Salat und Soße.", "price": "8,00 €" },
+        { "name": "Dönerfleisch (Portion)", "image": "images/doner-kebab-photo.jpg", "imageAlt": "Dönerfleisch (Portion)", "desc": "Eine großzügige Portion frisch geschnittenes Dönerfleisch, ohne Brot.", "price": "10,00 €" }
+      ]
+    },
+    {
+      "id": "wings",
+      "eyebrow": "Frisch frittiert",
+      "title": "Wings",
+      "jumpLabel": "Wings",
+      "layout": "grid",
+      "items": [
+        { "name": "Love Kebab Wings", "image": "images/wings.jpg", "imageAlt": "Love Kebab Wings", "desc": "Chicken Wings mariniert in unserer eigenen Gewürzmischung — der Love-Kebab-Klassiker.", "price": "7,00 €" },
+        { "name": "Buffalo Wings", "image": "images/wings.jpg", "imageAlt": "Buffalo Wings", "desc": "Knusprige Chicken Wings in scharfer Buffalo-Soße.", "price": "7,00 €" },
+        { "name": "Garlic Parmesan Wings", "image": "images/wings.jpg", "imageAlt": "Garlic Parmesan Wings", "desc": "Chicken Wings in Knoblauch-Butter mit frisch geriebenem Parmesan.", "price": "7,50 €" },
+        { "name": "BBQ Wings", "image": "images/wings.jpg", "imageAlt": "BBQ Wings", "desc": "Chicken Wings mit rauchiger BBQ-Glasur.", "price": "7,00 €" }
+      ]
+    },
+    {
+      "id": "fries",
+      "eyebrow": "Handgeschnitten",
+      "title": "Fries",
+      "jumpLabel": "Fries",
+      "layout": "grid",
+      "items": [
+        { "name": "Hand-Cut Fries", "image": "images/hand-cut-fries.jpg", "imageAlt": "Hand-Cut Fries", "desc": "Frisch handgeschnittene Pommes, gesalzen — nie aus der Tiefkühltruhe.", "price": "4,50 €" },
+        { "name": "Parmesan Fries", "image": "images/parmesan-fries.jpg", "imageAlt": "Parmesan Fries", "desc": "Handgeschnittene Pommes mit Parmesan und frischen Kräutern.", "price": "5,50 €" },
+        { "name": "Loaded Fries", "image": "images/loaded-fries.jpg", "imageAlt": "Loaded Fries", "desc": "Handgeschnittene Pommes mit Dönerfleisch, Käse und Soße nach Wahl.", "price": "9,00 €" }
+      ]
+    },
+    {
+      "id": "teller",
+      "eyebrow": "Für den großen Hunger",
+      "title": "Teller",
+      "jumpLabel": "Teller",
+      "layout": "grid",
+      "items": [
+        { "name": "Iskender", "image": "images/iskender.jpg", "imageAlt": "Iskender", "desc": "Dönerfleisch auf Fladenbrot, Tomatensoße, zerlassene Butter und Joghurt.", "price": "15,00 €" },
+        { "name": "Döner Teller", "image": "images/doner-teller.jpg", "imageAlt": "Döner Teller", "desc": "Dönerfleisch serviert mit Reis oder Pommes und frischem Salat.", "price": "14,00 €" },
+        { "name": "Sucuk Teller", "image": "images/sucuk.jpg", "imageAlt": "Sucuk Teller", "desc": "Gegrillte Sucuk-Wurst mit Reis oder Pommes und frischem Salat.", "price": "14,00 €" },
+        { "name": "Falafel Teller", "image": "images/falafel-wrap.jpg", "imageAlt": "Falafel Teller", "desc": "Knusprige Falafel mit Reis oder Pommes und frischem Salat.", "price": "13,00 €" }
+      ]
+    },
+    {
+      "id": "pizza",
+      "eyebrow": "Steinofen, Ø 30 cm",
+      "title": "Pizza",
+      "jumpLabel": "Pizza",
+      "layout": "grid",
+      "items": [
+        { "name": "Pizza Dönerfleisch", "image": "images/pizza-salami.jpg", "imageAlt": "Pizza Dönerfleisch", "desc": "Tomatensoße, Mozzarella und frisch geschnittenes Dönerfleisch.", "price": "12,00 €" },
+        { "name": "Pizza Margherita", "image": "images/margherita.jpg", "imageAlt": "Pizza Margherita", "desc": "Tomatensoße und zerlaufener Mozzarella, direkt aus dem Steinofen.", "price": "8,00 €" },
+        { "name": "Pizza Funghi", "image": "images/funghi.jpg", "imageAlt": "Pizza Funghi", "desc": "Tomatensoße, Mozzarella und frische Champignons.", "price": "10,00 €" },
+        { "name": "Pizza Hawaii", "image": "images/hawaii.jpg", "imageAlt": "Pizza Hawaii", "desc": "Tomatensoße, Mozzarella, Schinken und Ananas.", "price": "10,00 €" },
+        { "name": "Pizza Vegetarisch", "image": "images/vegetarian-pizza.jpg", "imageAlt": "Pizza Vegetarisch", "desc": "Tomatensoße, Mozzarella und eine Mischung aus frischem Gemüse.", "price": "10,00 €" },
+        { "name": "Pizza Salami", "image": "images/pizza-salami.jpg", "imageAlt": "Pizza Salami", "desc": "Tomatensoße, Mozzarella und würzige Salami.", "price": "11,00 €" },
+        { "name": "Pizza Tonno", "image": "images/tuna-pizza.jpg", "imageAlt": "Pizza Tonno", "desc": "Tomatensoße, Mozzarella, Thunfisch und Zwiebeln.", "price": "11,00 €" },
+        { "name": "Pizza mit Knoblauchwurst (Sucuk)", "image": "images/pizza-salami.jpg", "imageAlt": "Pizza mit Knoblauchwurst (Sucuk)", "desc": "Tomatensoße, Mozzarella und gegrillte türkische Sucuk-Wurst.", "price": "12,00 €" }
+      ]
+    },
+    {
+      "id": "pide-lahmacun",
+      "eyebrow": "Frisch aus dem Steinofen",
+      "title": "Pide & Lahmacun",
+      "jumpLabel": "Pide & Lahmacun",
+      "layout": "grid",
+      "items": [
+        { "name": "Lahmacun mit Fleisch und Salat", "image": "images/lahmacun-fleisch-salat.jpg", "imageAlt": "Lahmacun mit Fleisch und Salat", "desc": "Lahmacun beladen mit extra Dönerfleisch und frischem Salat.", "price": "10,00 €" },
+        { "name": "Lahmacun", "image": "images/lahmacun-plain.jpg", "imageAlt": "Lahmacun", "desc": "Dünner türkischer Fladen mit würzigem Hackfleisch, frisch gebacken.", "price": "5,00 €" },
+        { "name": "Lahmacun mit Salat", "image": "images/lahmacun-salat.jpg", "imageAlt": "Lahmacun mit Salat", "desc": "Klassischer Lahmacun gerollt mit knackigem, frischem Salat.", "price": "8,00 €" },
+        { "name": "Kiymali Pide", "image": "images/pide-kiymali.jpg", "imageAlt": "Kiymali Pide", "desc": "Schiffchen-Pide belegt mit würzigem Hackfleisch und Käse.", "price": "11,00 €" },
+        { "name": "Peynirli Pide", "image": "images/pide-peynirli.jpg", "imageAlt": "Peynirli Pide", "desc": "Schiffchen-Pide beladen mit geschmolzenem türkischem Käse.", "price": "10,00 €" },
+        { "name": "Sucuk Pide", "image": "images/pide-sucuk.jpg", "imageAlt": "Sucuk Pide", "desc": "Schiffchen-Pide mit gegrillter Sucuk-Wurst und Käse.", "price": "11,00 €" },
+        { "name": "Dönerli Pide", "image": "images/pide-kiymali.jpg", "imageAlt": "Dönerli Pide", "desc": "Schiffchen-Pide mit Dönerfleisch und zerlaufenem Käse.", "price": "11,00 €" },
+        { "name": "Vegetaria Pide", "image": "images/pide-peynirli.jpg", "imageAlt": "Vegetaria Pide", "desc": "Schiffchen-Pide mit Spinat, Käse und frischem Gemüse.", "price": "10,00 €" }
+      ]
+    },
+    {
+      "id": "salads",
+      "eyebrow": "Leicht, aber nicht klein",
+      "title": "Salate",
+      "jumpLabel": "Salate",
+      "layout": "grid",
+      "items": [
+        { "name": "Dönersalat", "image": "images/garden-salad.jpg", "imageAlt": "Dönersalat", "desc": "Gemischter Salat mit warmem, frisch geschnittenem Dönerfleisch.", "price": "8,00 €" },
+        { "name": "Gemischter Salat", "image": "images/garden-salad.jpg", "imageAlt": "Gemischter Salat", "desc": "Knackiger gemischter Salat mit leichtem Haus-Dressing.", "price": "7,00 €" },
+        { "name": "Thunfischsalat", "image": "images/tuna-salad.jpg", "imageAlt": "Thunfischsalat", "desc": "Gemischter Salat mit Thunfisch und Zwiebeln.", "price": "8,00 €" },
+        { "name": "Gemischter Salat mit Falafel", "image": "images/falafel-wrap.jpg", "imageAlt": "Gemischter Salat mit Falafel", "desc": "Gemischter Salat mit knuspriger Falafel.", "price": "8,00 €" },
+        { "name": "Gemischter Salat mit gebratenem Gemüse", "image": "images/grilled-veg.jpg", "imageAlt": "Gemischter Salat mit gebratenem Gemüse", "desc": "Gemischter Salat mit in der Pfanne gebratenem Saisongemüse.", "price": "8,00 €" }
+      ]
+    },
+    {
+      "id": "specialties",
+      "eyebrow": "Hausgemachte Spezialitäten",
+      "title": "Spezialitäten",
+      "jumpLabel": "Spezialitäten",
+      "layout": "grid",
+      "items": [
+        { "name": "Luxus Vorspeisenteller", "image": "images/mezze-platter.jpg", "imageAlt": "Luxus Vorspeisenteller", "desc": "Ein großzügiger Teller zum Teilen mit unseren besten hausgemachten Vorspeisen.", "price": "10,00 €" },
+        { "name": "Hausgemachte Blätterteigrollen", "image": "images/pastry-rolls.jpg", "imageAlt": "Hausgemachte Blätterteigrollen", "desc": "Knusprige hausgemachte Blätterteigrollen, gefüllt und frisch frittiert.", "price": "8,00 €" },
+        { "name": "Überbackener Weißkäseteller", "image": "images/baked-cheese.jpg", "imageAlt": "Überbackener Weißkäseteller", "desc": "Türkischer Weißkäse goldbraun überbacken.", "price": "8,00 €" }
+      ]
+    },
+    {
+      "id": "sides",
+      "eyebrow": "Imbiss",
+      "title": "Beilagen",
+      "jumpLabel": "Beilagen",
+      "layout": "list",
+      "items": [
+        { "name": "Pommes frites", "price": "3,50 €" },
+        { "name": "Pommes frites Spezial", "price": "5,00 €" },
+        { "name": "Currywurst", "price": "4,00 €" },
+        { "name": "Currywurst mit Pommes", "price": "7,50 €" },
+        { "name": "Mayonnaise", "price": "0,80 €" },
+        { "name": "Ketchup", "price": "0,80 €" },
+        { "name": "Weißkäse", "price": "1,00 €" }
+      ]
+    },
+    {
+      "id": "drinks",
+      "eyebrow": "Getränke",
+      "title": "Getränke",
+      "jumpLabel": "Getränke",
+      "layout": "list",
+      "items": [
+        { "name": "Ayran", "price": "2,00 €" },
+        { "name": "Coca-Cola", "price": "3,00 €" },
+        { "name": "Coca-Cola Zero", "askInStore": true },
+        { "name": "Fanta", "price": "3,00 €" },
+        { "name": "Sprite", "askInStore": true },
+        { "name": "Mezzo Mix", "askInStore": true },
+        { "name": "Gazoz", "price": "2,50 €" },
+        { "name": "Stilles Wasser", "price": "2,50 €" },
+        { "name": "Mineralwasser", "askInStore": true },
+        { "name": "Pils", "price": "2,90 €" },
+        { "name": "Efes Bier", "askInStore": true }
+      ]
+    }
+  ]
+}

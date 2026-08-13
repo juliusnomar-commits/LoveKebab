@@ -1,0 +1,99 @@
+{
+  "skip": "Zum Inhalt springen",
+  "hero": {
+    "kicker": "Döner · Wings · Hand-Cut Fries",
+    "word0": "Mit",
+    "word1": "Liebe",
+    "word2": "gemacht.",
+    "trust1": "100 % frisches Fleisch"
+  },
+  "place": {
+    "name": "Essen-Rüttenscheid"
+  },
+  "story": {
+    "eyebrow": "Unsere Geschichte",
+    "title": "Döner, wie er<br>sein sollte.",
+    "body1": "Bei Love Kebab treffen frische Zutaten auf jahrelange Erfahrung. Mitten in Rüttenscheid schneiden wir jeden Döner auf Bestellung vom Spieß — ehrlich, frisch und mit Liebe zubereitet.",
+    "stat1": "Jeden Tag geöffnet",
+    "stat2": "Frisch",
+    "stat3": "Jahre in Rüttenscheid"
+  },
+  "menu": {
+    "eyebrow": "Unsere Klassiker",
+    "title": "Frisch für dich<br>zubereitet.",
+    "wingsName": "Wings",
+    "descWings": "Mariniert in unserer eigenen Gewürzmischung — frisch frittiert.",
+    "parmFriesName": "Parmesan Fries",
+    "descParmFries": "Handgeschnitten, mit Parmesan und frischen Kräutern.",
+    "doenerName": "Döner Kebab",
+    "descDoener": "Der Klassiker im frischen Fladenbrot — direkt vom Spieß.",
+    "duerumName": "Dürüm",
+    "descDurum": "Im warmen, dünnen Fladenbrot gerollt — perfekt für unterwegs.",
+    "fullMenuCta": "Vollständige Speisekarte ansehen →"
+  },
+  "values": {
+    "eyebrow": "Warum Love Kebab",
+    "title": "Qualität, die man<br>schmeckt.",
+    "sauceTitle": "Hausgemachte Soßen",
+    "meatDesc": "Täglich frisch geliefert und mariniert — nie aus der Tiefkühltruhe.",
+    "sauceDesc": "Eigene Rezepte, jeden Tag frisch angerührt — das schmeckt man.",
+    "loveTitle": "Mit Liebe gemacht",
+    "loveDesc": "Jeder Döner wird auf Bestellung geschnitten und mit voller Aufmerksamkeit gebaut."
+  },
+  "process": {
+    "eyebrow": "Galerie",
+    "title": "Ein Blick in unsere Küche",
+    "step1": "Schritt 01",
+    "title1": "Frisches Fleisch",
+    "desc1": "Täglich frisch geliefert — Qualität, die man sieht und schmeckt.",
+    "photo1": "Foto: Frisches Fleisch",
+    "step2": "Schritt 02",
+    "title2": "Eigene Gewürzmischung",
+    "desc2": "Hausgemachte Marinade nach bewährtem Familienrezept.",
+    "photo2": "Foto: Gewürzmischung",
+    "step3": "Schritt 03",
+    "title3": "Langsam gegart am Spieß",
+    "desc3": "Stundenlang am Drehspieß — saftig innen, knusprig außen.",
+    "photo3": "Foto: Dönerspieß",
+    "step4": "Schritt 04",
+    "title4": "Frisch für dich geschnitten",
+    "desc4": "Auf Bestellung geschnitten, frisch belegt und mit Liebe serviert.",
+    "photo4": "Foto: Frisch geschnitten"
+  },
+  "contact": {
+    "eyebrow": "Standort",
+    "title": "Besuch uns in<br>Rüttenscheid.",
+    "whatsapp": "WhatsApp schreiben",
+    "hoursTitle": "Öffnungszeiten",
+    "hoursNote": "Öffnungszeiten können an Feiertagen abweichen.",
+    "addressLine1": "Rüttenscheider Straße 133",
+    "addressLine2": "45130 Essen",
+    "phoneDisplay": "+49 201 799 175 72"
+  },
+  "hours": {
+    "mon": "11:00 – 22:00",
+    "tue": "11:00 – 22:00",
+    "wed": "11:00 – 22:00",
+    "thu": "11:00 – 22:00",
+    "fri": "11:00 – 05:00",
+    "sat": "11:00 – 05:00",
+    "closed": "Geschlossen"
+  },
+  "footer": {
+    "legal": "Love Kebab · Pamukkale Kebap Haus<br>Essen-Rüttenscheid",
+    "rights": "Alle Rechte vorbehalten."
+  },
+  "meta": {
+    "title": "Love Kebab — Döner mit Liebe | Essen-Rüttenscheid",
+    "description": "Love Kebab — Döner mit Liebe in Essen-Rüttenscheid. 100 % frisches Fleisch, hausgemachte Soßen, echtes Street-Food-Gefühl."
+  },
+  "images": {
+    "logo": "images/logo.png",
+    "hero": "images/hero.png",
+    "storyPhoto": "images/store-interior.jpg",
+    "wingsPhoto": "images/wings.jpg",
+    "parmFriesPhoto": "images/parmesan-fries.jpg",
+    "doenerPhoto": "images/doner-kebab-photo.jpg",
+    "duerumPhoto": "images/durum.jpg"
+  }
+}

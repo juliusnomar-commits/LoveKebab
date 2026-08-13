@@ -182,57 +182,27 @@
     'menu.cat.drinksEyebrow': { de: 'Getränke', en: 'Drinks' },
     'menu.cat.drinksTitle': { de: 'Getränke', en: 'Drinks' },
 
-    'menu.item.donerKebap.desc': { de: 'Dönerfleisch im warmen Fladenbrot mit knackigem Salat und Soße nach Wahl.', en: 'Sliced döner meat in warm pita with crisp salad and your choice of sauce.' },
-    'menu.item.duerum.desc': { de: 'Dönerfleisch und Salat fest gerollt im weichen Dürüm-Fladen.', en: 'Döner meat and salad rolled tight in a soft dürüm wrap.' },
-    'menu.item.falafelTasche.desc': { de: 'Knusprige Kichererbsen-Falafel im Fladenbrot mit frischem Salat und Soße.', en: 'Crispy chickpea falafel tucked into pita with fresh salad and sauce.' },
-    'menu.item.sucukTasche.desc': { de: 'Gegrillte türkische Sucuk-Wurst im Fladenbrot mit Salat und Soße.', en: 'Grilled Turkish sucuk sausage in pita with salad and sauce.' },
-    'menu.item.salatTasche.desc': { de: 'Fladenbrot gefüllt mit knackigem, gemischtem Salat und Soße nach Wahl.', en: 'Pita packed with crisp mixed salad and your choice of sauce.' },
-    'menu.item.pommDoener.desc': { de: 'Dönerfleisch auf knusprigen Pommes mit Salat und Soße.', en: 'Döner meat piled over crispy fries with salad and sauce.' },
-    'menu.item.doenerfleischPortion.desc': { de: 'Eine großzügige Portion frisch geschnittenes Dönerfleisch, ohne Brot.', en: 'A generous portion of freshly sliced döner meat, no bread.' },
+    /* menu.item.*.desc entries removed — full priced menu (menu.html) is now
+       rendered entirely from content/menu.json, see renderMenu() below. */
+    'menu.askInStore': { de: 'Bitte im Laden fragen', en: 'Ask in store' },
 
-    'menu.item.loveKebabWings.desc': { de: 'Chicken Wings mariniert in unserer eigenen Gewürzmischung — der Love-Kebab-Klassiker.', en: 'Chicken wings tossed in our own signature marinade — the Love Kebab original.' },
-    'menu.item.buffaloWings.desc': { de: 'Knusprige Chicken Wings in scharfer Buffalo-Soße.', en: 'Crispy chicken wings tossed in spicy buffalo sauce.' },
-    'menu.item.garlicParmesanWings.desc': { de: 'Chicken Wings in Knoblauch-Butter mit frisch geriebenem Parmesan.', en: 'Chicken wings in garlic butter with freshly grated parmesan.' },
-    'menu.item.bbqWings.desc': { de: 'Chicken Wings mit rauchiger BBQ-Glasur.', en: 'Chicken wings with a smoky BBQ glaze.' },
+    /* homepage-only names not previously wired to i18n */
+    'menu.wingsName': { de: 'Wings', en: 'Wings' },
+    'menu.doenerName': { de: 'Döner Kebab', en: 'Döner Kebab' },
+    'menu.duerumName': { de: 'Dürüm', en: 'Dürüm' },
 
-    'menu.item.handCutFries.desc': { de: 'Frisch handgeschnittene Pommes, gesalzen — nie aus der Tiefkühltruhe.', en: 'Fresh hand-cut fries, salted — never from the freezer.' },
-    'menu.item.parmesanFries.desc': { de: 'Handgeschnittene Pommes mit Parmesan und frischen Kräutern.', en: 'Hand-cut fries tossed with parmesan and fresh herbs.' },
-    'menu.item.loadedFries.desc': { de: 'Handgeschnittene Pommes mit Dönerfleisch, Käse und Soße nach Wahl.', en: 'Hand-cut fries loaded with döner meat, cheese and your choice of sauce.' },
+    'contact.addressLine1': { de: 'Rüttenscheider Straße 133', en: 'Rüttenscheider Straße 133' },
+    'contact.addressLine2': { de: '45130 Essen', en: '45130 Essen' },
+    'contact.phoneDisplay': { de: '+49 201 799 175 72', en: '+49 201 799 175 72' },
 
-    'menu.item.iskender.desc': { de: 'Dönerfleisch auf Fladenbrot, Tomatensoße, zerlassene Butter und Joghurt.', en: 'Döner meat over pide bread, tomato sauce, melted butter and yoghurt.' },
-    'menu.item.doenerTeller.desc': { de: 'Dönerfleisch serviert mit Reis oder Pommes und frischem Salat.', en: 'Döner meat served over rice or fries with fresh salad.' },
-    'menu.item.sucukTeller.desc': { de: 'Gegrillte Sucuk-Wurst mit Reis oder Pommes und frischem Salat.', en: 'Grilled sucuk sausage with rice or fries and fresh salad.' },
-    'menu.item.falafelTeller.desc': { de: 'Knusprige Falafel mit Reis oder Pommes und frischem Salat.', en: 'Crispy falafel with rice or fries and fresh salad.' },
+    'hours.mon': { de: '11:00' + HAIRSP + '–' + HAIRSP + '22:00', en: '11:00' + HAIRSP + '–' + HAIRSP + '22:00' },
+    'hours.tue': { de: '11:00' + HAIRSP + '–' + HAIRSP + '22:00', en: '11:00' + HAIRSP + '–' + HAIRSP + '22:00' },
+    'hours.wed': { de: '11:00' + HAIRSP + '–' + HAIRSP + '22:00', en: '11:00' + HAIRSP + '–' + HAIRSP + '22:00' },
+    'hours.thu': { de: '11:00' + HAIRSP + '–' + HAIRSP + '22:00', en: '11:00' + HAIRSP + '–' + HAIRSP + '22:00' },
+    'hours.fri': { de: '11:00' + HAIRSP + '–' + HAIRSP + '05:00', en: '11:00' + HAIRSP + '–' + HAIRSP + '05:00' },
+    'hours.sat': { de: '11:00' + HAIRSP + '–' + HAIRSP + '05:00', en: '11:00' + HAIRSP + '–' + HAIRSP + '05:00' },
 
-    'menu.item.pizzaDoenerfleisch.desc': { de: 'Tomatensoße, Mozzarella und frisch geschnittenes Dönerfleisch.', en: 'Tomato sauce, mozzarella and freshly sliced döner meat.' },
-    'menu.item.pizzaMargherita.desc': { de: 'Tomatensoße und zerlaufener Mozzarella, direkt aus dem Steinofen.', en: 'Tomato sauce and melted mozzarella, straight from the stone oven.' },
-    'menu.item.pizzaFunghi.desc': { de: 'Tomatensoße, Mozzarella und frische Champignons.', en: 'Tomato sauce, mozzarella and fresh mushrooms.' },
-    'menu.item.pizzaHawaii.desc': { de: 'Tomatensoße, Mozzarella, Schinken und Ananas.', en: 'Tomato sauce, mozzarella, ham and pineapple.' },
-    'menu.item.pizzaVegetarisch.desc': { de: 'Tomatensoße, Mozzarella und eine Mischung aus frischem Gemüse.', en: 'Tomato sauce, mozzarella and a mix of fresh vegetables.' },
-    'menu.item.pizzaSalami.desc': { de: 'Tomatensoße, Mozzarella und würzige Salami.', en: 'Tomato sauce, mozzarella and spicy salami.' },
-    'menu.item.pizzaTonno.desc': { de: 'Tomatensoße, Mozzarella, Thunfisch und Zwiebeln.', en: 'Tomato sauce, mozzarella, tuna and onion.' },
-    'menu.item.pizzaSucuk.desc': { de: 'Tomatensoße, Mozzarella und gegrillte türkische Sucuk-Wurst.', en: 'Tomato sauce, mozzarella and grilled Turkish sucuk sausage.' },
-
-    'menu.item.lahmacunFleischSalat.desc': { de: 'Lahmacun beladen mit extra Dönerfleisch und frischem Salat.', en: 'Lahmacun loaded with extra döner meat and fresh salad.' },
-    'menu.item.lahmacun.desc': { de: 'Dünner türkischer Fladen mit würzigem Hackfleisch, frisch gebacken.', en: 'Thin Turkish flatbread topped with spiced minced meat, baked to order.' },
-    'menu.item.lahmacunSalat.desc': { de: 'Klassischer Lahmacun gerollt mit knackigem, frischem Salat.', en: 'Classic lahmacun rolled with crisp fresh salad.' },
-    'menu.item.kiymaliPide.desc': { de: 'Schiffchen-Pide belegt mit würzigem Hackfleisch und Käse.', en: 'Boat-shaped pide topped with spiced minced meat and cheese.' },
-    'menu.item.peynirliPide.desc': { de: 'Schiffchen-Pide beladen mit geschmolzenem türkischem Käse.', en: 'Boat-shaped pide loaded with melted Turkish cheese.' },
-    'menu.item.sucukPide.desc': { de: 'Schiffchen-Pide mit gegrillter Sucuk-Wurst und Käse.', en: 'Boat-shaped pide topped with grilled sucuk sausage and cheese.' },
-    'menu.item.doenerliPide.desc': { de: 'Schiffchen-Pide mit Dönerfleisch und zerlaufenem Käse.', en: 'Boat-shaped pide topped with döner meat and melted cheese.' },
-    'menu.item.vegetariaPide.desc': { de: 'Schiffchen-Pide mit Spinat, Käse und frischem Gemüse.', en: 'Boat-shaped pide topped with spinach, cheese and fresh vegetables.' },
-
-    'menu.item.doenersalat.desc': { de: 'Gemischter Salat mit warmem, frisch geschnittenem Dönerfleisch.', en: 'Mixed salad topped with warm, freshly sliced döner meat.' },
-    'menu.item.gemischterSalat.desc': { de: 'Knackiger gemischter Salat mit leichtem Haus-Dressing.', en: 'Crisp mixed salad with a light house dressing.' },
-    'menu.item.thunfischsalat.desc': { de: 'Gemischter Salat mit Thunfisch und Zwiebeln.', en: 'Mixed salad topped with tuna and onion.' },
-    'menu.item.gemischterSalatFalafel.desc': { de: 'Gemischter Salat mit knuspriger Falafel.', en: 'Mixed salad topped with crispy falafel.' },
-    'menu.item.gemischterSalatGemuese.desc': { de: 'Gemischter Salat mit in der Pfanne gebratenem Saisongemüse.', en: 'Mixed salad topped with pan-fried seasonal vegetables.' },
-
-    'menu.item.luxusVorspeisenteller.desc': { de: 'Ein großzügiger Teller zum Teilen mit unseren besten hausgemachten Vorspeisen.', en: 'A generous sharing plate of our best homemade starters.' },
-    'menu.item.blaetterteigrollen.desc': { de: 'Knusprige hausgemachte Blätterteigrollen, gefüllt und frisch frittiert.', en: 'Crispy homemade pastry rolls, filled and fried to order.' },
-    'menu.item.weisskaeseteller.desc': { de: 'Türkischer Weißkäse goldbraun überbacken.', en: 'Turkish white cheese baked until golden and bubbling.' },
-
-    'menu.askInStore': { de: 'Bitte im Laden fragen', en: 'Ask in store' }
+    'footer.legal': { de: 'Love Kebab · Pamukkale Kebap Haus<br>Essen-Rüttenscheid', en: 'Love Kebab · Pamukkale Kebap Haus<br>Essen-Rüttenscheid' }
   };
 
   function getStoredLang() {
@@ -589,6 +559,20 @@
     cats.forEach(function (cat) { observer.observe(cat); });
   }
 
+  /* re-land on a #hash target (e.g. menu.html#drinks) after CMS content has
+     rendered — the browser's own anchor-jump fires too early, before the
+     dynamically-built menu has expanded the page to its final height */
+  function fixInitialHashScroll() {
+    if (!window.location.hash) return;
+    var target = document.querySelector(window.location.hash);
+    if (!target) return;
+    var menuJump = document.querySelector('.menu-jump');
+    var navH = nav ? nav.offsetHeight : 72;
+    var jumpH = menuJump ? menuJump.offsetHeight : 0;
+    var top = target.getBoundingClientRect().top + window.scrollY - navH - jumpH;
+    window.scrollTo({ top: Math.max(top, 0), behavior: 'auto' });
+  }
+
   /* -------------------------------------------------------- scroll top */
   function initScrollTop() {
     if (!scrollTopBtn) return;
@@ -628,6 +612,106 @@
     if (el) el.textContent = String(new Date().getFullYear());
   }
 
+  /* ------------------------------------------------ CMS-editable content
+     Text and photos edited in Decap CMS live in content/site.json (homepage)
+     and content/menu.json (priced menu). Both are optional — if either is
+     missing or unreachable, the hardcoded defaults above / in the HTML are
+     used as-is, so the site still works with no CMS content at all. */
+  function flattenInto(target, obj, prefix) {
+    Object.keys(obj || {}).forEach(function (key) {
+      var value = obj[key];
+      var path = prefix ? prefix + '.' + key : key;
+      if (value && typeof value === 'object' && !Array.isArray(value)) {
+        flattenInto(target, value, path);
+      } else {
+        target[path] = value;
+      }
+    });
+    return target;
+  }
+
+  function applyTextOverrides(data) {
+    var flat = flattenInto({}, data, '');
+    Object.keys(flat).forEach(function (key) {
+      if (translations[key]) translations[key].de = flat[key];
+    });
+  }
+
+  function applyImageOverrides(images) {
+    if (!images) return;
+    document.querySelectorAll('[data-content-img]').forEach(function (el) {
+      var key = el.getAttribute('data-content-img');
+      if (images[key]) el.src = images[key];
+    });
+  }
+
+  /* builds one menu.html category (grid of product cards, or a plain
+     price list) straight from content/menu.json — see that file for shape */
+  function renderMenuCategory(cat) {
+    var section = document.getElementById(cat.id);
+    if (!section) return;
+
+    var eyebrowEl = section.querySelector('.eyebrow');
+    var titleEl = section.querySelector('.section-title');
+    if (eyebrowEl && cat.eyebrow) eyebrowEl.textContent = cat.eyebrow;
+    if (titleEl && cat.title) titleEl.innerHTML = cat.title;
+
+    var jumpLink = document.querySelector('.menu-jump-link[href="#' + cat.id + '"]');
+    if (jumpLink && cat.jumpLabel) jumpLink.textContent = cat.jumpLabel;
+
+    var container = section.querySelector('[data-menu-grid]');
+    if (!container || !cat.items) return;
+    container.innerHTML = '';
+
+    cat.items.forEach(function (item, i) {
+      if (cat.layout === 'list') {
+        var row = document.createElement('div');
+        row.className = 'list-row';
+        var priceHtml = item.askInStore
+          ? '<span class="list-row-price tbd">' + translations['menu.askInStore'][currentLang] + '</span>'
+          : '<span class="list-row-price">' + (item.price || '') + '</span>';
+        row.innerHTML = '<span class="list-row-name">' + item.name + '</span>' + priceHtml;
+        container.appendChild(row);
+      } else {
+        var card = document.createElement('article');
+        card.className = 'product-card reveal';
+        card.style.setProperty('--d', (i % 4) * 60 + 'ms');
+        card.innerHTML =
+          '<div class="product-media"><img src="' + item.image + '" alt="' + (item.imageAlt || item.name || '') + '" loading="lazy"></div>' +
+          '<div class="product-body">' +
+            '<h3 class="product-name">' + item.name + '</h3>' +
+            (item.desc ? '<p class="product-desc">' + item.desc + '</p>' : '') +
+            '<span class="product-price">' + (item.price || '') + '</span>' +
+          '</div>';
+        container.appendChild(card);
+      }
+    });
+  }
+
+  function renderMenu(data) {
+    if (!data || !data.categories) return;
+    data.categories.forEach(renderMenuCategory);
+  }
+
+  function fetchJson(url) {
+    return fetch(url, { cache: 'no-cache' })
+      .then(function (res) { return res.ok ? res.json() : null; })
+      .catch(function () { return null; });
+  }
+
+  function loadContent() {
+    return Promise.all([fetchJson('content/site.json'), fetchJson('content/menu.json')])
+      .then(function (results) {
+        var site = results[0];
+        var menu = results[1];
+        if (site) {
+          applyTextOverrides(site);
+          applyImageOverrides(site.images);
+        }
+        if (menu) renderMenu(menu);
+      });
+  }
+
   /* --------------------------------------------------------------- boot */
   function init() {
     applyLang(currentLang);
@@ -644,6 +728,7 @@
     initRevealObserver();
     initTodayHighlight();
     initYear();
+    fixInitialHashScroll();
 
     // hero entrance choreography
     requestAnimationFrame(function () {
@@ -671,9 +756,13 @@
     }
   }
 
+  function boot() {
+    loadContent().then(init);
+  }
+
   if (document.readyState === 'loading') {
-    document.addEventListener('DOMContentLoaded', init);
+    document.addEventListener('DOMContentLoaded', boot);
   } else {
-    init();
+    boot();
   }
 })();

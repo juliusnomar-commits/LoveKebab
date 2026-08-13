@@ -41,7 +41,7 @@
       </ul>
 
       <a href="#start" class="nav-logo" aria-label="Love Kebab — Startseite" data-i18n-aria="nav.logoAria">
-        <img src="images/logo.png" alt="Love Kebab Logo" width="80" height="80" class="nav-logo-img">
+        <img src="images/logo.png" alt="Love Kebab Logo" width="80" height="80" class="nav-logo-img" data-content-img="logo">
       </a>
 
       <div class="nav-actions">
@@ -60,7 +60,7 @@
 
   <div class="nav-overlay" id="navOverlay">
     <div class="nav-overlay-top">
-      <img src="images/logo.png" alt="Love Kebab Logo" class="nav-overlay-logo">
+      <img src="images/logo.png" alt="Love Kebab Logo" class="nav-overlay-logo" data-content-img="logo">
       <button class="nav-overlay-close" type="button" aria-label="Menü schließen">&#10005;</button>
     </div>
     <nav class="nav-overlay-links" aria-label="Mobile Navigation">
@@ -84,7 +84,7 @@
         <div class="hero-stage">
           <div class="hero-visual" aria-hidden="true">
             <div class="hero-image-wrap" id="hero-image-wrap">
-              <img class="hero-image" src="images/hero.png" width="1536" height="1024" alt="" loading="eager" fetchpriority="high">
+              <img class="hero-image" src="images/hero.png" width="1536" height="1024" alt="" loading="eager" fetchpriority="high" data-content-img="hero">
             </div>
           </div>
 
@@ -160,7 +160,7 @@
         </div>
 
         <div class="story-image reveal" style="--d:160ms">
-          <img class="story-photo" src="images/store-interior.jpg" alt="Theke und Küche bei Love Kebab" width="1042" height="924" loading="lazy">
+          <img class="story-photo" src="images/store-interior.jpg" alt="Theke und Küche bei Love Kebab" width="1042" height="924" loading="lazy" data-content-img="storyPhoto">
         </div>
         </div>
       </div>
@@ -182,17 +182,17 @@
           <div class="product-grid" id="menu-grid">
           <article class="product-card reveal" style="--d:0ms">
             <div class="product-media">
-              <img src="images/wings.jpg" alt="Wings" loading="lazy">
+              <img src="images/wings.jpg" alt="Wings" loading="lazy" data-content-img="wingsPhoto">
             </div>
             <div class="product-body">
-              <h3 class="product-name">Wings</h3>
+              <h3 class="product-name" data-i18n="menu.wingsName">Wings</h3>
               <p class="product-desc" data-i18n="menu.descWings">Mariniert in unserer eigenen Gewürzmischung — frisch frittiert.</p>
             </div>
           </article>
 
           <article class="product-card reveal" style="--d:90ms">
             <div class="product-media">
-              <img src="images/parmesan-fries.jpg" alt="Parmesan Fries" loading="lazy">
+              <img src="images/parmesan-fries.jpg" alt="Parmesan Fries" loading="lazy" data-content-img="parmFriesPhoto">
             </div>
             <div class="product-body">
               <h3 class="product-name" data-i18n="menu.parmFriesName">Parmesan Fries</h3>
@@ -202,20 +202,20 @@
 
           <article class="product-card reveal" style="--d:180ms">
             <div class="product-media">
-              <img src="images/doner-kebab-photo.jpg" alt="Döner Kebab" loading="lazy">
+              <img src="images/doner-kebab-photo.jpg" alt="Döner Kebab" loading="lazy" data-content-img="doenerPhoto">
             </div>
             <div class="product-body">
-              <h3 class="product-name">Döner Kebab</h3>
-              <p class="product-desc" data-i18n="menu.descDoner">Der Klassiker im frischen Fladenbrot — direkt vom Spieß.</p>
+              <h3 class="product-name" data-i18n="menu.doenerName">Döner Kebab</h3>
+              <p class="product-desc" data-i18n="menu.descDoener">Der Klassiker im frischen Fladenbrot — direkt vom Spieß.</p>
             </div>
           </article>
 
           <article class="product-card reveal" style="--d:270ms">
             <div class="product-media">
-              <img src="images/durum.jpg" alt="Dürüm" loading="lazy">
+              <img src="images/durum.jpg" alt="Dürüm" loading="lazy" data-content-img="duerumPhoto">
             </div>
             <div class="product-body">
-              <h3 class="product-name">Dürüm</h3>
+              <h3 class="product-name" data-i18n="menu.duerumName">Dürüm</h3>
               <p class="product-desc" data-i18n="menu.descDurum">Im warmen, dünnen Fladenbrot gerollt — perfekt für unterwegs.</p>
             </div>
           </article>
@@ -371,7 +371,7 @@
                     <circle cx="12" cy="10" r="2.5"/>
                   </svg>
                 </span>
-                <span>Rüttenscheider Straße 133<br>45130 Essen</span>
+                <span><span data-i18n="contact.addressLine1">Rüttenscheider Straße 133</span><br><span data-i18n="contact.addressLine2">45130 Essen</span></span>
               </p>
               <p>
                 <span class="contact-icon" aria-hidden="true">
@@ -379,7 +379,7 @@
                     <path d="M5 4h4l1.5 4.5-2.2 1.7a12.5 12.5 0 005.5 5.5l1.7-2.2L20 15v4a2 2 0 01-2 2A15 15 0 013 6a2 2 0 012-2z"/>
                   </svg>
                 </span>
-                <a href="tel:+4920179917572">+49 201 799 175 72</a>
+                <a href="tel:+4920179917572" data-i18n="contact.phoneDisplay">+49 201 799 175 72</a>
               </p>
             </address>
 
@@ -394,12 +394,12 @@
               <h3 class="hours-title" data-i18n="contact.hoursTitle">Öffnungszeiten</h3>
               <table class="hours-table">
                 <tbody>
-                  <tr data-day="1"><th scope="row" data-i18n="days.mon">Montag</th><td>11:00&#8202;–&#8202;22:00</td></tr>
-                  <tr data-day="2"><th scope="row" data-i18n="days.tue">Dienstag</th><td>11:00&#8202;–&#8202;22:00</td></tr>
-                  <tr data-day="3"><th scope="row" data-i18n="days.wed">Mittwoch</th><td>11:00&#8202;–&#8202;22:00</td></tr>
-                  <tr data-day="4"><th scope="row" data-i18n="days.thu">Donnerstag</th><td>11:00&#8202;–&#8202;22:00</td></tr>
-                  <tr data-day="5"><th scope="row" data-i18n="days.fri">Freitag</th><td>11:00&#8202;–&#8202;05:00</td></tr>
-                  <tr data-day="6"><th scope="row" data-i18n="days.sat">Samstag</th><td>11:00&#8202;–&#8202;05:00</td></tr>
+                  <tr data-day="1"><th scope="row" data-i18n="days.mon">Montag</th><td data-i18n="hours.mon">11:00&#8202;–&#8202;22:00</td></tr>
+                  <tr data-day="2"><th scope="row" data-i18n="days.tue">Dienstag</th><td data-i18n="hours.tue">11:00&#8202;–&#8202;22:00</td></tr>
+                  <tr data-day="3"><th scope="row" data-i18n="days.wed">Mittwoch</th><td data-i18n="hours.wed">11:00&#8202;–&#8202;22:00</td></tr>
+                  <tr data-day="4"><th scope="row" data-i18n="days.thu">Donnerstag</th><td data-i18n="hours.thu">11:00&#8202;–&#8202;22:00</td></tr>
+                  <tr data-day="5"><th scope="row" data-i18n="days.fri">Freitag</th><td data-i18n="hours.fri">11:00&#8202;–&#8202;05:00</td></tr>
+                  <tr data-day="6"><th scope="row" data-i18n="days.sat">Samstag</th><td data-i18n="hours.sat">11:00&#8202;–&#8202;05:00</td></tr>
                   <tr data-day="0" class="is-closed"><th scope="row" data-i18n="days.sun">Sonntag</th><td data-i18n="hours.closed">Geschlossen</td></tr>
                 </tbody>
               </table>
@@ -430,8 +430,8 @@
   <footer class="site-footer">
     <div class="container footer-grid">
       <div class="footer-brand">
-        <img src="images/logo.png" alt="Love Kebab" width="58" height="58" class="footer-logo">
-        <p class="footer-legal">Love Kebab · Pamukkale Kebap Haus<br>Essen-Rüttenscheid</p>
+        <img src="images/logo.png" alt="Love Kebab" width="58" height="58" class="footer-logo" data-content-img="logo">
+        <p class="footer-legal" data-i18n="footer.legal">Love Kebab · Pamukkale Kebap Haus<br>Essen-Rüttenscheid</p>
       </div>
 
       <nav class="footer-nav" aria-label="Footer Navigation">
