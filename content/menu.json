@@ -1,4 +1,10 @@
 {
+  "menu": {
+    "pageTitle": "Speisekarte — Love Kebab",
+    "pageDescription": "Die vollständige Speisekarte von Love Kebab in Essen-Rüttenscheid: Döner & Dürüm, Wings, Fries, Teller, Steinofenpizza, Pide & Lahmacun, Salate, Spezialitäten, Beilagen und Getränke.",
+    "heroTitle": "Speisekarte",
+    "heroSub": "Alles frisch zubereitet — direkt vom Spieß oder aus dem Steinofen."
+  },
   "categories": [
     {
       "id": "kebab-durum",

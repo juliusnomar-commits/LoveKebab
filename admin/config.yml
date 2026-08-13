@@ -43,6 +43,21 @@ collections:
         label: "Startseite – Texte & Fotos"
         file: "content/site.json"
         fields:
+          - { label: "Skip-Link (Barrierefreiheit, meist nicht nötig)", name: "skip", widget: "string" }
+          - label: "Navigation (Menüleiste oben, auf jeder Seite)"
+            name: "nav"
+            widget: "object"
+            fields:
+              - { label: "„Startseite“ Link-Text", name: "home", widget: "string" }
+              - { label: "„Speisekarte“ Link-Text", name: "menu", widget: "string" }
+              - { label: "„Über uns“ Link-Text", name: "about", widget: "string" }
+              - { label: "„Kontakt“ Link-Text", name: "contact", widget: "string" }
+              - { label: "„Bestellen“ Button-Text", name: "order", widget: "string" }
+              - { label: "„Anrufen“ Button-Text (nur Speisekarte-Seite)", name: "call", widget: "string" }
+              - { label: "Screenreader: Navigationsbereich", name: "ariaLabel", widget: "string", hint: "Nur für Screenreader hörbar, nicht sichtbar." }
+              - { label: "Screenreader: Logo-Link", name: "logoAria", widget: "string", hint: "Nur für Screenreader hörbar, nicht sichtbar." }
+              - { label: "Screenreader: Anrufen-Symbol", name: "callAria", widget: "string", hint: "Nur für Screenreader hörbar, nicht sichtbar." }
+              - { label: "Screenreader: WhatsApp-Symbol", name: "whatsappAria", widget: "string", hint: "Nur für Screenreader hörbar, nicht sichtbar." }
           - label: "Hero (großer Bereich oben)"
             name: "hero"
             widget: "object"
@@ -52,11 +67,18 @@ collections:
               - { label: "Überschrift – Wort 2", name: "word1", widget: "string" }
               - { label: "Überschrift – Wort 3 (Akzentfarbe)", name: "word2", widget: "string" }
               - { label: "„100% frisches Fleisch“-Text", name: "trust1", widget: "string" }
+              - { label: "Screenreader: Bereichsname (nicht sichtbar)", name: "sectionAria", widget: "string" }
           - label: "Standort"
             name: "place"
             widget: "object"
             fields:
               - { label: "Ortsname", name: "name", widget: "string" }
+          - label: "Laufband-Zeile (unter dem Hero, scrollt durch)"
+            name: "marquee"
+            widget: "object"
+            fields:
+              - { label: "Text „Döner mit Liebe“", name: "love", widget: "string" }
+              - { label: "Text „100% frisch“", name: "fresh", widget: "string" }
           - label: "Unsere Geschichte"
             name: "story"
             widget: "object"
@@ -82,6 +104,8 @@ collections:
               - { label: "Name: Dürüm", name: "duerumName", widget: "string" }
               - { label: "Beschreibung: Dürüm", name: "descDurum", widget: "string" }
               - { label: "Button-Text „Vollständige Speisekarte“", name: "fullMenuCta", widget: "string" }
+              - { label: "Karussell-Pfeil zurück (Screenreader)", name: "prev", widget: "string" }
+              - { label: "Karussell-Pfeil weiter (Screenreader)", name: "next", widget: "string" }
           - label: "Warum Love Kebab"
             name: "values"
             widget: "object"
@@ -93,12 +117,15 @@ collections:
               - { label: "Text: Hausgemachte Soßen", name: "sauceDesc", widget: "string" }
               - { label: "Titel: Mit Liebe gemacht", name: "loveTitle", widget: "string" }
               - { label: "Text: Mit Liebe gemacht", name: "loveDesc", widget: "string" }
+              - { label: "Karussell-Pfeil zurück (Screenreader)", name: "prev", widget: "string" }
+              - { label: "Karussell-Pfeil weiter (Screenreader)", name: "next", widget: "string" }
           - label: "Galerie „Ein Blick in unsere Küche“"
             name: "process"
             widget: "object"
             fields:
               - { label: "Kicker", name: "eyebrow", widget: "string" }
               - { label: "Überschrift", name: "title", widget: "string" }
+              - { label: "Screenreader: Bereichsname (nicht sichtbar)", name: "ariaLabel", widget: "string" }
               - { label: "Schritt 1 – Label", name: "step1", widget: "string" }
               - { label: "Schritt 1 – Titel", name: "title1", widget: "string" }
               - { label: "Schritt 1 – Text", name: "desc1", widget: "string" }
@@ -127,6 +154,7 @@ collections:
               - { label: "Adresse – Zeile 1 (Straße)", name: "addressLine1", widget: "string" }
               - { label: "Adresse – Zeile 2 (PLZ/Ort)", name: "addressLine2", widget: "string" }
               - { label: "Telefonnummer (Anzeige-Text)", name: "phoneDisplay", widget: "string" }
+              - { label: "Screenreader: Google-Maps-Karte (nicht sichtbar)", name: "mapTitle", widget: "string" }
           - label: "Öffnungszeiten – Uhrzeiten"
             name: "hours"
             widget: "object"
@@ -138,12 +166,27 @@ collections:
               - { label: "Freitag", name: "fri", widget: "string" }
               - { label: "Samstag", name: "sat", widget: "string" }
               - { label: "Sonntag (Text statt Uhrzeit)", name: "closed", widget: "string" }
+          - label: "Wochentag-Namen (Öffnungszeiten-Tabelle)"
+            name: "days"
+            widget: "object"
+            fields:
+              - { label: "Montag", name: "mon", widget: "string" }
+              - { label: "Dienstag", name: "tue", widget: "string" }
+              - { label: "Mittwoch", name: "wed", widget: "string" }
+              - { label: "Donnerstag", name: "thu", widget: "string" }
+              - { label: "Freitag", name: "fri", widget: "string" }
+              - { label: "Samstag", name: "sat", widget: "string" }
+              - { label: "Sonntag", name: "sun", widget: "string" }
           - label: "Footer"
             name: "footer"
             widget: "object"
             fields:
               - { label: "Rechtlicher Text unter dem Logo", name: "legal", widget: "string" }
               - { label: "Copyright-Text", name: "rights", widget: "string" }
+              - { label: "„Impressum“ Link-Text", name: "imprint", widget: "string" }
+              - { label: "„Datenschutz“ Link-Text", name: "privacy", widget: "string" }
+              - { label: "Screenreader: Instagram-Symbol", name: "instagramAria", widget: "string" }
+              - { label: "Screenreader: TikTok-Symbol", name: "tiktokAria", widget: "string" }
           - label: "SEO / Google-Vorschau"
             name: "meta"
             widget: "object"
@@ -169,6 +212,14 @@ collections:
         label: "Vollständige Speisekarte"
         file: "content/menu.json"
         fields:
+          - label: "Seiten-Kopfbereich (oben auf der Speisekarte-Seite)"
+            name: "menu"
+            widget: "object"
+            fields:
+              - { label: "Seitentitel (Browser-Tab / Google)", name: "pageTitle", widget: "string" }
+              - { label: "Meta-Beschreibung (Google)", name: "pageDescription", widget: "text" }
+              - { label: "Überschrift", name: "heroTitle", widget: "string" }
+              - { label: "Untertitel", name: "heroSub", widget: "string" }
           - label: "Kategorien"
             name: "categories"
             widget: "list"

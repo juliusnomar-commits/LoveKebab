@@ -1,14 +1,31 @@
 {
   "skip": "Zum Inhalt springen",
+  "nav": {
+    "home": "Startseite",
+    "menu": "Speisekarte",
+    "about": "Über uns",
+    "contact": "Kontakt",
+    "order": "Bestellen",
+    "call": "Anrufen",
+    "ariaLabel": "Hauptnavigation",
+    "logoAria": "Love Kebab — Startseite",
+    "callAria": "Anrufen",
+    "whatsappAria": "WhatsApp schreiben"
+  },
   "hero": {
     "kicker": "Döner · Wings · Hand-Cut Fries",
     "word0": "Mit",
     "word1": "Liebe",
     "word2": "gemacht.",
-    "trust1": "100 % frisches Fleisch"
+    "trust1": "100 % frisches Fleisch",
+    "sectionAria": "Willkommen bei Love Kebab"
   },
   "place": {
     "name": "Essen-Rüttenscheid"
+  },
+  "marquee": {
+    "love": "Döner mit Liebe",
+    "fresh": "100 % frisch"
   },
   "story": {
     "eyebrow": "Unsere Geschichte",
@@ -29,7 +46,9 @@
     "descDoener": "Der Klassiker im frischen Fladenbrot — direkt vom Spieß.",
     "duerumName": "Dürüm",
     "descDurum": "Im warmen, dünnen Fladenbrot gerollt — perfekt für unterwegs.",
-    "fullMenuCta": "Vollständige Speisekarte ansehen →"
+    "fullMenuCta": "Vollständige Speisekarte ansehen →",
+    "prev": "Zurück",
+    "next": "Weiter"
   },
   "values": {
     "eyebrow": "Warum Love Kebab",
@@ -38,7 +57,9 @@
     "meatDesc": "Täglich frisch geliefert und mariniert — nie aus der Tiefkühltruhe.",
     "sauceDesc": "Eigene Rezepte, jeden Tag frisch angerührt — das schmeckt man.",
     "loveTitle": "Mit Liebe gemacht",
-    "loveDesc": "Jeder Döner wird auf Bestellung geschnitten und mit voller Aufmerksamkeit gebaut."
+    "loveDesc": "Jeder Döner wird auf Bestellung geschnitten und mit voller Aufmerksamkeit gebaut.",
+    "prev": "Zurück",
+    "next": "Weiter"
   },
   "process": {
     "eyebrow": "Galerie",
@@ -58,7 +79,8 @@
     "step4": "Schritt 04",
     "title4": "Frisch für dich geschnitten",
     "desc4": "Auf Bestellung geschnitten, frisch belegt und mit Liebe serviert.",
-    "photo4": "Foto: Frisch geschnitten"
+    "photo4": "Foto: Frisch geschnitten",
+    "ariaLabel": "Ein Blick in unsere Küche"
   },
   "contact": {
     "eyebrow": "Standort",
@@ -68,7 +90,8 @@
     "hoursNote": "Öffnungszeiten können an Feiertagen abweichen.",
     "addressLine1": "Rüttenscheider Straße 133",
     "addressLine2": "45130 Essen",
-    "phoneDisplay": "+49 201 799 175 72"
+    "phoneDisplay": "+49 201 799 175 72",
+    "mapTitle": "Love Kebab Standort auf Google Maps"
   },
   "hours": {
     "mon": "11:00 – 22:00",
@@ -79,9 +102,22 @@
     "sat": "11:00 – 05:00",
     "closed": "Geschlossen"
   },
+  "days": {
+    "mon": "Montag",
+    "tue": "Dienstag",
+    "wed": "Mittwoch",
+    "thu": "Donnerstag",
+    "fri": "Freitag",
+    "sat": "Samstag",
+    "sun": "Sonntag"
+  },
   "footer": {
     "legal": "Love Kebab · Pamukkale Kebap Haus<br>Essen-Rüttenscheid",
-    "rights": "Alle Rechte vorbehalten."
+    "rights": "Alle Rechte vorbehalten.",
+    "imprint": "Impressum",
+    "privacy": "Datenschutz",
+    "instagramAria": "Instagram (folgt)",
+    "tiktokAria": "TikTok (folgt)"
   },
   "meta": {
     "title": "Love Kebab — Döner mit Liebe | Essen-Rüttenscheid",

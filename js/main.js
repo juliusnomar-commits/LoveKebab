@@ -37,6 +37,8 @@
     'nav.contact': { de: 'Kontakt', en: 'Contact' },
     'nav.logoAria': { de: 'Love Kebab — Startseite', en: 'Love Kebab — Home' },
     'nav.callAria': { de: 'Anrufen', en: 'Call' },
+    'nav.call': { de: 'Anrufen', en: 'Call' },
+    'nav.whatsappAria': { de: 'WhatsApp schreiben', en: 'Message on WhatsApp' },
     'nav.menuOpen': { de: 'Menü öffnen', en: 'Open menu' },
     'nav.menuClose': { de: 'Menü schließen', en: 'Close menu' },
 
@@ -645,19 +647,32 @@
     });
   }
 
+  // "kebab-durum" -> "kebabDurum", to match the translations key naming
+  function camelFromId(id) {
+    return id.replace(/-([a-z0-9])/g, function (_, c) { return c.toUpperCase(); });
+  }
+
   /* builds one menu.html category (grid of product cards, or a plain
-     price list) straight from content/menu.json — see that file for shape */
+     price list) straight from content/menu.json — see that file for shape.
+     Category eyebrow/title/jump-label are merged into `translations`
+     (not written to the DOM directly) so the applyLang() pass that runs
+     right after this — and any later language toggle — renders the
+     CMS-edited value instead of clobbering it back to the hardcoded
+     default. */
   function renderMenuCategory(cat) {
     var section = document.getElementById(cat.id);
     if (!section) return;
 
-    var eyebrowEl = section.querySelector('.eyebrow');
-    var titleEl = section.querySelector('.section-title');
-    if (eyebrowEl && cat.eyebrow) eyebrowEl.textContent = cat.eyebrow;
-    if (titleEl && cat.title) titleEl.innerHTML = cat.title;
-
-    var jumpLink = document.querySelector('.menu-jump-link[href="#' + cat.id + '"]');
-    if (jumpLink && cat.jumpLabel) jumpLink.textContent = cat.jumpLabel;
+    var camel = camelFromId(cat.id);
+    if (cat.eyebrow && translations['menu.cat.' + camel + 'Eyebrow']) {
+      translations['menu.cat.' + camel + 'Eyebrow'].de = cat.eyebrow;
+    }
+    if (cat.title && translations['menu.cat.' + camel + 'Title']) {
+      translations['menu.cat.' + camel + 'Title'].de = cat.title;
+    }
+    if (cat.jumpLabel && translations['menu.jump.' + camel]) {
+      translations['menu.jump.' + camel].de = cat.jumpLabel;
+    }
 
     var container = section.querySelector('[data-menu-grid]');
     if (!container || !cat.items) return;
@@ -714,7 +729,13 @@
           applyTextOverrides(site);
           applyImageOverrides(site.images);
         }
-        if (menu) renderMenu(menu);
+        if (menu) {
+          // top-level scalars (pageTitle, heroTitle, ...) flow through the
+          // same key-matching merge as site.json; `categories` is an array
+          // so flattenInto leaves it alone and renderMenu handles it below
+          applyTextOverrides(menu);
+          renderMenu(menu);
+        }
       });
   }
 
