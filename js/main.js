@@ -146,43 +146,45 @@
     /* ------------------------------------------------------- menu.html page */
     'menu.pageTitle': { de: 'Speisekarte — Love Kebab', en: 'Menu — Love Kebab' },
     'menu.pageDescription': {
-      de: 'Die vollständige Speisekarte von Love Kebab in Essen-Rüttenscheid: Döner & Dürüm, Wings, Fries, Teller, Steinofenpizza, Pide & Lahmacun, Salate, Spezialitäten, Beilagen und Getränke.',
-      en: 'The full Love Kebab menu in Essen-Rüttenscheid: Döner & Dürüm, wings, fries, Teller, stone-oven pizza, Pide & Lahmacun, salads, specialties, sides and drinks.'
+      de: 'Die vollständige Speisekarte von Love Kebab in Essen-Rüttenscheid: Wraps, Taschen & Wrap Gerichte, Wings, Bowl, Love Friet, Teller, Lahmacun & Currywurst, Extra Topping, Saucen & Dips und Dessert.',
+      en: 'The full Love Kebab menu in Essen-Rüttenscheid: wraps, pocket & wrap dishes, wings, bowls, Love Friet, Teller, Lahmacun & currywurst, extra toppings, sauces & dips and dessert.'
     },
     'menu.heroTitle': { de: 'Speisekarte', en: 'Menu' },
     'menu.heroSub': { de: 'Alles frisch zubereitet — direkt vom Spieß oder aus dem Steinofen.', en: 'Everything made fresh — straight from the spit or the stone oven.' },
 
-    'menu.jump.kebabDurum': { de: 'Kebab & Dürüm', en: 'Kebab & Dürüm' },
+    'menu.jump.wraps': { de: 'Wraps', en: 'Wraps' },
+    'menu.jump.taschenWrapGerichte': { de: 'Taschen & Wrap Gerichte', en: 'Taschen & Wrap Gerichte' },
     'menu.jump.wings': { de: 'Wings', en: 'Wings' },
-    'menu.jump.fries': { de: 'Fries', en: 'Fries' },
-    'menu.jump.teller': { de: 'Teller', en: 'Teller' },
-    'menu.jump.pizza': { de: 'Pizza', en: 'Pizza' },
-    'menu.jump.pideLahmacun': { de: 'Pide & Lahmacun', en: 'Pide & Lahmacun' },
-    'menu.jump.salads': { de: 'Salate', en: 'Salads' },
-    'menu.jump.specialties': { de: 'Spezialitäten', en: 'Specialties' },
-    'menu.jump.sides': { de: 'Beilagen', en: 'Sides' },
-    'menu.jump.drinks': { de: 'Getränke', en: 'Drinks' },
+    'menu.jump.bowl': { de: 'Bowl', en: 'Bowl' },
+    'menu.jump.fries': { de: 'Love Friet', en: 'Love Friet' },
+    'menu.jump.teller': { de: 'Teller / Lahmacun / Currywurst', en: 'Teller / Lahmacun / Currywurst' },
+    'menu.jump.extraTopping': { de: 'Extra Topping', en: 'Extra Topping' },
+    'menu.jump.sauces': { de: 'Saucen & Dips', en: 'Sauces & Dips' },
+    'menu.jump.dessert': { de: 'Dessert', en: 'Dessert' },
 
-    'menu.cat.kebabDurumEyebrow': { de: 'Frisch vom Spieß', en: 'Fresh off the spit' },
-    'menu.cat.kebabDurumTitle': { de: 'Kebab & Dürüm', en: 'Kebab & Dürüm' },
-    'menu.cat.wingsEyebrow': { de: 'Frisch frittiert', en: 'Freshly fried' },
-    'menu.cat.wingsTitle': { de: 'Wings', en: 'Wings' },
-    'menu.cat.friesEyebrow': { de: 'Handgeschnitten', en: 'Hand-cut' },
-    'menu.cat.friesTitle': { de: 'Fries', en: 'Fries' },
+    'menu.cat.wrapsEyebrow': { de: 'Frisch vom Spieß', en: 'Fresh off the spit' },
+    'menu.cat.wrapsTitle': { de: 'Wraps', en: 'Wraps' },
+    'menu.cat.taschenWrapGerichteEyebrow': { de: 'Frisch gefüllt', en: 'Freshly filled' },
+    'menu.cat.taschenWrapGerichteTitle': { de: 'Taschen und Wrap Gerichte', en: 'Taschen und Wrap Gerichte' },
+    'menu.cat.wingsEyebrow': { de: 'Frisch frittiert, 6er', en: 'Freshly fried, 6 pcs' },
+    'menu.cat.wingsTitle': { de: 'Chicken Wings', en: 'Chicken Wings' },
+    'menu.cat.bowlEyebrow': { de: 'Frisch angerichtet', en: 'Freshly assembled' },
+    'menu.cat.bowlTitle': { de: 'Bowl', en: 'Bowl' },
+    'menu.cat.bowlSauceNote': {
+      de: 'Bowl-Saucen: Granatapfel-Essig-Öl · Joghurt-Dressing · Honey Cocktailsauce',
+      en: 'Bowl sauces: pomegranate vinegar & oil · yoghurt dressing · honey cocktail sauce'
+    },
+    'menu.cat.friesEyebrow': { de: 'Love Friet', en: 'Love Friet' },
+    'menu.cat.friesTitle': { de: 'Love Friet', en: 'Love Friet' },
+    'menu.cat.friesSublistHeading': { de: 'Wähle dein Topping:', en: 'Choose your topping:' },
     'menu.cat.tellerEyebrow': { de: 'Für den großen Hunger', en: 'For the properly hungry' },
-    'menu.cat.tellerTitle': { de: 'Teller', en: 'Teller' },
-    'menu.cat.pizzaEyebrow': { de: 'Steinofen, Ø 30 cm', en: 'Stone-oven, Ø 30cm' },
-    'menu.cat.pizzaTitle': { de: 'Pizza', en: 'Pizza' },
-    'menu.cat.pideLahmacunEyebrow': { de: 'Frisch aus dem Steinofen', en: 'Straight from the stone oven' },
-    'menu.cat.pideLahmacunTitle': { de: 'Pide & Lahmacun', en: 'Pide & Lahmacun' },
-    'menu.cat.saladsEyebrow': { de: 'Leicht, aber nicht klein', en: 'Lighter, still loaded' },
-    'menu.cat.saladsTitle': { de: 'Salate', en: 'Salads' },
-    'menu.cat.specialtiesEyebrow': { de: 'Hausgemachte Spezialitäten', en: 'Homemade specialties' },
-    'menu.cat.specialtiesTitle': { de: 'Spezialitäten', en: 'Specialties' },
-    'menu.cat.sidesEyebrow': { de: 'Imbiss', en: 'Extras' },
-    'menu.cat.sidesTitle': { de: 'Beilagen', en: 'Sides' },
-    'menu.cat.drinksEyebrow': { de: 'Getränke', en: 'Drinks' },
-    'menu.cat.drinksTitle': { de: 'Getränke', en: 'Drinks' },
+    'menu.cat.tellerTitle': { de: 'Teller / Lahmacun / Currywurst', en: 'Teller / Lahmacun / Currywurst' },
+    'menu.cat.extraToppingEyebrow': { de: 'Extra Topping', en: 'Extra Topping' },
+    'menu.cat.extraToppingTitle': { de: 'Extra Topping', en: 'Extra Topping' },
+    'menu.cat.saucesEyebrow': { de: 'Saucen & Dips', en: 'Sauces & Dips' },
+    'menu.cat.saucesTitle': { de: 'Saucen & Dips', en: 'Sauces & Dips' },
+    'menu.cat.dessertEyebrow': { de: 'Zum Abschluss', en: 'To finish' },
+    'menu.cat.dessertTitle': { de: 'Dessert', en: 'Dessert' },
 
     /* menu.item.*.desc entries removed — full priced menu (menu.html) is now
        rendered entirely from content/menu.json, see renderMenu() below. */
@@ -707,6 +709,28 @@
         container.appendChild(card);
       }
     });
+
+    // optional secondary price list rendered inside the same section, with
+    // no jump-nav entry of its own (e.g. the fries topping list under Love
+    // Friet) — same CMS-merge-into-translations approach as eyebrow/title
+    var subContainer = section.querySelector('[data-menu-sublist]');
+    if (subContainer) {
+      if (cat.sublist && cat.sublist.items && cat.sublist.items.length) {
+        var subKey = 'menu.cat.' + camel + 'SublistHeading';
+        if (cat.sublist.heading && translations[subKey]) {
+          translations[subKey].de = cat.sublist.heading;
+        }
+        var headingHtml = translations[subKey] ? translations[subKey][currentLang] : (cat.sublist.heading || '');
+        var rowsHtml = cat.sublist.items.map(function (item) {
+          return '<div class="list-row"><span class="list-row-name">' + item.name + '</span><span class="list-row-price">' + (item.price || '') + '</span></div>';
+        }).join('');
+        subContainer.innerHTML =
+          (headingHtml ? '<p class="menu-sublist-heading">' + headingHtml + '</p>' : '') +
+          '<div class="list-grid">' + rowsHtml + '</div>';
+      } else {
+        subContainer.innerHTML = '';
+      }
+    }
   }
 
   function renderMenu(data) {

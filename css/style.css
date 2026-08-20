@@ -1016,6 +1016,25 @@ html.js .hero-image-wrap { opacity: 0; animation: heroImageIn 1.1s var(--ease-ex
 .section--light .list-row { border-bottom-color: var(--line-light); }
 .section--light .list-row-price.tbd { color: var(--text-muted-light); }
 
+/* secondary price list inside a menu-cat section, without its own jump-nav
+   entry (e.g. the fries topping list under Love Friet) */
+.menu-sublist {
+  margin-top: clamp(var(--sp-8), 6vw, var(--sp-12));
+  padding-top: clamp(var(--sp-6), 5vw, var(--sp-8));
+  border-top: 1px solid var(--line-light);
+}
+.section--dark .menu-sublist { border-top-color: var(--line-dark); }
+.menu-sublist-heading {
+  font-family: var(--font-mono);
+  font-size: var(--fs-mono);
+  font-weight: 600;
+  letter-spacing: 0.24em;
+  text-transform: uppercase;
+  color: var(--accent-600);
+  margin-bottom: var(--sp-4);
+}
+.section--dark .menu-sublist-heading { color: var(--gold-400); }
+
 .nav-links a.is-active { color: var(--neutral-0); }
 .nav-links a.is-active::after { right: 0; }
 

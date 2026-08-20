@@ -241,3 +241,17 @@ collections:
                   - { label: "Foto", name: "image", widget: "image", required: false, hint: "Nur bei Karten-Layout sichtbar." }
                   - { label: "Alt-Text (Bildbeschreibung für Screenreader)", name: "imageAlt", widget: "string", required: false }
                   - { label: "„Bitte im Laden fragen“ statt Preis anzeigen", name: "askInStore", widget: "boolean", required: false, default: false }
+              - label: "Zusatz-Preisliste (optional, z. B. „Wähle dein Topping“ unter Love Friet)"
+                name: "sublist"
+                widget: "object"
+                required: false
+                hint: "Erscheint am Ende dieser Kategorie, ohne eigenes Label in der Sprungnavigation."
+                fields:
+                  - { label: "Überschrift", name: "heading", widget: "string" }
+                  - label: "Positionen"
+                    name: "items"
+                    widget: "list"
+                    summary: "{{fields.name}}"
+                    fields:
+                      - { label: "Name", name: "name", widget: "string" }
+                      - { label: "Preis", name: "price", widget: "string" }
