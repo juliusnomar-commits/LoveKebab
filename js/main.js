@@ -170,10 +170,7 @@
     'menu.cat.wingsTitle': { de: 'Chicken Wings', en: 'Chicken Wings' },
     'menu.cat.bowlEyebrow': { de: 'Frisch angerichtet', en: 'Freshly assembled' },
     'menu.cat.bowlTitle': { de: 'Bowl', en: 'Bowl' },
-    'menu.cat.bowlSauceNote': {
-      de: 'Bowl-Saucen: Granatapfel-Essig-Öl · Joghurt-Dressing · Honey Cocktailsauce',
-      en: 'Bowl sauces: pomegranate vinegar & oil · yoghurt dressing · honey cocktail sauce'
-    },
+    'menu.cat.bowlSublistHeading': { de: 'Bowl-Saucen:', en: 'Bowl sauces:' },
     'menu.cat.friesEyebrow': { de: 'Love Friet', en: 'Love Friet' },
     'menu.cat.friesTitle': { de: 'Love Friet', en: 'Love Friet' },
     'menu.cat.friesSublistHeading': { de: 'Wähle dein Topping:', en: 'Choose your topping:' },
@@ -722,7 +719,11 @@
         }
         var headingHtml = translations[subKey] ? translations[subKey][currentLang] : (cat.sublist.heading || '');
         var rowsHtml = cat.sublist.items.map(function (item) {
-          return '<div class="list-row"><span class="list-row-name">' + item.name + '</span><span class="list-row-price">' + (item.price || '') + '</span></div>';
+          var priceHtml = item.price ? '<span class="list-row-price">' + item.price + '</span>' : '';
+          return '<div class="list-row">' +
+            '<span class="list-row-name">' + item.name + '</span>' +
+            priceHtml +
+          '</div>';
         }).join('');
         subContainer.innerHTML =
           (headingHtml ? '<p class="menu-sublist-heading">' + headingHtml + '</p>' : '') +

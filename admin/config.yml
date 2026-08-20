@@ -254,4 +254,4 @@ collections:
                     summary: "{{fields.name}}"
                     fields:
                       - { label: "Name", name: "name", widget: "string" }
-                      - { label: "Preis", name: "price", widget: "string" }
+                      - { label: "Preis", name: "price", widget: "string", required: false, hint: "Leer lassen, wenn kein Preis angezeigt werden soll (z. B. bei den Bowl-Saucen)." }

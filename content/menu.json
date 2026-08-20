@@ -166,7 +166,15 @@
           "desc": "Unser gemischter Salat in der großen Portion.",
           "price": "8,00 €"
         }
-      ]
+      ],
+      "sublist": {
+        "heading": "Bowl-Saucen:",
+        "items": [
+          { "name": "Granatapfel-Essig-Öl" },
+          { "name": "Joghurt-Dressing" },
+          { "name": "Honey Cocktailsauce" }
+        ]
+      }
     },
     {
       "id": "fries",
