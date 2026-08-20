@@ -915,6 +915,10 @@ html.js .hero-image-wrap { opacity: 0; animation: heroImageIn 1.1s var(--ease-ex
   text-transform: uppercase;
   letter-spacing: 0.045em;
   margin-bottom: 0.4375rem;
+  /* the card itself is always dark (--bg-card-dark), regardless of
+     whether it sits in a --light or --dark section, so pin this to a
+     light color instead of inheriting the section's text color */
+  color: var(--text-on-dark);
 }
 
 .product-desc {
