@@ -770,6 +770,8 @@ html.js .hero-image-wrap { opacity: 0; animation: heroImageIn 1.1s var(--ease-ex
   width: 100%;
   max-width: 100%;
   overflow: hidden;
+  container-type: inline-size;
+  container-name: story-photo;
 }
 .img-placeholder--story {
   width: 100% !important;
@@ -811,7 +813,10 @@ html.js .hero-image-wrap { opacity: 0; animation: heroImageIn 1.1s var(--ease-ex
 }
 .story-carousel-item {
   flex: 0 0 auto;
-  width: clamp(300px, 46vw, 560px);
+  /* sized off the carousel's own column (cqw), not the page viewport —
+     so one frame always roughly fills the frame with a sliver of the
+     next peeking in, at any column width from mobile up to wide desktop */
+  width: clamp(220px, 88cqw, 480px);
   aspect-ratio: 16 / 9;
   border-radius: calc(var(--radius-lg) - 6px);
   overflow: hidden;
