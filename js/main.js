@@ -69,6 +69,7 @@
     'menu.title': { de: 'Frisch für dich<br>zubereitet.', en: 'Freshly made<br>for you.' },
     'menu.photoDoner': { de: 'Foto: Döner Kebab', en: 'Photo: Döner Kebab' },
     'menu.descDoner': { de: 'Der Klassiker im frischen Fladenbrot — direkt vom Spieß.', en: 'The classic in fresh flatbread — straight from the spit.' },
+    'menu.descDoenerBowl': { de: 'Gemischter Salat, Pommes und Sauce.', en: 'Mixed salad, fries and sauce.' },
     'menu.photoDurum': { de: 'Foto: Dürüm', en: 'Photo: Dürüm' },
     'menu.descDurum': { de: 'Im warmen, dünnen Fladenbrot gerollt — perfekt für unterwegs.', en: 'Rolled in warm, thin flatbread — perfect on the go.' },
     'menu.photoWings': { de: 'Foto: Wings', en: 'Photo: Wings' },
@@ -167,7 +168,7 @@
 
     /* homepage-only names not previously wired to i18n */
     'menu.wingsName': { de: 'Wings', en: 'Wings' },
-    'menu.doenerName': { de: 'Döner Kebab', en: 'Döner Kebab' },
+    'menu.doenerBowlName': { de: 'Döner Bowl', en: 'Döner Bowl' },
     'menu.duerumName': { de: 'Dürüm', en: 'Dürüm' },
 
     'contact.addressLine1': { de: 'Rüttenscheider Straße 133', en: 'Rüttenscheider Straße 133' },
