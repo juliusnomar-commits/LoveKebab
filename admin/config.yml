@@ -86,7 +86,7 @@ collections:
               - { label: "Kicker", name: "eyebrow", widget: "string" }
               - { label: "Überschrift (mit <br> für Zeilenumbruch)", name: "title", widget: "string" }
               - { label: "Text", name: "body1", widget: "text" }
-              - { label: "Statistik 1 Beschriftung (über „7/7“)", name: "stat1", widget: "string" }
+              - { label: "Statistik 1 Beschriftung (über „30+“)", name: "stat1", widget: "string" }
               - { label: "Statistik 2 Beschriftung (über „100%“)", name: "stat2", widget: "string" }
               - { label: "Statistik 3 Beschriftung (über „10+“)", name: "stat3", widget: "string" }
           - label: "Menü-Vorschau (4 Karten auf der Startseite)"
@@ -199,7 +199,9 @@ collections:
             fields:
               - { label: "Logo", name: "logo", widget: "image" }
               - { label: "Hero-Foto (großes Startbild)", name: "hero", widget: "image" }
-              - { label: "Laden-/Küchenfoto (bei „Unsere Geschichte“)", name: "storyPhoto", widget: "image" }
+              - { label: "Foto-Karussell bei „Unsere Geschichte“ — Bild 1", name: "storyPhoto1", widget: "image" }
+              - { label: "Foto-Karussell bei „Unsere Geschichte“ — Bild 2", name: "storyPhoto2", widget: "image" }
+              - { label: "Foto-Karussell bei „Unsere Geschichte“ — Bild 3", name: "storyPhoto3", widget: "image" }
               - { label: "Foto: Wings", name: "wingsPhoto", widget: "image" }
               - { label: "Foto: Parmesan Fries", name: "parmFriesPhoto", widget: "image" }
               - { label: "Foto: Döner Kebab", name: "doenerPhoto", widget: "image" }

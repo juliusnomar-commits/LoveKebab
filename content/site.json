@@ -13,7 +13,7 @@
     "whatsappAria": "WhatsApp schreiben"
   },
   "hero": {
-    "kicker": "Döner · Wings · Hand-Cut Fries",
+    "kicker": "Döner · Wings · Parmesan Fries · Dürüm",
     "word0": "Mit",
     "word1": "Liebe",
     "word2": "gemacht.",
@@ -29,9 +29,9 @@
   },
   "story": {
     "eyebrow": "Unsere Geschichte",
-    "title": "Döner, wie er<br>sein sollte.",
-    "body1": "Bei Love Kebab treffen frische Zutaten auf jahrelange Erfahrung. Mitten in Rüttenscheid schneiden wir jeden Döner auf Bestellung vom Spieß — ehrlich, frisch und mit Liebe zubereitet.",
-    "stat1": "Jeden Tag geöffnet",
+    "title": "Frisch gemacht,<br>wie es sein sollte.",
+    "body1": "Bei Love Kebab treffen frische Zutaten auf jahrelange Erfahrung. Mitten in Rüttenscheid bereiten wir alles frisch zu — von Wings über Parmesan Fries bis Dürüm, ehrlich und mit Liebe gemacht.",
+    "stat1": "Gerichte auf der Karte",
     "stat2": "Frisch",
     "stat3": "Jahre in Rüttenscheid"
   },
@@ -126,7 +126,9 @@
   "images": {
     "logo": "images/logo.png",
     "hero": "images/hero.png",
-    "storyPhoto": "images/store-interior.jpg",
+    "storyPhoto1": "images/story-carousel-1.jpg",
+    "storyPhoto2": "images/story-carousel-2.jpg",
+    "storyPhoto3": "images/story-carousel-3.jpg",
     "wingsPhoto": "images/wings.jpg",
     "parmFriesPhoto": "images/parmesan-fries.jpg",
     "doenerPhoto": "images/doner-kebab-photo.jpg",

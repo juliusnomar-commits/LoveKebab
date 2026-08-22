@@ -43,7 +43,7 @@
     'nav.menuClose': { de: 'Menü schließen', en: 'Close menu' },
 
     'hero.sectionAria': { de: 'Willkommen bei Love Kebab', en: 'Welcome to Love Kebab' },
-    'hero.kicker': { de: 'Döner · Wings · Hand-Cut Fries', en: 'Döner · Wings · Hand-Cut Fries' },
+    'hero.kicker': { de: 'Döner · Wings · Parmesan Fries · Dürüm', en: 'Döner · Wings · Parmesan Fries · Dürüm' },
     'hero.word0': { de: 'Mit', en: 'Made' },
     'hero.word1': { de: 'Liebe', en: 'with' },
     'hero.word2': { de: 'gemacht.', en: 'love.' },
@@ -55,12 +55,12 @@
     'marquee.fresh': { de: '100' + HAIRSP + '% frisch', en: '100' + HAIRSP + '% Fresh' },
 
     'story.eyebrow': { de: 'Unsere Geschichte', en: 'Our Story' },
-    'story.title': { de: 'Döner, wie er<br>sein sollte.', en: 'Döner, the way<br>it should be.' },
+    'story.title': { de: 'Frisch gemacht,<br>wie es sein sollte.', en: 'Fresh food,<br>the way it should be.' },
     'story.body1': {
-      de: 'Bei Love Kebab treffen frische Zutaten auf jahrelange Erfahrung. Mitten in Rüttenscheid schneiden wir jeden Döner auf Bestellung vom Spieß — ehrlich, frisch und mit Liebe zubereitet.',
-      en: 'At Love Kebab, fresh ingredients meet years of experience. Right here in Rüttenscheid, we cut every döner fresh off the spit, made to order — honest, fresh, and made with love.'
+      de: 'Bei Love Kebab treffen frische Zutaten auf jahrelange Erfahrung. Mitten in Rüttenscheid bereiten wir alles frisch zu — von Wings über Parmesan Fries bis Dürüm, ehrlich und mit Liebe gemacht.',
+      en: 'At Love Kebab, fresh ingredients meet years of experience. Right here in Rüttenscheid, we prepare everything fresh — from wings to parmesan fries to dürüm, honest and made with love.'
     },
-    'story.stat1': { de: 'Jeden Tag geöffnet', en: 'Open everyday' },
+    'story.stat1': { de: 'Gerichte auf der Karte', en: 'dishes on the menu' },
     'story.stat2': { de: 'Frisch', en: 'Fresh' },
     'story.stat3': { de: 'Jahre in Rüttenscheid', en: 'years in Rüttenscheid' },
     'story.photoLabel': { de: 'Foto: Ladeninnenraum', en: 'Photo: Store interior' },

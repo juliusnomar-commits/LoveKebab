@@ -87,7 +87,7 @@
           </div>
 
           <div class="hero-content">
-            <p class="hero-kicker" data-i18n="hero.kicker">Döner · Wings · Hand-Cut Fries</p>
+            <p class="hero-kicker" data-i18n="hero.kicker">Döner · Wings · Parmesan Fries · Dürüm</p>
 
             <h1 class="hero-title">
               <span class="line">
@@ -135,16 +135,16 @@
         <div class="story-grid">
         <div class="story-content">
           <p class="eyebrow reveal" data-i18n="story.eyebrow">Unsere Geschichte</p>
-          <h2 class="section-title reveal" style="--d:80ms" data-i18n="story.title">Döner, wie er<br>sein sollte.</h2>
+          <h2 class="section-title reveal" style="--d:80ms" data-i18n="story.title">Frisch gemacht,<br>wie es sein sollte.</h2>
           <p class="section-body reveal" style="--d:160ms" data-i18n="story.body1">
             Bei Love Kebab treffen frische Zutaten auf jahrelange Erfahrung.
-            Mitten in Rüttenscheid schneiden wir jeden Döner auf Bestellung
-            vom Spieß — ehrlich, frisch und mit Liebe zubereitet.
+            Mitten in Rüttenscheid bereiten wir alles frisch zu — von Wings
+            über Parmesan Fries bis Dürüm, ehrlich und mit Liebe gemacht.
           </p>
           <ul class="story-stats reveal" style="--d:320ms">
             <li>
-              <span class="stat-value">7/7</span>
-              <span class="stat-label" data-i18n="story.stat1">Jeden Tag geöffnet</span>
+              <span class="stat-value">30+</span>
+              <span class="stat-label" data-i18n="story.stat1">Gerichte auf der Karte</span>
             </li>
             <li>
               <span class="stat-value">100&#8202;%</span>
@@ -158,7 +158,17 @@
         </div>
 
         <div class="story-image reveal" style="--d:160ms">
-          <img class="story-photo" src="images/store-interior.jpg" alt="Theke und Küche bei Love Kebab" width="1042" height="924" loading="lazy" data-content-img="storyPhoto">
+          <div class="story-carousel" role="img" aria-label="Einblicke in Theke und Gastraum bei Love Kebab">
+            <div class="story-carousel-track">
+              <div class="story-carousel-item"><img src="images/story-carousel-1.jpg" alt="" width="1042" height="924" loading="eager" fetchpriority="high" data-content-img="storyPhoto1"></div>
+              <div class="story-carousel-item"><img src="images/story-carousel-2.jpg" alt="" width="1042" height="924" loading="lazy" data-content-img="storyPhoto2"></div>
+              <div class="story-carousel-item"><img src="images/story-carousel-3.jpg" alt="" width="1042" height="924" loading="lazy" data-content-img="storyPhoto3"></div>
+              <!-- duplicate set, aria-hidden — makes the leftward scroll loop seamlessly -->
+              <div class="story-carousel-item" aria-hidden="true"><img src="images/story-carousel-1.jpg" alt="" loading="lazy" data-content-img="storyPhoto1"></div>
+              <div class="story-carousel-item" aria-hidden="true"><img src="images/story-carousel-2.jpg" alt="" loading="lazy" data-content-img="storyPhoto2"></div>
+              <div class="story-carousel-item" aria-hidden="true"><img src="images/story-carousel-3.jpg" alt="" loading="lazy" data-content-img="storyPhoto3"></div>
+            </div>
+          </div>
         </div>
         </div>
       </div>
