@@ -11,7 +11,9 @@
       "eyebrow": "Frisch vom Spieß",
       "title": "Wraps",
       "jumpLabel": "Wraps",
-      "photo": { "src": "images/durum.jpg", "alt": "Frischer Dürüm Wrap bei Love Kebab" },
+      "photos": [
+        { "src": "images/menu-wraps-durum.png", "alt": "Frischer Dürüm Wrap bei Love Kebab" }
+      ],
       "items": [
         {
           "name": "Hatay Original Dürüm Classic (L)",
@@ -35,7 +37,10 @@
       "eyebrow": "Frisch gefüllt",
       "title": "Taschen und Wrap Gerichte",
       "jumpLabel": "Taschen & Wrap Gerichte",
-      "photo": { "src": "images/doner-kebab-photo.jpg", "alt": "Döner Teller mit Fleisch, Pommes und Salat" },
+      "photos": [
+        { "src": "images/menu-taschen-doner.png", "alt": "Döner Teller mit Fleisch, Pommes und Salat" },
+        { "src": "images/menu-taschen-pomm.png", "alt": "Pomm Döner — Dönerfleisch auf Pommes im Wrap" }
+      ],
       "items": [
         {
           "name": "Döner Tasche",
@@ -79,7 +84,9 @@
       "eyebrow": "Frisch frittiert, 6er",
       "title": "Chicken Wings",
       "jumpLabel": "Wings",
-      "photo": { "src": "images/wings.jpg", "alt": "Chicken Wings mit Parmesan" },
+      "photos": [
+        { "src": "images/menu-wings.png", "alt": "Chicken Wings mit Parmesan" }
+      ],
       "items": [
         {
           "name": "Classic Flavour",
@@ -98,7 +105,10 @@
       "eyebrow": "Frisch angerichtet",
       "title": "Bowl",
       "jumpLabel": "Bowl",
-      "photo": { "src": "images/doner-teller.jpg", "alt": "Döner Bowl mit Fleisch, Pommes und Salat" },
+      "photos": [
+        { "src": "images/menu-bowl-doner.png", "alt": "Döner Bowl mit Fleisch, Pommes und Salat" },
+        { "src": "images/menu-bowl-falafel.png", "alt": "Falafel Bowl mit Couscous und Pommes" }
+      ],
       "items": [
         {
           "name": "Döner Bowl",
@@ -145,7 +155,10 @@
       "eyebrow": "Love Friet",
       "title": "Love Friet",
       "jumpLabel": "Love Friet",
-      "photo": { "src": "images/loaded-fries.jpg", "alt": "Pommes Frites mit Currysauce und Röstzwiebeln" },
+      "photos": [
+        { "src": "images/menu-fries-loaded.png", "alt": "Pommes Frites mit Currysauce und Röstzwiebeln" },
+        { "src": "images/menu-fries-parmesan.png", "alt": "Pommes Frites mit Parmesan und Trüffelmajo" }
+      ],
       "items": [
         {
           "name": "Pommes Frites (Large)",
@@ -179,7 +192,9 @@
       "eyebrow": "Für den großen Hunger",
       "title": "Teller / Lahmacun / Currywurst",
       "jumpLabel": "Teller / Lahmacun / Currywurst",
-      "photo": { "src": "images/lahmacun-fleisch-salat.jpg", "alt": "Lahmacun mit Fleisch und Salat" },
+      "photos": [
+        { "src": "images/menu-teller-lahmacun.png", "alt": "Lahmacun mit Fleisch und Salat" }
+      ],
       "items": [
         {
           "name": "Dönerteller",
@@ -211,6 +226,9 @@
       "eyebrow": "Extra Topping",
       "title": "Extra Topping",
       "jumpLabel": "Extra Topping",
+      "photos": [
+        { "src": "images/menu-extra-grilled-veg.png", "alt": "Gegrillte Gemüse — Zucchini, Paprika, Aubergine" }
+      ],
       "items": [
         { "name": "Gegrillte Gemüse (Zucchini, Paprika, Aubergine)", "price": "1,50 €" }
       ]

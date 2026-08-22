@@ -548,13 +548,21 @@
       translations['menu.jump.' + camel].de = cat.jumpLabel;
     }
 
-    // one representative photo per category (not per dish) — set on the
-    // section's figure if content/menu.json supplies cat.photo, otherwise
-    // the section simply has no figure markup at all (see menu.html)
-    var photoImg = section.querySelector('[data-menu-cat-photo]');
-    if (photoImg && cat.photo && cat.photo.src) {
-      photoImg.src = cat.photo.src;
-      photoImg.alt = cat.photo.alt || cat.title || '';
+    // one or two representative photos per category (never one per dish) —
+    // built from content/menu.json's cat.photos; sections with no photos
+    // (Saucen & Dips, Dessert) simply have no [data-menu-cat-photos] host
+    var photoGroup = section.querySelector('[data-menu-cat-photos]');
+    if (photoGroup) {
+      var photos = cat.photos || [];
+      photoGroup.className = 'menu-cat-photo-group' + (photos.length > 1 ? ' has-2' : '');
+      photoGroup.innerHTML = '';
+      photos.forEach(function (photo) {
+        var img = document.createElement('img');
+        img.src = photo.src;
+        img.alt = photo.alt || cat.title || '';
+        img.loading = 'lazy';
+        photoGroup.appendChild(img);
+      });
     }
 
     var container = section.querySelector('[data-menu-grid]');

@@ -208,11 +208,13 @@ collections:
               - { label: "Kicker über der Überschrift", name: "eyebrow", widget: "string" }
               - { label: "Überschrift", name: "title", widget: "string" }
               - { label: "Label in der Sprungnavigation oben", name: "jumpLabel", widget: "string" }
-              - label: "Kategorie-Foto (optional)"
-                name: "photo"
-                widget: "object"
+              - label: "Kategorie-Fotos (optional, 1–2 Stück)"
+                name: "photos"
+                widget: "list"
                 required: false
-                hint: "Ein Foto für die ganze Kategorie (nicht pro Gericht). Leer lassen, wenn diese Kategorie ohne Foto als reine Preisliste erscheinen soll (z. B. Saucen, Dessert)."
+                minimize: true
+                summary: "{{fields.alt}}"
+                hint: "Ein oder zwei Fotos für die ganze Kategorie (nicht pro Gericht). Leer lassen, wenn diese Kategorie ohne Foto als reine Preisliste erscheinen soll (z. B. Saucen, Dessert)."
                 fields:
                   - { label: "Foto", name: "src", widget: "image" }
                   - { label: "Alt-Text (Bildbeschreibung für Screenreader)", name: "alt", widget: "string", required: false }
