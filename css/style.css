@@ -745,15 +745,20 @@ html.js .hero-image-wrap { opacity: 0; animation: heroImageIn 1.1s var(--ease-ex
 .story { overflow: clip; }
 .story .container { overflow: hidden; box-sizing: border-box; }
 
+/* stacked, full-width: text block on top, photo wheel spans the full
+   section width below it — not a side-by-side two-column layout */
 .story-grid {
   display: grid;
-  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
-  gap: clamp(var(--sp-4), 6vw, var(--sp-10));
-  align-items: center;
+  grid-template-columns: 1fr;
+  gap: clamp(var(--sp-6), 5vw, var(--sp-10));
   width: 100%;
   max-width: 100%;
   box-sizing: border-box;
   overflow: hidden;
+}
+
+.story-content .section-body {
+  max-width: 68ch;
 }
 
 .story-content,
@@ -813,10 +818,10 @@ html.js .hero-image-wrap { opacity: 0; animation: heroImageIn 1.1s var(--ease-ex
 }
 .story-carousel-item {
   flex: 0 0 auto;
-  /* sized off the carousel's own column (cqw), not the page viewport —
-     so one frame always roughly fills the frame with a sliver of the
-     next peeking in, at any column width from mobile up to wide desktop */
-  width: clamp(220px, 88cqw, 480px);
+  /* sized off the carousel's own column (cqw), not the page viewport — now
+     that the wheel spans the full section width, this shows ~2 frames at
+     once on desktop (a real "wheel") while staying one big frame on mobile */
+  width: clamp(280px, 42cqw, 620px);
   aspect-ratio: 16 / 9;
   border-radius: calc(var(--radius-lg) - 6px);
   overflow: hidden;
