@@ -396,19 +396,6 @@
     startAuto();
   }
 
-  function buildCarouselArrow(direction, i18nKey) {
-    var btn = document.createElement('button');
-    btn.type = 'button';
-    btn.className = 'menu-arrow menu-arrow--' + direction;
-    btn.setAttribute('data-i18n-aria', i18nKey);
-    var label = translations[i18nKey];
-    btn.setAttribute('aria-label', label ? label[currentLang] : direction);
-    btn.innerHTML = direction === 'prev'
-      ? '<svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 18l-6-6 6-6"/></svg>'
-      : '<svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 6l6 6-6 6"/></svg>';
-    return btn;
-  }
-
   /* ---------------------------------------- values: swipe/arrow carousel */
   function initValuesCarousel() {
     var grid = document.getElementById('values-grid');
@@ -425,21 +412,6 @@
     var nextBtn = document.querySelector('.menu-arrow--next');
     if (!grid || !prevBtn || !nextBtn) return;
     setupCarousel(grid, prevBtn, nextBtn, '.product-card', 700);
-  }
-
-  /* --------------------------- menu.html: per-category swipe/arrow carousels */
-  function initCategoryCarousels() {
-    document.querySelectorAll('.menu-cat .product-grid').forEach(function (grid) {
-      var wrapper = document.createElement('div');
-      wrapper.className = 'menu-carousel';
-      grid.parentNode.insertBefore(wrapper, grid);
-      var prevBtn = buildCarouselArrow('prev', 'menu.prev');
-      var nextBtn = buildCarouselArrow('next', 'menu.next');
-      wrapper.appendChild(prevBtn);
-      wrapper.appendChild(grid);
-      wrapper.appendChild(nextBtn);
-      setupCarousel(grid, prevBtn, nextBtn, '.product-card', 700);
-    });
   }
 
   /* ------------------------------------------------- menu quick-jump nav */
@@ -576,38 +548,34 @@
       translations['menu.jump.' + camel].de = cat.jumpLabel;
     }
 
+    // one representative photo per category (not per dish) — set on the
+    // section's figure if content/menu.json supplies cat.photo, otherwise
+    // the section simply has no figure markup at all (see menu.html)
+    var photoImg = section.querySelector('[data-menu-cat-photo]');
+    if (photoImg && cat.photo && cat.photo.src) {
+      photoImg.src = cat.photo.src;
+      photoImg.alt = cat.photo.alt || cat.title || '';
+    }
+
     var container = section.querySelector('[data-menu-grid]');
     if (!container || !cat.items) return;
-    // keep the container's layout class in sync with the data — lets a
-    // category switch between the photo-card grid and a plain price list
-    container.className = (cat.layout === 'list' ? 'list-grid' : 'product-grid');
+    container.className = 'list-grid';
     container.innerHTML = '';
 
-    cat.items.forEach(function (item, i) {
-      if (cat.layout === 'list') {
-        var row = document.createElement('div');
-        row.className = 'list-row';
-        var priceHtml = item.askInStore
-          ? '<span class="list-row-price tbd">' + translations['menu.askInStore'][currentLang] + '</span>'
-          : '<span class="list-row-price">' + (item.price || '') + '</span>';
-        row.innerHTML = '<span class="list-row-name">' + item.name + '</span>' + priceHtml;
-        container.appendChild(row);
-      } else {
-        var card = document.createElement('article');
-        card.className = 'product-card reveal';
-        card.style.setProperty('--d', (i % 4) * 60 + 'ms');
-        var cardPriceHtml = item.askInStore
-          ? '<span class="product-price tbd">' + translations['menu.askInStore'][currentLang] + '</span>'
-          : '<span class="product-price">' + (item.price || '') + '</span>';
-        card.innerHTML =
-          '<div class="product-media"><img src="' + item.image + '" alt="' + (item.imageAlt || item.name || '') + '" loading="lazy"></div>' +
-          '<div class="product-body">' +
-            '<h3 class="product-name">' + item.name + '</h3>' +
-            (item.desc ? '<p class="product-desc">' + item.desc + '</p>' : '') +
-            cardPriceHtml +
-          '</div>';
-        container.appendChild(card);
-      }
+    cat.items.forEach(function (item) {
+      var row = document.createElement('div');
+      row.className = 'list-row';
+      var priceHtml = item.askInStore
+        ? '<span class="list-row-price tbd">' + translations['menu.askInStore'][currentLang] + '</span>'
+        : '<span class="list-row-price">' + (item.price || '') + '</span>';
+      row.innerHTML =
+        '<div class="list-row-line">' +
+          '<span class="list-row-name">' + item.name + '</span>' +
+          '<span class="list-row-leader" aria-hidden="true"></span>' +
+          priceHtml +
+        '</div>' +
+        (item.desc ? '<p class="list-row-desc">' + item.desc + '</p>' : '');
+      container.appendChild(row);
     });
 
     // optional secondary price list rendered inside the same section, with
@@ -676,7 +644,6 @@
     initMenuJump();
     initValuesCarousel();
     initMenuCarousel();
-    initCategoryCarousels();
     initScrollTop();
     initRevealObserver();
     initTodayHighlight();

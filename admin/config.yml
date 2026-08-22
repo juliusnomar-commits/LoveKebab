@@ -208,17 +208,22 @@ collections:
               - { label: "Kicker über der Überschrift", name: "eyebrow", widget: "string" }
               - { label: "Überschrift", name: "title", widget: "string" }
               - { label: "Label in der Sprungnavigation oben", name: "jumpLabel", widget: "string" }
-              - { label: "Layout – bitte nicht ändern!", name: "layout", widget: "select", options: ["grid", "list"], hint: "„grid“ = Karten mit Foto (z. B. Pizza). „list“ = einfache Preisliste ohne Foto (z. B. Getränke)." }
+              - label: "Kategorie-Foto (optional)"
+                name: "photo"
+                widget: "object"
+                required: false
+                hint: "Ein Foto für die ganze Kategorie (nicht pro Gericht). Leer lassen, wenn diese Kategorie ohne Foto als reine Preisliste erscheinen soll (z. B. Saucen, Dessert)."
+                fields:
+                  - { label: "Foto", name: "src", widget: "image" }
+                  - { label: "Alt-Text (Bildbeschreibung für Screenreader)", name: "alt", widget: "string", required: false }
               - label: "Gerichte / Positionen"
                 name: "items"
                 widget: "list"
                 summary: "{{fields.name}}"
                 fields:
                   - { label: "Name", name: "name", widget: "string" }
-                  - { label: "Beschreibung", name: "desc", widget: "string", required: false, hint: "Nur bei Karten-Layout sichtbar." }
+                  - { label: "Beschreibung", name: "desc", widget: "string", required: false }
                   - { label: "Preis", name: "price", widget: "string", required: false, hint: "z. B. 8,00 €. Leer lassen, wenn unten „Bitte im Laden fragen“ aktiviert ist." }
-                  - { label: "Foto", name: "image", widget: "image", required: false, hint: "Nur bei Karten-Layout sichtbar." }
-                  - { label: "Alt-Text (Bildbeschreibung für Screenreader)", name: "imageAlt", widget: "string", required: false }
                   - { label: "„Bitte im Laden fragen“ statt Preis anzeigen", name: "askInStore", widget: "boolean", required: false, default: false }
               - label: "Zusatz-Preisliste (optional, z. B. „Wähle dein Topping“ unter Love Friet)"
                 name: "sublist"

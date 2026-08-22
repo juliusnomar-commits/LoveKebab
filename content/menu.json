@@ -11,26 +11,20 @@
       "eyebrow": "Frisch vom Spieß",
       "title": "Wraps",
       "jumpLabel": "Wraps",
-      "layout": "grid",
+      "photo": { "src": "images/durum.jpg", "alt": "Frischer Dürüm Wrap bei Love Kebab" },
       "items": [
         {
           "name": "Hatay Original Dürüm Classic (L)",
-          "image": "images/durum.jpg",
-          "imageAlt": "Hatay Original Dürüm Classic",
           "desc": "Gurke, Zwiebel, Pommes und Mayonnaise mit hausgemachter Knoblauchsoße.",
           "price": "9,00 €"
         },
         {
           "name": "Hatay Original Dürüm Classic (M)",
-          "image": "images/durum.jpg",
-          "imageAlt": "Hatay Original Dürüm Classic, kleinere Größe",
           "desc": "Gurke, Zwiebel, Pommes und Mayonnaise mit hausgemachter Knoblauchsoße.",
           "price": "7,00 €"
         },
         {
           "name": "Hatay Original Classic mit Parmesan",
-          "image": "images/durum.jpg",
-          "imageAlt": "Hatay Original Classic mit Parmesan Käse",
           "desc": "Unser Hatay Original Classic, verfeinert mit Parmesan Käse.",
           "price": "11,00 €"
         }
@@ -41,54 +35,40 @@
       "eyebrow": "Frisch gefüllt",
       "title": "Taschen und Wrap Gerichte",
       "jumpLabel": "Taschen & Wrap Gerichte",
-      "layout": "grid",
+      "photo": { "src": "images/doner-kebab-photo.jpg", "alt": "Döner Teller mit Fleisch, Pommes und Salat" },
       "items": [
         {
           "name": "Döner Tasche",
-          "image": "images/doner-kebab-photo.jpg",
-          "imageAlt": "Döner Tasche",
           "desc": "Döner Tasche mit Salat und Sauce.",
           "price": "8,00 €"
         },
         {
           "name": "Dürüm Döner",
-          "image": "images/durum.jpg",
-          "imageAlt": "Dürüm Döner",
           "desc": "Dürüm Döner mit Salat und Sauce.",
           "price": "9,00 €"
         },
         {
           "name": "Falafel Tasche",
-          "image": "images/falafel-wrap.jpg",
-          "imageAlt": "Falafel Tasche",
           "desc": "Falafel Tasche mit Salat und Sauce.",
           "price": "7,00 €"
         },
         {
           "name": "Falafel Dürüm",
-          "image": "images/falafel-wrap.jpg",
-          "imageAlt": "Falafel Dürüm",
           "desc": "Falafel Dürüm mit Salat und Sauce.",
           "price": "7,50 €"
         },
         {
           "name": "Überbackene Weißkäse Tasche",
-          "image": "images/baked-cheese.jpg",
-          "imageAlt": "Überbackene Weißkäse Tasche",
           "desc": "Überbackene Weißkäse Tasche mit Salat und Sauce.",
           "price": "7,50 €"
         },
         {
           "name": "Gegrillte Gemüse Tasche",
-          "image": "images/grilled-veg.jpg",
-          "imageAlt": "Gegrillte Gemüse Tasche",
           "desc": "Gegrillte Gemüse Tasche mit Salat und Sauce.",
           "price": "7,00 €"
         },
         {
           "name": "Pomm Döner",
-          "image": "images/pomm-doner.jpg",
-          "imageAlt": "Pomm Döner",
           "desc": "Dönerfleisch auf knusprigen Pommes.",
           "price": "8,00 €"
         }
@@ -99,19 +79,15 @@
       "eyebrow": "Frisch frittiert, 6er",
       "title": "Chicken Wings",
       "jumpLabel": "Wings",
-      "layout": "grid",
+      "photo": { "src": "images/wings.jpg", "alt": "Chicken Wings mit Parmesan" },
       "items": [
         {
           "name": "Classic Flavour",
-          "image": "images/wings.jpg",
-          "imageAlt": "Classic Flavour Wings",
           "desc": "6 Chicken Wings Classic Flavour, mit Krautsalat und einem Dip.",
           "price": "7,00 €"
         },
         {
           "name": "Parmesan Wings Flavour",
-          "image": "images/wings.jpg",
-          "imageAlt": "Parmesan Wings Flavour",
           "desc": "6 Chicken Wings Parmesan Flavour, mit Krautsalat und Dip.",
           "price": "9,00 €"
         }
@@ -122,47 +98,35 @@
       "eyebrow": "Frisch angerichtet",
       "title": "Bowl",
       "jumpLabel": "Bowl",
-      "layout": "grid",
+      "photo": { "src": "images/doner-teller.jpg", "alt": "Döner Bowl mit Fleisch, Pommes und Salat" },
       "items": [
         {
           "name": "Döner Bowl",
-          "image": "images/doner-teller.jpg",
-          "imageAlt": "Döner Bowl",
           "desc": "Gemischter Salat, Pommes und Sauce.",
           "price": "12,00 €"
         },
         {
           "name": "Falafel Bowl",
-          "image": "images/falafel-wrap.jpg",
-          "imageAlt": "Falafel Bowl",
           "desc": "Gemischter Salat, Perlnudeln, Pommes und Sauce.",
           "price": "12,00 €"
         },
         {
           "name": "Überbackene Weißkäse Bowl",
-          "image": "images/baked-cheese.jpg",
-          "imageAlt": "Überbackene Weißkäse Bowl",
           "desc": "Gemischter Salat, gebratenes Gemüse, gerollte Blätterteigrolle und Perlnudeln.",
           "price": "12,00 €"
         },
         {
           "name": "Chicken Wings Bowl",
-          "image": "images/wings.jpg",
-          "imageAlt": "Chicken Wings Bowl",
           "desc": "Krautsalat, Pommes und eingelegte Peperoni.",
           "price": "12,00 €"
         },
         {
           "name": "Love Bowl Power",
-          "image": "images/mezze-platter.jpg",
-          "imageAlt": "Love Bowl Power",
           "desc": "Überraschung — lass dich von unserer Tages-Bowl verwöhnen.",
           "price": "13,00 €"
         },
         {
           "name": "Gemischter Salat XL",
-          "image": "images/garden-salad.jpg",
-          "imageAlt": "Gemischter Salat XL",
           "desc": "Unser gemischter Salat in der großen Portion.",
           "price": "8,00 €"
         }
@@ -181,26 +145,20 @@
       "eyebrow": "Love Friet",
       "title": "Love Friet",
       "jumpLabel": "Love Friet",
-      "layout": "grid",
+      "photo": { "src": "images/loaded-fries.jpg", "alt": "Pommes Frites mit Currysauce und Röstzwiebeln" },
       "items": [
         {
           "name": "Pommes Frites (Large)",
-          "image": "images/hand-cut-fries.jpg",
-          "imageAlt": "Pommes Frites Large",
           "desc": "Unsere Pommes Frites in der großen Portion.",
           "price": "4,00 €"
         },
         {
           "name": "Pommes Frites mit Parmesan & Trüffelmajo",
-          "image": "images/parmesan-fries.jpg",
-          "imageAlt": "Pommes Frites mit Parmesan & Trüffelmajonnaise",
           "desc": "Pommes Frites mit Parmesan und Trüffelmajonnaise.",
           "price": "7,50 €"
         },
         {
           "name": "Pommes Frites mit Majo, Currysauce & Röstzwiebeln",
-          "image": "images/loaded-fries.jpg",
-          "imageAlt": "Pommes Frites mit Majo, Currysauce und Röstzwiebeln",
           "desc": "Pommes Frites mit Mayonnaise, Currysauce und knusprigen Röstzwiebeln.",
           "price": "7,50 €"
         }
@@ -221,39 +179,29 @@
       "eyebrow": "Für den großen Hunger",
       "title": "Teller / Lahmacun / Currywurst",
       "jumpLabel": "Teller / Lahmacun / Currywurst",
-      "layout": "grid",
+      "photo": { "src": "images/lahmacun-fleisch-salat.jpg", "alt": "Lahmacun mit Fleisch und Salat" },
       "items": [
         {
           "name": "Dönerteller",
-          "image": "images/doner-teller.jpg",
-          "imageAlt": "Dönerteller",
           "desc": "Mit Pommes oder Couscous, Salat und Sauce.",
           "price": "14,00 €"
         },
         {
           "name": "Lahmacun mit Salat und Fleisch",
-          "image": "images/lahmacun-fleisch-salat.jpg",
-          "imageAlt": "Lahmacun mit Salat und Fleisch",
           "desc": "Lahmacun beladen mit extra Dönerfleisch und frischem Salat.",
           "price": "10,00 €"
         },
         {
           "name": "Lahmacun mit Salat und Sauce",
-          "image": "images/lahmacun-salat.jpg",
-          "imageAlt": "Lahmacun mit Salat und Sauce",
           "desc": "Klassischer Lahmacun gerollt mit frischem Salat und Sauce.",
           "price": "8,00 €"
         },
         {
           "name": "Currywurst",
-          "image": "images/placeholder-dish.svg",
-          "imageAlt": "Currywurst",
           "price": "4,00 €"
         },
         {
           "name": "Currywurst mit Pommes Frites",
-          "image": "images/placeholder-dish.svg",
-          "imageAlt": "Currywurst mit Pommes Frites",
           "price": "8,00 €"
         }
       ]
@@ -263,7 +211,6 @@
       "eyebrow": "Extra Topping",
       "title": "Extra Topping",
       "jumpLabel": "Extra Topping",
-      "layout": "list",
       "items": [
         { "name": "Gegrillte Gemüse (Zucchini, Paprika, Aubergine)", "price": "1,50 €" }
       ]
@@ -273,7 +220,6 @@
       "eyebrow": "Saucen & Dips",
       "title": "Saucen & Dips",
       "jumpLabel": "Saucen & Dips",
-      "layout": "list",
       "items": [
         { "name": "🌶️🌶️ Scharfsauce", "price": "1,00 €" },
         { "name": "🧄 Knoblauch", "price": "1,00 €" },
@@ -288,7 +234,6 @@
       "eyebrow": "Zum Abschluss",
       "title": "Dessert",
       "jumpLabel": "Dessert",
-      "layout": "list",
       "items": [
         { "name": "Mehle Helva", "price": "3,00 €" }
       ]
