@@ -2,10 +2,9 @@
  * Love Kebab — main.js
  *
  * Engineering rule: every continuous scroll-position-dependent effect
- * (nav chrome, hero image parallax, horizontal
- * process scroll-jack) runs from ONE shared requestAnimationFrame loop that
- * reads window.scrollY once per frame. One-shot reveals use a separate
- * lightweight IntersectionObserver.
+ * (nav chrome, hero image parallax) runs from ONE shared requestAnimationFrame
+ * loop that reads window.scrollY once per frame. One-shot reveals use a
+ * separate lightweight IntersectionObserver.
  */
 
 (function () {
@@ -19,7 +18,6 @@
 
   var motionQuery = window.matchMedia('(prefers-reduced-motion: reduce)');
   var prefersReducedMotion = motionQuery.matches;
-  var processStackedQuery = window.matchMedia('(max-width: 700px)');
 
   /* ------------------------------------------------------------------ i18n
      Default language is German — English is opt-in via the nav toggle and
@@ -55,7 +53,7 @@
     'marquee.fresh': { de: '100' + HAIRSP + '% frisch', en: '100' + HAIRSP + '% Fresh' },
 
     'story.eyebrow': { de: 'Unsere Geschichte', en: 'Our Story' },
-    'story.title': { de: 'Frisch gemacht,<br>wie es sein sollte.', en: 'Fresh food,<br>the way it should be.' },
+    'story.title': { de: 'Frisch gemacht, wie es sein sollte.', en: 'Fresh food, the way it should be.' },
     'story.body1': {
       de: 'Bei Love Kebab treffen frische Zutaten auf jahrelange Erfahrung. Mitten in Rüttenscheid bereiten wir alles frisch zu — von Wings über Parmesan Fries bis Dürüm, ehrlich und mit Liebe gemacht.',
       en: 'At Love Kebab, fresh ingredients meet years of experience. Right here in Rüttenscheid, we prepare everything fresh — from wings to parmesan fries to dürüm, honest and made with love.'
@@ -91,26 +89,6 @@
     'values.next': { de: 'Weiter', en: 'Next' },
     'menu.prev': { de: 'Zurück', en: 'Previous' },
     'menu.next': { de: 'Weiter', en: 'Next' },
-
-    'process.ariaLabel': { de: 'Ein Blick in unsere Küche', en: 'A look inside our kitchen' },
-    'process.title': { de: 'Ein Blick in unsere Küche', en: 'A look inside our kitchen' },
-    'process.eyebrow': { de: 'Galerie', en: 'Gallery' },
-    'process.step1': { de: 'Schritt 01', en: 'Step 01' },
-    'process.title1': { de: 'Frisches Fleisch', en: 'Fresh Meat' },
-    'process.desc1': { de: 'Täglich frisch geliefert — Qualität, die man sieht und schmeckt.', en: 'Delivered fresh daily — quality you can see and taste.' },
-    'process.photo1': { de: 'Foto: Frisches Fleisch', en: 'Photo: Fresh Meat' },
-    'process.step2': { de: 'Schritt 02', en: 'Step 02' },
-    'process.title2': { de: 'Eigene Gewürzmischung', en: 'Our Own Spice Blend' },
-    'process.desc2': { de: 'Hausgemachte Marinade nach bewährtem Familienrezept.', en: 'Homemade marinade made from a trusted family recipe.' },
-    'process.photo2': { de: 'Foto: Gewürzmischung', en: 'Photo: Spice Blend' },
-    'process.step3': { de: 'Schritt 03', en: 'Step 03' },
-    'process.title3': { de: 'Langsam gegart am Spieß', en: 'Slow-Roasted on the Spit' },
-    'process.desc3': { de: 'Stundenlang am Drehspieß — saftig innen, knusprig außen.', en: 'Hours on the rotisserie — juicy inside, crispy outside.' },
-    'process.photo3': { de: 'Foto: Dönerspieß', en: 'Photo: Döner Spit' },
-    'process.step4': { de: 'Schritt 04', en: 'Step 04' },
-    'process.title4': { de: 'Frisch für dich geschnitten', en: 'Freshly Cut for You' },
-    'process.desc4': { de: 'Auf Bestellung geschnitten, frisch belegt und mit Liebe serviert.', en: 'Cut to order, freshly topped, and served with love.' },
-    'process.photo4': { de: 'Foto: Frisch geschnitten', en: 'Photo: Freshly Cut' },
 
     'contact.eyebrow': { de: 'Standort', en: 'Location' },
     'contact.title': { de: 'Besuch uns in<br>Rüttenscheid.', en: 'Visit us in<br>Rüttenscheid.' },
@@ -265,61 +243,13 @@
   var nav = document.querySelector('.nav');
   var hero = document.querySelector('.hero');
   var heroImageParallaxEl = document.querySelector('.hero-image-wrap');
-  var processSection = document.getElementById('process');
-  var processTrack = document.getElementById('process-track');
-  var processSteps = processTrack ? processTrack.querySelectorAll('.process-step') : [];
-  var processDots = document.querySelectorAll('.process-dot');
-  var processBarFill = document.getElementById('process-bar-fill');
   var scrollTopBtn = document.getElementById('scroll-top');
   var navToggle = document.querySelector('.nav-toggle');
   var navOverlay = document.getElementById('navOverlay');
   var navOverlayClose = document.querySelector('.nav-overlay-close');
 
-  /* --------------------------------------------------- measured layout */
-  var processMax = 0;      // max horizontal translate in px
-  var stepCount = processSteps.length;
-
-  /* mobile: duplicate the steps once so the CSS loop (translateX(-50%))
-     wraps seamlessly — clones are aria-hidden, originals stay the single
-     source of truth for screen readers */
-  function updateProcessCarousel() {
-    if (!processTrack) return;
-    var clones = processTrack.querySelectorAll('.process-step--clone');
-    if (processStackedQuery.matches && !prefersReducedMotion) {
-      if (!clones.length) {
-        processSteps.forEach(function (step) {
-          var clone = step.cloneNode(true);
-          clone.classList.add('process-step--clone');
-          clone.setAttribute('aria-hidden', 'true');
-          processTrack.appendChild(clone);
-        });
-      }
-    } else if (clones.length) {
-      clones.forEach(function (c) { c.remove(); });
-    }
-  }
-
-  function measure() {
-    if (processTrack && processSection && !processStackedQuery.matches) {
-      // center the first / last card in the viewport
-      var vw = document.documentElement.clientWidth;
-      var stepW = processSteps.length ? processSteps[0].offsetWidth : 0;
-      var pad = Math.max((vw - stepW) / 2, 20);
-      processTrack.style.paddingLeft = pad + 'px';
-      processTrack.style.paddingRight = pad + 'px';
-      processMax = Math.max(0, processTrack.scrollWidth - vw);
-    } else {
-      processMax = 0;
-      if (processTrack) {
-        processTrack.style.paddingLeft = '';
-        processTrack.style.paddingRight = '';
-      }
-    }
-  }
-
   /* --------------------------------------------- shared RAF scroll loop */
   var lastNavScrolled = null;
-  var lastActiveStep = -1;
 
   function frame(now) {
     var y = window.scrollY;
@@ -347,31 +277,6 @@
         heroImageParallaxEl.style.transform = 'translateY(' + (drift * -34).toFixed(2) + 'px)';
         heroImageParallaxEl.style.opacity = String(1 - drift * 0.35);
       }
-
-      /* process: vertical scroll → horizontal travel */
-      if (processSection && processTrack && processMax > 0) {
-        var rect = processSection.getBoundingClientRect();
-        var runway = rect.height - vh;
-        if (runway > 0) {
-          var p = clamp01(-rect.top / runway);
-          var x = p * processMax;
-          processTrack.style.transform = 'translate3d(' + (-x).toFixed(2) + 'px, 0, 0)';
-
-          var active = Math.min(stepCount - 1, Math.round(p * (stepCount - 1)));
-          if (active !== lastActiveStep) {
-            lastActiveStep = active;
-            processDots.forEach(function (dot, i) {
-              dot.classList.toggle('active', i === active);
-            });
-            processSteps.forEach(function (step, i) {
-              step.classList.toggle('is-active', i === active);
-            });
-          }
-          if (processBarFill) {
-            processBarFill.style.transform = 'scaleX(' + p.toFixed(4) + ')';
-          }
-        }
-      }
     }
 
     requestAnimationFrame(frame);
@@ -379,8 +284,6 @@
 
   /* --------------------------------------- reduced motion: final states */
   function applyReducedMotionStates() {
-    if (processTrack) processTrack.style.transform = 'none';
-    processSteps.forEach(function (s) { s.classList.add('is-active'); });
     document.querySelectorAll('.reveal').forEach(function (el) {
       el.classList.add('is-visible');
     });
@@ -767,8 +670,6 @@
   /* --------------------------------------------------------------- boot */
   function init() {
     applyLang(currentLang);
-    updateProcessCarousel();
-    measure();
     initNavToggle();
     initLangToggle();
     initSmoothScroll();
@@ -794,18 +695,6 @@
       requestAnimationFrame(frame);
     }
 
-    var resizeTimer;
-    window.addEventListener('resize', function () {
-      clearTimeout(resizeTimer);
-      resizeTimer = setTimeout(function () {
-        updateProcessCarousel();
-        measure();
-      }, 150);
-    });
-    window.addEventListener('load', measure);
-    if (document.fonts && document.fonts.ready) {
-      document.fonts.ready.then(measure);
-    }
   }
 
   function boot() {

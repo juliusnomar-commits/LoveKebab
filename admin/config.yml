@@ -119,29 +119,6 @@ collections:
               - { label: "Text: Mit Liebe gemacht", name: "loveDesc", widget: "string" }
               - { label: "Karussell-Pfeil zurück (Screenreader)", name: "prev", widget: "string" }
               - { label: "Karussell-Pfeil weiter (Screenreader)", name: "next", widget: "string" }
-          - label: "Galerie „Ein Blick in unsere Küche“"
-            name: "process"
-            widget: "object"
-            fields:
-              - { label: "Kicker", name: "eyebrow", widget: "string" }
-              - { label: "Überschrift", name: "title", widget: "string" }
-              - { label: "Screenreader: Bereichsname (nicht sichtbar)", name: "ariaLabel", widget: "string" }
-              - { label: "Schritt 1 – Label", name: "step1", widget: "string" }
-              - { label: "Schritt 1 – Titel", name: "title1", widget: "string" }
-              - { label: "Schritt 1 – Text", name: "desc1", widget: "string" }
-              - { label: "Schritt 1 – Foto-Bildunterschrift", name: "photo1", widget: "string" }
-              - { label: "Schritt 2 – Label", name: "step2", widget: "string" }
-              - { label: "Schritt 2 – Titel", name: "title2", widget: "string" }
-              - { label: "Schritt 2 – Text", name: "desc2", widget: "string" }
-              - { label: "Schritt 2 – Foto-Bildunterschrift", name: "photo2", widget: "string" }
-              - { label: "Schritt 3 – Label", name: "step3", widget: "string" }
-              - { label: "Schritt 3 – Titel", name: "title3", widget: "string" }
-              - { label: "Schritt 3 – Text", name: "desc3", widget: "string" }
-              - { label: "Schritt 3 – Foto-Bildunterschrift", name: "photo3", widget: "string" }
-              - { label: "Schritt 4 – Label", name: "step4", widget: "string" }
-              - { label: "Schritt 4 – Titel", name: "title4", widget: "string" }
-              - { label: "Schritt 4 – Text", name: "desc4", widget: "string" }
-              - { label: "Schritt 4 – Foto-Bildunterschrift", name: "photo4", widget: "string" }
           - label: "Kontakt & Öffnungszeiten"
             name: "contact"
             widget: "object"

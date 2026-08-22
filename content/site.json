@@ -29,7 +29,7 @@
   },
   "story": {
     "eyebrow": "Unsere Geschichte",
-    "title": "Frisch gemacht,<br>wie es sein sollte.",
+    "title": "Frisch gemacht, wie es sein sollte.",
     "body1": "Bei Love Kebab treffen frische Zutaten auf jahrelange Erfahrung. Mitten in Rüttenscheid bereiten wir alles frisch zu — von Wings über Parmesan Fries bis Dürüm, ehrlich und mit Liebe gemacht.",
     "stat1": "Gerichte auf der Karte",
     "stat2": "Frisch",
@@ -60,27 +60,6 @@
     "loveDesc": "Jeder Döner wird auf Bestellung geschnitten und mit voller Aufmerksamkeit gebaut.",
     "prev": "Zurück",
     "next": "Weiter"
-  },
-  "process": {
-    "eyebrow": "Galerie",
-    "title": "Ein Blick in unsere Küche",
-    "step1": "Schritt 01",
-    "title1": "Frisches Fleisch",
-    "desc1": "Täglich frisch geliefert — Qualität, die man sieht und schmeckt.",
-    "photo1": "Foto: Frisches Fleisch",
-    "step2": "Schritt 02",
-    "title2": "Eigene Gewürzmischung",
-    "desc2": "Hausgemachte Marinade nach bewährtem Familienrezept.",
-    "photo2": "Foto: Gewürzmischung",
-    "step3": "Schritt 03",
-    "title3": "Langsam gegart am Spieß",
-    "desc3": "Stundenlang am Drehspieß — saftig innen, knusprig außen.",
-    "photo3": "Foto: Dönerspieß",
-    "step4": "Schritt 04",
-    "title4": "Frisch für dich geschnitten",
-    "desc4": "Auf Bestellung geschnitten, frisch belegt und mit Liebe serviert.",
-    "photo4": "Foto: Frisch geschnitten",
-    "ariaLabel": "Ein Blick in unsere Küche"
   },
   "contact": {
     "eyebrow": "Standort",
