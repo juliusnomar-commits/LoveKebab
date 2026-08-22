@@ -1085,6 +1085,9 @@ html.js .hero-image-wrap { opacity: 0; animation: heroImageIn 1.1s var(--ease-ex
 }
 .section--light .menu-cat-photo-group img { filter: drop-shadow(0 20px 28px rgba(28, 26, 23, 0.22)); }
 
+/* Teller / Lahmacun / Currywurst photo nudged down to sit better against the list */
+#teller .menu-cat-photo-group img { transform: translateY(30px); }
+
 /* two photos in one category (e.g. Bowl, Love Friet) — stacked one above
    the other, each shown large, instead of a single forced "the" dish, so
    the variety inside a category still reads without going back to a
