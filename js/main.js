@@ -91,7 +91,7 @@
     'menu.next': { de: 'Weiter', en: 'Next' },
 
     'contact.eyebrow': { de: 'Standort', en: 'Location' },
-    'contact.title': { de: 'Besuch uns in<br>Rüttenscheid.', en: 'Visit us in<br>Rüttenscheid.' },
+    'contact.title': { de: 'Besuch uns in Rüttenscheid.', en: 'Visit us in Rüttenscheid.' },
     'contact.whatsapp': { de: 'WhatsApp schreiben', en: 'Message on WhatsApp' },
     'contact.hoursTitle': { de: 'Öffnungszeiten', en: 'Opening Hours' },
     'contact.hoursNote': { de: 'Öffnungszeiten können an Feiertagen abweichen.', en: 'Hours may vary on public holidays.' },

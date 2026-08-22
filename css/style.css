@@ -140,6 +140,12 @@ strong { font-weight: 600; }
 .section--light { background: var(--bg-light); color: var(--text-on-light); }
 .section--dark { background: var(--bg-dark); color: var(--text-on-dark); }
 
+/* values → contact are both light with no color break between them (the
+   dark gallery section that used to sit here is gone) — their default
+   padding stacked into an oversized gap, so tighten just this seam */
+.values { padding-bottom: clamp(1.5rem, 3vw, 2.5rem); }
+.values + .contact { padding-top: clamp(1.5rem, 3vw, 2.5rem); }
+
 .eyebrow {
   display: flex;
   align-items: center;
