@@ -1554,8 +1554,24 @@ html.js .reveal.is-visible {
   .menu-cat--reverse .menu-cat-photo-group,
   .menu-cat--reverse .menu-cat-content { order: initial; }
   .menu-cat-photo-group img { max-width: 280px; max-height: 340px; }
-  .menu-cat-photo-group.has-2 { max-width: 300px; gap: var(--sp-4); margin-inline: auto; }
-  .menu-cat-photo-group.has-2 img { max-width: 260px; max-height: 300px; }
+
+  /* two-photo categories (Taschen/Wrap Gerichte, Bowl, Love Friet): instead
+     of both photos stacking together above the dish list, bookend the
+     section — first photo on top, dish list in the middle, second photo
+     at the bottom. display:contents dissolves the photo-group wrapper so
+     its two images become direct items of menu-cat-inner and can be
+     ordered independently around menu-cat-content. */
+  .menu-cat-photo-group.has-2 {
+    display: contents;
+  }
+  .menu-cat-photo-group.has-2 img {
+    max-width: 280px;
+    max-height: 340px;
+    margin-inline: auto;
+  }
+  .menu-cat-photo-group.has-2 img:first-child { order: 1; }
+  .menu-cat-inner:has(.menu-cat-photo-group.has-2) .menu-cat-content { order: 2; }
+  .menu-cat-photo-group.has-2 img:last-child { order: 3; }
 }
 
 @media (max-width: 820px) {
