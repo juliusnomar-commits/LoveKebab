@@ -1396,29 +1396,6 @@ html.js .hero-image-wrap { opacity: 0; animation: heroImageIn 1.1s var(--ease-ex
 }
 .footer-nav a:hover { color: var(--neutral-0); }
 
-.footer-social {
-  display: flex;
-  gap: 0.5rem;
-  justify-content: flex-end;
-}
-.footer-social a {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 44px;
-  height: 44px;
-  border-radius: 50%;
-  color: var(--text-muted-dark);
-  border: 1px solid var(--line-dark);
-  transition: color 0.25s, border-color 0.25s, background-color 0.25s, transform 0.25s var(--ease-soft);
-}
-.footer-social a:hover {
-  color: var(--accent-300);
-  border-color: rgba(221, 14, 82, 0.5);
-  background: rgba(221, 14, 82, 0.08);
-  transform: translateY(-2px);
-}
-
 .footer-bottom {
   border-top: 1px solid var(--line-dark);
   padding-block: var(--sp-3);
@@ -1646,7 +1623,6 @@ html.js .reveal.is-visible {
   }
   .footer-brand { flex-direction: column; text-align: center; }
   .footer-nav { flex-wrap: wrap; }
-  .footer-social { justify-content: center; }
   .footer-bottom-inner { flex-direction: column; text-align: center; gap: 0; }
 }
 

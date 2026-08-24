@@ -107,8 +107,6 @@
     'days.sat': { de: 'Samstag', en: 'Saturday' },
     'days.sun': { de: 'Sonntag', en: 'Sunday' },
 
-    'footer.instagramAria': { de: 'Instagram (folgt)', en: 'Instagram (coming soon)' },
-    'footer.tiktokAria': { de: 'TikTok (folgt)', en: 'TikTok (coming soon)' },
     'footer.rights': { de: 'Alle Rechte vorbehalten.', en: 'All rights reserved.' },
     'footer.imprint': { de: 'Impressum', en: 'Imprint' },
     'footer.privacy': { de: 'Datenschutz', en: 'Privacy Policy' },
