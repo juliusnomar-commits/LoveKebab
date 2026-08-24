@@ -110,6 +110,7 @@
     'footer.rights': { de: 'Alle Rechte vorbehalten.', en: 'All rights reserved.' },
     'footer.imprint': { de: 'Impressum', en: 'Imprint' },
     'footer.privacy': { de: 'Datenschutz', en: 'Privacy Policy' },
+    'footer.credit': { de: 'Website von', en: 'Website by' },
 
     'meta.title': { de: 'Love Kebab — Döner mit Liebe | Essen-Rüttenscheid', en: 'Love Kebab — Döner with Love | Essen-Rüttenscheid' },
     'meta.description': {

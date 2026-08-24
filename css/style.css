@@ -999,6 +999,56 @@ html.js .hero-image-wrap { opacity: 0; animation: heroImageIn 1.1s var(--ease-ex
 }
 .section--light .product-price.tbd { color: var(--text-muted-light); }
 
+/* ------------------------------------------------------------- legal pages (Impressum / Datenschutz) */
+.legal-content-inner {
+  max-width: 68ch;
+  min-height: 30vh;
+}
+.legal-content-inner .section-body { margin-top: var(--sp-2); }
+
+.legal-content h2 {
+  font-family: var(--font-body);
+  font-size: 1.375rem;
+  font-weight: 700;
+  color: var(--neutral-800);
+  letter-spacing: -0.01em;
+  margin-top: var(--sp-8);
+  margin-bottom: var(--sp-2);
+}
+.legal-content h2:first-child { margin-top: 0; }
+.legal-content h3 {
+  font-family: var(--font-body);
+  font-size: 1.0625rem;
+  font-weight: 600;
+  color: var(--neutral-800);
+  margin-top: var(--sp-5);
+  margin-bottom: var(--sp-1);
+}
+.legal-content address { font-style: normal; }
+.legal-content ul {
+  font-size: var(--fs-lead);
+  line-height: 1.75;
+  color: var(--text-muted-light);
+  margin: var(--sp-2) 0;
+  padding-left: 1.25rem;
+}
+.legal-content li { margin-bottom: 0.4rem; }
+.legal-content a { color: var(--accent-500); text-decoration: underline; text-underline-offset: 2px; }
+.legal-content a:hover { color: var(--accent-600); }
+
+/* flagged placeholder callout — must be resolved/removed before publishing */
+.legal-todo {
+  margin: var(--sp-2) 0;
+  padding: var(--sp-2) var(--sp-3);
+  background: var(--gold-50);
+  border: 1px solid var(--gold-300);
+  border-radius: var(--radius-sm);
+  font-size: var(--fs-sm);
+  line-height: 1.6;
+  color: var(--neutral-700);
+}
+.legal-todo strong { color: var(--accent-600); }
+
 /* ------------------------------------------------------------- menu page */
 .menu-hero {
   padding-top: calc(var(--nav-height) + var(--sp-8));
@@ -1418,6 +1468,26 @@ html.js .hero-image-wrap { opacity: 0; animation: heroImageIn 1.1s var(--ease-ex
 }
 .footer-legal-links a:hover { color: var(--neutral-0); }
 
+.footer-right {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  gap: var(--sp-3);
+}
+.footer-credit { color: inherit; }
+.footer-credit a {
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
+  color: inherit;
+  text-decoration: none;
+  border-bottom: 1px solid currentColor;
+  opacity: 0.75;
+  transition: opacity 0.2s, color 0.2s;
+}
+.footer-credit a:hover { opacity: 1; color: var(--neutral-0); }
+
 /* -------------------------------------------------------------- scroll top */
 .scroll-top {
   position: fixed;
@@ -1624,6 +1694,7 @@ html.js .reveal.is-visible {
   .footer-brand { flex-direction: column; text-align: center; }
   .footer-nav { flex-wrap: wrap; }
   .footer-bottom-inner { flex-direction: column; text-align: center; gap: 0; }
+  .footer-right { justify-content: center; margin-top: var(--sp-1); }
 }
 
 @media (max-width: 700px) {
