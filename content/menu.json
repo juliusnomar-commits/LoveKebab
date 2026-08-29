@@ -38,7 +38,8 @@
       "title": "Taschen und Wrap Gerichte",
       "jumpLabel": "Taschen & Wrap Gerichte",
       "photos": [
-        { "src": "images/menu-taschen-doner-v2.png", "alt": "Döner Wrap mit Fleisch und frischem Salat" }
+        { "src": "images/menu-taschen-doner-v2.png", "alt": "Döner Wrap mit Fleisch und frischem Salat" },
+        { "src": "images/menu-wraps-durum.png", "alt": "Dürüm Döner Wraps auf Holzbrett" }
       ],
       "items": [
         {
