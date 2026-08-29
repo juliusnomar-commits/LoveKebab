@@ -106,8 +106,9 @@
     "storyPhoto1": "images/story-carousel-1.jpg",
     "storyPhoto2": "images/story-carousel-2.jpg",
     "storyPhoto3": "images/story-carousel-3.jpg",
+    "storyPhoto4": "images/story-carousel-4.jpg",
     "wingsPhoto": "images/menu-wings.png",
-    "parmFriesPhoto": "images/menu-fries-parmesan.png",
+    "parmFriesPhoto": "images/menu-fries-parmesan-v2.png",
     "doenerPhoto": "images/menu-bowl-doner.png",
     "duerumPhoto": "images/menu-wraps-durum.png"
   }

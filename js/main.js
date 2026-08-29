@@ -554,7 +554,7 @@
     var photoGroup = section.querySelector('[data-menu-cat-photos]');
     if (photoGroup) {
       var photos = cat.photos || [];
-      photoGroup.className = 'menu-cat-photo-group' + (photos.length > 1 ? ' has-2' : '');
+      photoGroup.className = 'menu-cat-photo-group' + (photos.length > 1 ? ' has-' + photos.length : '');
       photoGroup.innerHTML = '';
       photos.forEach(function (photo) {
         var img = document.createElement('img');

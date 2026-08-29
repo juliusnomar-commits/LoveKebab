@@ -107,7 +107,9 @@
       "jumpLabel": "Bowl",
       "photos": [
         { "src": "images/menu-bowl-doner.png", "alt": "Döner Bowl mit Fleisch, Pommes und Salat" },
-        { "src": "images/menu-bowl-falafel.png", "alt": "Falafel Bowl mit Couscous und Pommes" }
+        { "src": "images/menu-bowl-falafel.png", "alt": "Falafel Bowl mit Couscous und Pommes" },
+        { "src": "images/menu-bowl-weisskaese.png", "alt": "Überbackene Weißkäse Bowl mit Gemüse und Perlnudeln" },
+        { "src": "images/menu-bowl-wings.png", "alt": "Chicken Wings Bowl mit Pommes und Peperoni" }
       ],
       "items": [
         {
@@ -193,13 +195,18 @@
       "title": "Teller / Lahmacun / Currywurst",
       "jumpLabel": "Teller / Lahmacun / Currywurst",
       "photos": [
-        { "src": "images/menu-teller-lahmacun.png", "alt": "Lahmacun mit Fleisch und Salat" }
+        { "src": "images/menu-teller-lahmacun.png", "alt": "Lahmacun mit Fleisch und Salat" },
+        { "src": "images/menu-teller-blaetterteigrollen.png", "alt": "Blätterteigrollen mit Dips" }
       ],
       "items": [
         {
           "name": "Dönerteller",
           "desc": "Mit Pommes oder Couscous, Salat und Sauce.",
           "price": "14,00 €"
+        },
+        {
+          "name": "Blätterteigrollen mit Dips",
+          "price": "7,00 €"
         },
         {
           "name": "Lahmacun mit Salat und Fleisch",
