@@ -12,7 +12,7 @@
       "title": "Wraps",
       "jumpLabel": "Wraps",
       "photos": [
-        { "src": "images/menu-wraps-durum.png", "alt": "Frischer Dürüm Wrap bei Love Kebab" }
+        { "src": "images/menu-taschen-pomm.png", "alt": "Frischer Dürüm Wrap bei Love Kebab" }
       ],
       "items": [
         {
@@ -38,8 +38,7 @@
       "title": "Taschen und Wrap Gerichte",
       "jumpLabel": "Taschen & Wrap Gerichte",
       "photos": [
-        { "src": "images/menu-taschen-doner-v2.png", "alt": "Döner Wrap mit Fleisch und frischem Salat" },
-        { "src": "images/menu-taschen-pomm.png", "alt": "Pomm Döner — Dönerfleisch auf Pommes im Wrap" }
+        { "src": "images/menu-taschen-doner-v2.png", "alt": "Döner Wrap mit Fleisch und frischem Salat" }
       ],
       "items": [
         {
