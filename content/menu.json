@@ -38,7 +38,7 @@
       "title": "Taschen und Wrap Gerichte",
       "jumpLabel": "Taschen & Wrap Gerichte",
       "photos": [
-        { "src": "images/menu-taschen-doner.png", "alt": "Döner Teller mit Fleisch, Pommes und Salat" },
+        { "src": "images/menu-taschen-doner-v2.png", "alt": "Döner Wrap mit Fleisch und frischem Salat" },
         { "src": "images/menu-taschen-pomm.png", "alt": "Pomm Döner — Dönerfleisch auf Pommes im Wrap" }
       ],
       "items": [
@@ -157,7 +157,7 @@
       "jumpLabel": "Love Friet",
       "photos": [
         { "src": "images/menu-fries-loaded.png", "alt": "Pommes Frites mit Currysauce und Röstzwiebeln" },
-        { "src": "images/menu-fries-parmesan.png", "alt": "Pommes Frites mit Parmesan und Trüffelmayo" }
+        { "src": "images/menu-fries-parmesan-v2.png", "alt": "Pommes Frites mit Parmesan und Trüffelmayo" }
       ],
       "items": [
         {
@@ -252,6 +252,9 @@
       "eyebrow": "Zum Abschluss",
       "title": "Dessert",
       "jumpLabel": "Dessert",
+      "photos": [
+        { "src": "images/menu-dessert-helva.png", "alt": "Mehl Helva mit Pistazien" }
+      ],
       "items": [
         { "name": "Mehl Helva", "price": "3,00 €" }
       ]
