@@ -3,7 +3,7 @@
     "pageTitle": "Speisekarte — Love Kebab",
     "pageDescription": "Die vollständige Speisekarte von Love Kebab in Essen-Rüttenscheid: Wraps, Taschen & Wrap Gerichte, Wings, Bowl, Love Friet, Teller, Lahmacun & Currywurst, Extra Topping, Saucen & Dips und Dessert.",
     "heroTitle": "Speisekarte",
-    "heroSub": "Alles frisch zubereitet — direkt vom Spieß oder aus der Fritteuse."
+    "heroSub": "(Alle Gerichte enthalten Geflügelfleisch)"
   },
   "categories": [
     {
@@ -157,7 +157,7 @@
       "jumpLabel": "Love Friet",
       "photos": [
         { "src": "images/menu-fries-loaded.png", "alt": "Pommes Frites mit Currysauce und Röstzwiebeln" },
-        { "src": "images/menu-fries-parmesan.png", "alt": "Pommes Frites mit Parmesan und Trüffelmajo" }
+        { "src": "images/menu-fries-parmesan.png", "alt": "Pommes Frites mit Parmesan und Trüffelmayo" }
       ],
       "items": [
         {
@@ -166,8 +166,8 @@
           "price": "4,00 €"
         },
         {
-          "name": "Pommes Frites mit Parmesan & Trüffelmajo",
-          "desc": "Pommes Frites mit Parmesan und Trüffelmajonnaise.",
+          "name": "Pommes Frites mit Parmesan & Trüffelmayo",
+          "desc": "Pommes Frites mit Parmesan und Trüffelmayonnaise.",
           "price": "7,50 €"
         },
         {
@@ -180,7 +180,7 @@
         "heading": "Wähle dein Topping:",
         "items": [
           { "name": "Parmesan", "price": "2,00 €" },
-          { "name": "Trüffelmajo", "price": "1,00 €" },
+          { "name": "Trüffelmayo", "price": "1,00 €" },
           { "name": "Ketchup", "price": "1,00 €" },
           { "name": "Majonnaise", "price": "1,00 €" },
           { "name": "Currysauce", "price": "1,00 €" }
@@ -203,7 +203,7 @@
         },
         {
           "name": "Lahmacun mit Salat und Fleisch",
-          "desc": "Lahmacun beladen mit extra Dönerfleisch und frischem Salat.",
+          "desc": "Lahmacun belegen mit extra Dönerfleisch und frischem Salat.",
           "price": "10,00 €"
         },
         {
@@ -253,7 +253,7 @@
       "title": "Dessert",
       "jumpLabel": "Dessert",
       "items": [
-        { "name": "Mehle Helva", "price": "3,00 €" }
+        { "name": "Mehl Helva", "price": "3,00 €" }
       ]
     }
   ]

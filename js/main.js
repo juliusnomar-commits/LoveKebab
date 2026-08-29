@@ -128,7 +128,7 @@
       en: 'The full Love Kebab menu in Essen-Rüttenscheid: wraps, pocket & wrap dishes, wings, bowls, Love Friet, Teller, Lahmacun & currywurst, extra toppings, sauces & dips and dessert.'
     },
     'menu.heroTitle': { de: 'Speisekarte', en: 'Menu' },
-    'menu.heroSub': { de: 'Alles frisch zubereitet — direkt vom Spieß oder aus dem Steinofen.', en: 'Everything made fresh — straight from the spit or the stone oven.' },
+    'menu.heroSub': { de: '(Alle Gerichte enthalten Geflügelfleisch)', en: '(All dishes are made with poultry / chicken meat)' },
 
     'menu.jump.wraps': { de: 'Wraps', en: 'Wraps' },
     'menu.jump.taschenWrapGerichte': { de: 'Taschen & Wrap Gerichte', en: 'Taschen & Wrap Gerichte' },
