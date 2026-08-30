@@ -1270,7 +1270,7 @@ html.js .hero-image-wrap { opacity: 0; animation: heroImageIn 1.1s var(--ease-ex
     gap: clamp(var(--sp-2), 2.5vw, var(--sp-3));
   }
   .values-right-col .value-card--photo-xs { flex: 1 1 0; }
-  .values-right-col .value-card--photo-sm { flex: 2 1 0; }
+  .values-right-col .value-card--photo-sm { flex: 1 1 0; }
 }
 
 .values-arrow {
@@ -1417,9 +1417,9 @@ html.js .hero-image-wrap { opacity: 0; animation: heroImageIn 1.1s var(--ease-ex
   align-items: center;
   height: 100%;
   width: max-content;
-  gap: clamp(1.25rem, 3.5vw, 2rem);
+  gap: calc(clamp(1.25rem, 3.5vw, 2rem) + 20px);
   padding-inline: clamp(var(--sp-2), 2.5vw, var(--sp-3));
-  animation: valuesSlideRight 22s linear infinite;
+  animation: valuesSlideRight 12s linear infinite;
 }
 .value-card-slideshow-img {
   --arc-amp: 14px;
