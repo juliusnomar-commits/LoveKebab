@@ -1470,7 +1470,14 @@ html.js .hero-image-wrap { opacity: 0; animation: heroImageIn 1.1s var(--ease-ex
 .value-card-fries-track {
   display: flex;
   width: max-content;
-  animation: marqueeScroll 16s linear infinite;
+  /* same px/s pace on every card — fries sets the 16s baseline pace;
+     wings/sauces get their own --duration (set inline per card) worked
+     out from their actual (shorter/longer) text so all three scroll at
+     the same visual speed instead of the same loop time */
+  animation-name: marqueeScroll;
+  animation-duration: var(--duration, 16s);
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
 }
 .value-card-fries-group {
   display: flex;
@@ -1483,7 +1490,7 @@ html.js .hero-image-wrap { opacity: 0; animation: heroImageIn 1.1s var(--ease-ex
   font-family: var(--font-mono);
   font-size: var(--fs-xs);
   line-height: 1.5;
-  color: var(--text-muted-dark);
+  color: var(--accent-400);
   white-space: nowrap;
 }
 .value-card-fries-group i {
