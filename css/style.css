@@ -1262,6 +1262,12 @@ html.js .hero-image-wrap { opacity: 0; animation: heroImageIn 1.1s var(--ease-ex
 }
 
 .value-card {
+  /* grid/flex items default to min-width/height:auto, which resolves to
+     their content's min-content size — for a card containing a large
+     intrinsic image that can blow the track way past its fr share and
+     break the whole grid's width. Force them back down to their track. */
+  min-width: 0;
+  min-height: 0;
   background: var(--neutral-0);
   border: 1px solid var(--line-light);
   border-radius: var(--radius-lg);
@@ -1335,6 +1341,7 @@ html.js .hero-image-wrap { opacity: 0; animation: heroImageIn 1.1s var(--ease-ex
 .value-card-img {
   flex: 1 1 auto;
   width: 100%;
+  min-width: 0;
   min-height: 0;
   object-fit: contain;
   object-position: center 60%;
@@ -1348,6 +1355,7 @@ html.js .hero-image-wrap { opacity: 0; animation: heroImageIn 1.1s var(--ease-ex
 .value-card-rotator {
   position: relative;
   flex: 1 1 auto;
+  min-width: 0;
   min-height: 120px;
   padding: clamp(var(--sp-2), 2.5vw, var(--sp-3)) clamp(var(--sp-3), 3vw, var(--sp-4)) 0;
 }
