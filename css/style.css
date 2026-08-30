@@ -1270,7 +1270,7 @@ html.js .hero-image-wrap { opacity: 0; animation: heroImageIn 1.1s var(--ease-ex
     gap: clamp(var(--sp-2), 2.5vw, var(--sp-3));
   }
   .values-right-col .value-card--photo-xs { flex: 1 1 0; }
-  .values-right-col .value-card--photo-sm { flex: 1 1 0; }
+  .values-right-col .value-card--photo-sm { flex: 2 1 0; }
 }
 
 .values-arrow {
@@ -1369,43 +1369,70 @@ html.js .hero-image-wrap { opacity: 0; animation: heroImageIn 1.1s var(--ease-ex
 }
 .value-card--photo:hover .value-card-img { transform: scale(1.04); }
 
-/* wings/sauces: a continuously-spinning 3D ring of real product shots,
-   same flex slot as the fries img above. Tiles sit an even 20px apart
-   around a circle (radius solved from tile size + gap + count so the
-   spacing holds regardless of how many images are in the ring — 3 for
-   wings, 6 for sauces, set via --n/--i inline on the ring/images) and the
-   whole ring rotates on its Y axis, slower the more tiles it carries. */
+/* wings: rotating crossfade of real product shots, same flex slot as the
+   fries img above (grows to fill the space above the copy block). */
 .value-card-rotator {
   position: relative;
   flex: 1 1 auto;
   min-width: 0;
-  min-height: 90px;
+  min-height: 120px;
   padding: clamp(var(--sp-2), 2.5vw, var(--sp-3)) clamp(var(--sp-3), 3vw, var(--sp-4)) 0;
-  perspective: 640px;
-}
-.value-card-rotator-ring {
-  --tile: clamp(48px, 8vw, 76px);
-  --gap: 20px;
-  --radius: calc((var(--tile) + var(--gap)) / (2 * tan(180deg / var(--n))));
-  position: absolute;
-  inset: clamp(var(--sp-2), 2.5vw, var(--sp-3)) clamp(var(--sp-3), 3vw, var(--sp-4)) 0;
-  transform-style: preserve-3d;
-  animation: valuesRingSpin linear infinite;
-  animation-duration: calc(var(--n) * 7s);
 }
 .value-card-rotator-img {
   position: absolute;
-  top: 50%;
-  left: 50%;
-  width: var(--tile);
-  height: var(--tile);
-  margin: calc(var(--tile) / -2) 0 0 calc(var(--tile) / -2);
+  inset: clamp(var(--sp-2), 2.5vw, var(--sp-3)) clamp(var(--sp-3), 3vw, var(--sp-4)) 0;
+  width: calc(100% - 2 * clamp(var(--sp-3), 3vw, var(--sp-4)));
+  height: calc(100% - clamp(var(--sp-2), 2.5vw, var(--sp-3)));
   object-fit: contain;
-  transform: rotateY(calc(360deg / var(--n) * var(--i))) translateZ(var(--radius));
+  object-position: center bottom;
+  opacity: 0;
 }
-@keyframes valuesRingSpin {
-  from { transform: rotateY(0deg); }
-  to   { transform: rotateY(-360deg); }
+.value-card--photo-sm .value-card-rotator-img { animation: valuesRotate3 9s infinite; }
+.value-card--photo-sm .value-card-rotator-img:nth-child(1) { animation-delay: 0s; }
+.value-card--photo-sm .value-card-rotator-img:nth-child(2) { animation-delay: 3s; }
+.value-card--photo-sm .value-card-rotator-img:nth-child(3) { animation-delay: 6s; }
+@keyframes valuesRotate3 {
+  0%, 100% { opacity: 0; }
+  4% { opacity: 1; }
+  29% { opacity: 1; }
+  33% { opacity: 0; }
+}
+
+/* sauces: curved sliding showcase of menu photos — bigger tiles than the
+   wings rotator, running the full width of the card and continuously
+   sliding off toward the right (mirrors the marqueeScroll mechanic used
+   elsewhere, just reversed), each tile riding a shallow arc via --i/--n
+   so the strip reads as a gentle curve rather than a flat row. */
+.value-card-slideshow {
+  position: relative;
+  flex: 1 1 auto;
+  min-width: 0;
+  min-height: 90px;
+  overflow: hidden;
+  -webkit-mask-image: linear-gradient(90deg, transparent, #000 6%, #000 94%, transparent);
+  mask-image: linear-gradient(90deg, transparent, #000 6%, #000 94%, transparent);
+}
+.value-card-slideshow-track {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  width: max-content;
+  gap: clamp(1.25rem, 3.5vw, 2rem);
+  padding-inline: clamp(var(--sp-2), 2.5vw, var(--sp-3));
+  animation: valuesSlideRight 22s linear infinite;
+}
+.value-card-slideshow-img {
+  --arc-amp: 14px;
+  flex-shrink: 0;
+  height: clamp(64px, 12vw, 96px);
+  width: auto;
+  max-width: 120px;
+  object-fit: contain;
+  transform: translateY(calc(-1 * var(--arc-amp) * sin(180deg * var(--i) / (var(--n) - 1))));
+}
+@keyframes valuesSlideRight {
+  from { transform: translateX(-50%); }
+  to   { transform: translateX(0%); }
 }
 .value-card-photo-content {
   flex: 0 0 auto;
@@ -1760,7 +1787,9 @@ html.js .reveal.is-visible {
   }
   .marquee-track { animation: none !important; }
   .value-card-fries-track { animation: none !important; }
-  .value-card-rotator-ring { animation: none !important; }
+  .value-card-rotator-img { animation: none !important; opacity: 0 !important; }
+  .value-card-rotator-img:first-child { opacity: 1 !important; }
+  .value-card-slideshow-track { animation: none !important; }
   .story-carousel-track { animation: none !important; }
   html.js .reveal { opacity: 1; transform: none; transition: none; }
   *, *::before, *::after {
