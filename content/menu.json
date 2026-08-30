@@ -233,9 +233,6 @@
       "eyebrow": "Extra Topping",
       "title": "Extra Topping",
       "jumpLabel": "Extra Topping",
-      "photos": [
-        { "src": "images/menu-extra-grilled-veg.png", "alt": "Gegrillte Gemüse — Zucchini, Paprika, Aubergine" }
-      ],
       "items": [
         { "name": "Gegrillte Gemüse (Zucchini, Paprika, Aubergine)", "price": "1,50 €" }
       ]
