@@ -184,7 +184,7 @@
           { "name": "Parmesan", "price": "2,00 €" },
           { "name": "Trüffelmayo", "price": "1,00 €" },
           { "name": "Ketchup", "price": "1,00 €" },
-          { "name": "Majonnaise", "price": "1,00 €" },
+          { "name": "Mayonnaise", "price": "1,00 €" },
           { "name": "Currysauce", "price": "1,00 €" }
         ]
       }
