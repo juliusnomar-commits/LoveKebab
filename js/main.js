@@ -206,10 +206,18 @@
   }
 
   var currentLang = getStoredLang();
+  // menu.json data, cached after the first fetch so language toggles can
+  // re-render the priced menu grid without refetching — see applyLang()
+  var cachedMenuData = null;
 
   function applyLang(lang) {
     currentLang = lang;
     document.documentElement.lang = lang;
+
+    // re-render the priced menu grid (menu.html) in the new language —
+    // item name/desc live in content/menu.json, not the translations
+    // dict above, so a plain data-i18n pass can't reach them
+    if (cachedMenuData) renderMenu(cachedMenuData);
 
     document.querySelectorAll('[data-i18n]').forEach(function (el) {
       var entry = translations[el.getAttribute('data-i18n')];
@@ -546,6 +554,15 @@
      right after this — and any later language toggle — renders the
      CMS-edited value instead of clobbering it back to the hardcoded
      default. */
+  /* content/menu.json items carry an optional "<field>En" (e.g. nameEn,
+     descEn) alongside the German default; falls back to the German field
+     when no English override is set (or on any other language). */
+  function itemLangField(item, field) {
+    var enField = field + 'En';
+    if (currentLang === 'en' && item[enField] != null) return item[enField];
+    return item[field] || '';
+  }
+
   function renderMenuCategory(cat) {
     var section = document.getElementById(cat.id);
     if (!section) return;
@@ -589,13 +606,15 @@
       var priceHtml = item.askInStore
         ? '<span class="list-row-price tbd">' + translations['menu.askInStore'][currentLang] + '</span>'
         : '<span class="list-row-price">' + (item.price || '') + '</span>';
+      var name = itemLangField(item, 'name');
+      var desc = itemLangField(item, 'desc');
       row.innerHTML =
         '<div class="list-row-line">' +
-          '<span class="list-row-name">' + item.name + '</span>' +
+          '<span class="list-row-name">' + name + '</span>' +
           '<span class="list-row-leader" aria-hidden="true"></span>' +
           priceHtml +
         '</div>' +
-        (item.desc ? '<p class="list-row-desc">' + item.desc + '</p>' : '');
+        (desc ? '<p class="list-row-desc">' + desc + '</p>' : '');
       container.appendChild(row);
     });
 
@@ -613,7 +632,7 @@
         var rowsHtml = cat.sublist.items.map(function (item) {
           var priceHtml = item.price ? '<span class="list-row-price">' + item.price + '</span>' : '';
           return '<div class="list-row">' +
-            '<span class="list-row-name">' + item.name + '</span>' +
+            '<span class="list-row-name">' + itemLangField(item, 'name') + '</span>' +
             priceHtml +
           '</div>';
         }).join('');
@@ -649,9 +668,12 @@
         if (menu) {
           // top-level scalars (pageTitle, heroTitle, ...) flow through the
           // same key-matching merge as site.json; `categories` is an array
-          // so flattenInto leaves it alone and renderMenu handles it below
+          // so flattenInto leaves it alone and renderMenu handles it below.
+          // The actual grid render happens inside applyLang() (called by
+          // init() right after loadContent resolves) so it already knows
+          // the active language, and can re-run on every later toggle too.
           applyTextOverrides(menu);
-          renderMenu(menu);
+          cachedMenuData = menu;
         }
       });
   }

@@ -18,16 +18,20 @@
         {
           "name": "Hatay Original Dürüm Classic (L)",
           "desc": "Gurke, Zwiebel, Pommes, Mayonnaise, hausgemachte Soße und Knoblauchsoße.",
+          "descEn": "Cucumber, onion, fries, mayonnaise, homemade sauce and garlic sauce.",
           "price": "9,00 €"
         },
         {
           "name": "Hatay Original Dürüm Classic (M)",
           "desc": "Gurke, Zwiebel, Pommes, Mayonnaise, hausgemachte Soße und Knoblauchsoße.",
+          "descEn": "Cucumber, onion, fries, mayonnaise, homemade sauce and garlic sauce.",
           "price": "7,00 €"
         },
         {
           "name": "Hatay Original Classic mit Parmesan",
+          "nameEn": "Hatay Original Classic with Parmesan",
           "desc": "Unser Hatay Original Classic, verfeinert mit Parmesan Käse.",
+          "descEn": "Our Hatay Original Classic, finished with parmesan cheese.",
           "price": "11,00 €"
         }
       ]
@@ -44,37 +48,48 @@
       "items": [
         {
           "name": "Döner Tasche",
+          "nameEn": "Döner Pocket",
           "desc": "Döner Tasche mit Salat und Sauce.",
+          "descEn": "Döner pocket with salad and sauce.",
           "price": "8,00 €"
         },
         {
           "name": "Dürüm Döner",
           "desc": "Dürüm Döner mit Salat und Sauce.",
+          "descEn": "Dürüm döner with salad and sauce.",
           "price": "9,00 €"
         },
         {
           "name": "Falafel Tasche",
+          "nameEn": "Falafel Pocket",
           "desc": "Falafel Tasche mit Salat und Sauce.",
+          "descEn": "Falafel pocket with salad and sauce.",
           "price": "7,00 €"
         },
         {
           "name": "Falafel Dürüm",
           "desc": "Falafel Dürüm mit Salat und Sauce.",
+          "descEn": "Falafel dürüm with salad and sauce.",
           "price": "7,50 €"
         },
         {
           "name": "Überbackene Weißkäse Tasche",
+          "nameEn": "Baked White Cheese Pocket",
           "desc": "Überbackene Weißkäse Tasche mit Salat und Sauce.",
+          "descEn": "Baked white cheese pocket with salad and sauce.",
           "price": "7,50 €"
         },
         {
           "name": "Gegrillte Gemüse Tasche",
+          "nameEn": "Grilled Vegetable Pocket",
           "desc": "Gegrillte Gemüse Tasche mit Salat und Sauce.",
+          "descEn": "Grilled vegetable pocket with salad and sauce.",
           "price": "7,00 €"
         },
         {
           "name": "Pomm Döner",
           "desc": "Dönerfleisch auf knusprigen Pommes.",
+          "descEn": "Döner meat on crispy fries.",
           "price": "8,00 €"
         }
       ]
@@ -91,11 +106,13 @@
         {
           "name": "Classic Flavour",
           "desc": "6 Chicken Wings Classic Flavour, mit Krautsalat und einem Dip.",
+          "descEn": "6 chicken wings, classic flavour, with coleslaw and a dip.",
           "price": "7,00 €"
         },
         {
           "name": "Parmesan Wings Flavour",
           "desc": "6 Chicken Wings Parmesan Flavour, mit Krautsalat und Dip.",
+          "descEn": "6 chicken wings, parmesan flavour, with coleslaw and dip.",
           "price": "9,00 €"
         }
       ]
@@ -115,40 +132,48 @@
         {
           "name": "Döner Bowl",
           "desc": "Gemischter Salat, Pommes und Sauce.",
+          "descEn": "Mixed salad, fries and sauce.",
           "price": "12,00 €"
         },
         {
           "name": "Falafel Bowl",
           "desc": "Gemischter Salat, Perlnudeln, Pommes und Sauce.",
+          "descEn": "Mixed salad, pearl couscous, fries and sauce.",
           "price": "12,00 €"
         },
         {
           "name": "Überbackene Weißkäse Bowl",
+          "nameEn": "Baked White Cheese Bowl",
           "desc": "Gemischter Salat, gebratenes Gemüse, gerollte Blätterteigrolle und Perlnudeln.",
+          "descEn": "Mixed salad, sautéed vegetables, rolled filo pastry and pearl couscous.",
           "price": "12,00 €"
         },
         {
           "name": "Chicken Wings Bowl",
           "desc": "Krautsalat, Pommes und eingelegte Peperoni.",
+          "descEn": "Coleslaw, fries and pickled peppers.",
           "price": "12,00 €"
         },
         {
           "name": "Love Bowl Power",
           "desc": "Überraschung — lass dich von unserer Tages-Bowl verwöhnen.",
+          "descEn": "A surprise — let our bowl of the day treat you.",
           "price": "13,00 €"
         },
         {
           "name": "Gemischter Salat XL",
+          "nameEn": "Mixed Salad XL",
           "desc": "Unser gemischter Salat in der großen Portion.",
+          "descEn": "Our mixed salad in the large portion.",
           "price": "8,00 €"
         }
       ],
       "sublist": {
         "heading": "Bowl-Saucen:",
         "items": [
-          { "name": "Granatapfel-Essig-Öl" },
-          { "name": "Joghurt-Dressing" },
-          { "name": "Honey Cocktailsauce" }
+          { "name": "Granatapfel-Essig-Öl", "nameEn": "Pomegranate Vinegar Oil" },
+          { "name": "Joghurt-Dressing", "nameEn": "Yogurt Dressing" },
+          { "name": "Honey Cocktailsauce", "nameEn": "Honey Cocktail Sauce" }
         ]
       }
     },
@@ -164,17 +189,23 @@
       "items": [
         {
           "name": "Pommes Frites (Large)",
+          "nameEn": "Fries (Large)",
           "desc": "Unsere Pommes Frites in der großen Portion.",
+          "descEn": "Our fries in the large portion.",
           "price": "4,00 €"
         },
         {
           "name": "Pommes Frites mit Parmesan & Trüffelmayo",
+          "nameEn": "Fries with Parmesan & Truffle Mayo",
           "desc": "Pommes Frites mit Parmesan und Trüffelmayonnaise.",
+          "descEn": "Fries with parmesan and truffle mayonnaise.",
           "price": "7,50 €"
         },
         {
           "name": "Pommes Frites mit Majo, Currysauce & Röstzwiebeln",
+          "nameEn": "Fries with Mayo, Curry Sauce & Crispy Onions",
           "desc": "Pommes Frites mit Mayonnaise, Currysauce und knusprigen Röstzwiebeln.",
+          "descEn": "Fries with mayonnaise, curry sauce and crispy fried onions.",
           "price": "7,50 €"
         }
       ],
@@ -182,10 +213,10 @@
         "heading": "Wähle dein Topping:",
         "items": [
           { "name": "Parmesan", "price": "2,00 €" },
-          { "name": "Trüffelmayo", "price": "1,00 €" },
+          { "name": "Trüffelmayo", "nameEn": "Truffle Mayo", "price": "1,00 €" },
           { "name": "Ketchup", "price": "1,00 €" },
           { "name": "Mayonnaise", "price": "1,00 €" },
-          { "name": "Currysauce", "price": "1,00 €" }
+          { "name": "Currysauce", "nameEn": "Curry Sauce", "price": "1,00 €" }
         ]
       }
     },
@@ -201,21 +232,28 @@
       "items": [
         {
           "name": "Dönerteller",
+          "nameEn": "Döner Plate",
           "desc": "Mit Pommes oder Couscous, Salat und Sauce.",
+          "descEn": "With fries or couscous, salad and sauce.",
           "price": "14,00 €"
         },
         {
           "name": "Blätterteigrollen mit Dips",
+          "nameEn": "Filo Pastry Rolls with Dips",
           "price": "7,00 €"
         },
         {
           "name": "Lahmacun mit Salat und Fleisch",
+          "nameEn": "Lahmacun with Salad and Meat",
           "desc": "Lahmacun belegen mit extra Dönerfleisch und frischem Salat.",
+          "descEn": "Lahmacun topped with extra döner meat and fresh salad.",
           "price": "10,00 €"
         },
         {
           "name": "Lahmacun mit Salat und Sauce",
+          "nameEn": "Lahmacun with Salad and Sauce",
           "desc": "Klassischer Lahmacun gerollt mit frischem Salat und Sauce.",
+          "descEn": "Classic lahmacun rolled with fresh salad and sauce.",
           "price": "8,00 €"
         },
         {
@@ -224,6 +262,7 @@
         },
         {
           "name": "Currywurst mit Pommes Frites",
+          "nameEn": "Currywurst with Fries",
           "price": "8,00 €"
         }
       ]
@@ -234,7 +273,11 @@
       "title": "Extra Topping",
       "jumpLabel": "Extra Topping",
       "items": [
-        { "name": "Gegrillte Gemüse (Zucchini, Paprika, Aubergine)", "price": "1,50 €" }
+        {
+          "name": "Gegrillte Gemüse (Zucchini, Paprika, Aubergine)",
+          "nameEn": "Grilled Vegetables (Zucchini, Bell Pepper, Eggplant)",
+          "price": "1,50 €"
+        }
       ]
     },
     {
@@ -243,12 +286,12 @@
       "title": "Saucen & Dips",
       "jumpLabel": "Saucen & Dips",
       "items": [
-        { "name": "🌶️🌶️ Scharfsauce", "price": "1,00 €" },
-        { "name": "🧄 Knoblauch", "price": "1,00 €" },
+        { "name": "🌶️🌶️ Scharfsauce", "nameEn": "🌶️🌶️ Hot Sauce", "price": "1,00 €" },
+        { "name": "🧄 Knoblauch", "nameEn": "🧄 Garlic", "price": "1,00 €" },
         { "name": "🌶️ Sweet Chilli", "price": "1,00 €" },
-        { "name": "🍯 Honey Cocktailsauce", "price": "1,00 €" },
-        { "name": "Joppiesauce", "price": "1,00 €" },
-        { "name": "🥣 Joghurtsauce", "price": "1,00 €" }
+        { "name": "🍯 Honey Cocktailsauce", "nameEn": "🍯 Honey Cocktail Sauce", "price": "1,00 €" },
+        { "name": "Joppiesauce", "nameEn": "Joppie Sauce", "price": "1,00 €" },
+        { "name": "🥣 Joghurtsauce", "nameEn": "🥣 Yogurt Sauce", "price": "1,00 €" }
       ]
     },
     {

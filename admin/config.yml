@@ -223,8 +223,10 @@ collections:
                 widget: "list"
                 summary: "{{fields.name}}"
                 fields:
-                  - { label: "Name", name: "name", widget: "string" }
-                  - { label: "Beschreibung", name: "desc", widget: "string", required: false }
+                  - { label: "Name (Deutsch)", name: "name", widget: "string" }
+                  - { label: "Name (Englisch)", name: "nameEn", widget: "string", required: false, hint: "Leer lassen, um den deutschen Namen auch auf Englisch anzuzeigen." }
+                  - { label: "Beschreibung (Deutsch)", name: "desc", widget: "string", required: false }
+                  - { label: "Beschreibung (Englisch)", name: "descEn", widget: "string", required: false, hint: "Leer lassen, um die deutsche Beschreibung auch auf Englisch anzuzeigen." }
                   - { label: "Preis", name: "price", widget: "string", required: false, hint: "z. B. 8,00 €. Leer lassen, wenn unten „Bitte im Laden fragen“ aktiviert ist." }
                   - { label: "„Bitte im Laden fragen“ statt Preis anzeigen", name: "askInStore", widget: "boolean", required: false, default: false }
               - label: "Zusatz-Preisliste (optional, z. B. „Wähle dein Topping“ unter Love Friet)"
@@ -239,5 +241,6 @@ collections:
                     widget: "list"
                     summary: "{{fields.name}}"
                     fields:
-                      - { label: "Name", name: "name", widget: "string" }
+                      - { label: "Name (Deutsch)", name: "name", widget: "string" }
+                      - { label: "Name (Englisch)", name: "nameEn", widget: "string", required: false, hint: "Leer lassen, um den deutschen Namen auch auf Englisch anzuzeigen." }
                       - { label: "Preis", name: "price", widget: "string", required: false, hint: "Leer lassen, wenn kein Preis angezeigt werden soll (z. B. bei den Bowl-Saucen)." }
