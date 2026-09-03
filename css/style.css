@@ -1170,7 +1170,7 @@ html.js .hero-image-wrap { opacity: 0; animation: heroImageIn 1.1s var(--ease-ex
   gap: clamp(0.75rem, 3vw, 1.5rem);
 }
 .menu-cat-photo-group.has-3 img { width: auto; max-width: 220px; max-height: 260px; margin-inline: auto; }
-.menu-cat-photo-group.has-3 img:not(:last-child) { transform: translateY(20px); }
+.menu-cat-photo-group.has-3 img:not(:last-child) { transform: translateY(40px); }
 .menu-cat-photo-group.has-3 img:last-child {
   grid-column: 1 / -1;
   max-width: 340px;
