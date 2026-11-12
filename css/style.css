@@ -836,8 +836,10 @@ html.js .hero-image-wrap { opacity: 0; animation: heroImageIn 1.1s var(--ease-ex
   display: block;
   width: 100%;
   height: 100%;
-  object-fit: contain;
+  object-fit: cover;
 }
+.story-carousel-item--day img { object-position: center top; }
+.story-carousel-item--evening img { object-position: center 44%; }
 
 @keyframes story-wheel-scroll {
   to { transform: translateX(-50%); }
