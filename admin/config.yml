@@ -142,7 +142,7 @@ collections:
               - { label: "Donnerstag", name: "thu", widget: "string" }
               - { label: "Freitag", name: "fri", widget: "string" }
               - { label: "Samstag", name: "sat", widget: "string" }
-              - { label: "Sonntag (Text statt Uhrzeit)", name: "closed", widget: "string" }
+              - { label: "Sonntag", name: "sun", widget: "string" }
           - label: "Wochentag-Namen (Öffnungszeiten-Tabelle)"
             name: "days"
             widget: "object"
@@ -179,6 +179,8 @@ collections:
               - { label: "Foto-Karussell bei „Unsere Geschichte“ — Bild 1", name: "storyPhoto1", widget: "image" }
               - { label: "Foto-Karussell bei „Unsere Geschichte“ — Bild 2", name: "storyPhoto2", widget: "image" }
               - { label: "Foto-Karussell bei „Unsere Geschichte“ — Bild 3", name: "storyPhoto3", widget: "image" }
+              - { label: "Foto-Karussell bei „Unsere Geschichte“ — Bild 4", name: "storyPhoto4", widget: "image" }
+              - { label: "Foto-Karussell bei „Unsere Geschichte“ — Bild 5", name: "storyPhoto5", widget: "image" }
               - { label: "Foto: Wings", name: "wingsPhoto", widget: "image" }
               - { label: "Foto: Parmesan Fries", name: "parmFriesPhoto", widget: "image" }
               - { label: "Foto: Döner Kebab", name: "doenerPhoto", widget: "image" }

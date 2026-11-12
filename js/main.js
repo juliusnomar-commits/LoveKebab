@@ -193,6 +193,7 @@
     'hours.thu': { de: '11:00' + HAIRSP + '–' + HAIRSP + '22:00', en: '11:00' + HAIRSP + '–' + HAIRSP + '22:00' },
     'hours.fri': { de: '11:00' + HAIRSP + '–' + HAIRSP + '05:00', en: '11:00' + HAIRSP + '–' + HAIRSP + '05:00' },
     'hours.sat': { de: '11:00' + HAIRSP + '–' + HAIRSP + '05:00', en: '11:00' + HAIRSP + '–' + HAIRSP + '05:00' },
+    'hours.sun': { de: '12:00' + HAIRSP + '–' + HAIRSP + '21:00', en: '12:00' + HAIRSP + '–' + HAIRSP + '21:00' },
 
     'footer.legal': { de: 'Love Kebab · Pamukkale Kebap Haus<br>Essen-Rüttenscheid', en: 'Love Kebab · Pamukkale Kebap Haus<br>Essen-Rüttenscheid' }
   };

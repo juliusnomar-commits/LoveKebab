@@ -12,7 +12,10 @@
       "title": "Wraps",
       "jumpLabel": "Wraps",
       "photos": [
-        { "src": "images/menu-taschen-pomm.png", "alt": "Frischer Dürüm Wrap bei Love Kebab" }
+        {
+          "src": "images/menu-taschen-pomm.png",
+          "alt": "Frischer Dürüm Wrap bei Love Kebab"
+        }
       ],
       "items": [
         {
@@ -42,8 +45,14 @@
       "title": "Taschen und Wrap Gerichte",
       "jumpLabel": "Taschen & Wrap Gerichte",
       "photos": [
-        { "src": "images/menu-taschen-doner-v2.png", "alt": "Döner Wrap mit Fleisch und frischem Salat" },
-        { "src": "images/menu-wraps-durum.png", "alt": "Dürüm Döner Wraps auf Holzbrett" }
+        {
+          "src": "images/menu-taschen-doner-v2.png",
+          "alt": "Döner Wrap mit Fleisch und frischem Salat"
+        },
+        {
+          "src": "images/menu-wraps-durum.png",
+          "alt": "Dürüm Döner Wraps auf Holzbrett"
+        }
       ],
       "items": [
         {
@@ -100,7 +109,10 @@
       "title": "Chicken Wings",
       "jumpLabel": "Wings",
       "photos": [
-        { "src": "images/menu-wings.png", "alt": "Chicken Wings mit Parmesan" }
+        {
+          "src": "images/menu-wings.png",
+          "alt": "Chicken Wings mit Parmesan"
+        }
       ],
       "items": [
         {
@@ -123,10 +135,22 @@
       "title": "Bowl",
       "jumpLabel": "Bowl",
       "photos": [
-        { "src": "images/menu-bowl-doner.png", "alt": "Döner Bowl mit Fleisch, Pommes und Salat" },
-        { "src": "images/menu-bowl-falafel.png", "alt": "Falafel Bowl mit Couscous und Pommes" },
-        { "src": "images/menu-bowl-weisskaese.png", "alt": "Überbackene Weißkäse Bowl mit Gemüse und Perlnudeln" },
-        { "src": "images/menu-bowl-wings.png", "alt": "Chicken Wings Bowl mit Pommes und Peperoni" }
+        {
+          "src": "images/menu-bowl-doner.png",
+          "alt": "Döner Bowl mit Fleisch, Pommes und Salat"
+        },
+        {
+          "src": "images/menu-bowl-falafel.png",
+          "alt": "Falafel Bowl mit Couscous und Pommes"
+        },
+        {
+          "src": "images/menu-bowl-weisskaese.png",
+          "alt": "Überbackene Weißkäse Bowl mit Gemüse und Perlnudeln"
+        },
+        {
+          "src": "images/menu-bowl-wings.png",
+          "alt": "Chicken Wings Bowl mit Pommes und Peperoni"
+        }
       ],
       "items": [
         {
@@ -171,9 +195,18 @@
       "sublist": {
         "heading": "Bowl-Saucen:",
         "items": [
-          { "name": "Granatapfel-Essig-Öl", "nameEn": "Pomegranate Vinegar Oil" },
-          { "name": "Joghurt-Dressing", "nameEn": "Yogurt Dressing" },
-          { "name": "Honey Cocktailsauce", "nameEn": "Honey Cocktail Sauce" }
+          {
+            "name": "Granatapfel-Essig-Öl",
+            "nameEn": "Pomegranate Vinegar Oil"
+          },
+          {
+            "name": "Joghurt-Dressing",
+            "nameEn": "Yogurt Dressing"
+          },
+          {
+            "name": "Honey Cocktailsauce",
+            "nameEn": "Honey Cocktail Sauce"
+          }
         ]
       }
     },
@@ -183,8 +216,14 @@
       "title": "Love Friet",
       "jumpLabel": "Love Friet",
       "photos": [
-        { "src": "images/menu-fries-loaded.png", "alt": "Pommes Frites mit Currysauce und Röstzwiebeln" },
-        { "src": "images/menu-fries-parmesan-v2.png", "alt": "Pommes Frites mit Parmesan und Trüffelmayo" }
+        {
+          "src": "images/menu-fries-loaded.png",
+          "alt": "Pommes Frites mit Currysauce und Röstzwiebeln"
+        },
+        {
+          "src": "images/menu-fries-parmesan-v2.png",
+          "alt": "Pommes Frites mit Parmesan und Trüffelmayo"
+        }
       ],
       "items": [
         {
@@ -212,11 +251,28 @@
       "sublist": {
         "heading": "Wähle dein Topping:",
         "items": [
-          { "name": "Parmesan", "price": "2,00 €" },
-          { "name": "Trüffelmayo", "nameEn": "Truffle Mayo", "price": "1,00 €" },
-          { "name": "Ketchup", "price": "1,00 €" },
-          { "name": "Mayonnaise", "price": "1,00 €" },
-          { "name": "Currysauce", "nameEn": "Curry Sauce", "price": "1,00 €" }
+          {
+            "name": "Parmesan",
+            "price": "2,00 €"
+          },
+          {
+            "name": "Trüffelmayo",
+            "nameEn": "Truffle Mayo",
+            "price": "1,00 €"
+          },
+          {
+            "name": "Ketchup",
+            "price": "1,00 €"
+          },
+          {
+            "name": "Mayonnaise",
+            "price": "1,00 €"
+          },
+          {
+            "name": "Currysauce",
+            "nameEn": "Curry Sauce",
+            "price": "1,00 €"
+          }
         ]
       }
     },
@@ -226,9 +282,18 @@
       "title": "Teller / Lahmacun / Currywurst",
       "jumpLabel": "Teller / Lahmacun / Currywurst",
       "photos": [
-        { "src": "images/menu-teller-lahmacun.png", "alt": "Lahmacun mit Fleisch und Salat" },
-        { "src": "images/menu-teller-blaetterteigrollen.png", "alt": "Blätterteigrollen mit Dips" },
-        { "src": "images/menu-teller-doenerteller.png", "alt": "Dönerteller mit Pommes und Salat" }
+        {
+          "src": "images/menu-teller-lahmacun.png",
+          "alt": "Lahmacun mit Fleisch und Salat"
+        },
+        {
+          "src": "images/menu-teller-blaetterteigrollen.png",
+          "alt": "Blätterteigrollen mit Dips"
+        },
+        {
+          "src": "images/menu-teller-doenerteller.png",
+          "alt": "Dönerteller mit Pommes und Salat"
+        }
       ],
       "items": [
         {
@@ -287,24 +352,35 @@
       "title": "Saucen & Dips",
       "jumpLabel": "Saucen & Dips",
       "items": [
-        { "name": "🌶️🌶️ Scharfsauce", "nameEn": "🌶️🌶️ Hot Sauce", "price": "1,00 €" },
-        { "name": "🧄 Knoblauch", "nameEn": "🧄 Garlic", "price": "1,00 €" },
-        { "name": "🌶️ Sweet Chilli", "price": "1,00 €" },
-        { "name": "🍯 Honey Cocktailsauce", "nameEn": "🍯 Honey Cocktail Sauce", "price": "1,00 €" },
-        { "name": "Joppiesauce", "nameEn": "Joppie Sauce", "price": "1,00 €" },
-        { "name": "🥣 Joghurtsauce", "nameEn": "🥣 Yogurt Sauce", "price": "1,00 €" }
-      ]
-    },
-    {
-      "id": "dessert",
-      "eyebrow": "Zum Abschluss",
-      "title": "Dessert",
-      "jumpLabel": "Dessert",
-      "photos": [
-        { "src": "images/menu-dessert-helva.png", "alt": "Mehl Helva mit Pistazien" }
-      ],
-      "items": [
-        { "name": "Mehl Helva", "price": "3,00 €" }
+        {
+          "name": "🌶️🌶️ Scharfsauce",
+          "nameEn": "🌶️🌶️ Hot Sauce",
+          "price": "1,00 €"
+        },
+        {
+          "name": "🧄 Knoblauch",
+          "nameEn": "🧄 Garlic",
+          "price": "1,00 €"
+        },
+        {
+          "name": "🌶️ Sweet Chilli",
+          "price": "1,00 €"
+        },
+        {
+          "name": "🍯 Honey Cocktailsauce",
+          "nameEn": "🍯 Honey Cocktail Sauce",
+          "price": "1,00 €"
+        },
+        {
+          "name": "Joppiesauce",
+          "nameEn": "Joppie Sauce",
+          "price": "1,00 €"
+        },
+        {
+          "name": "🥣 Joghurtsauce",
+          "nameEn": "🥣 Yogurt Sauce",
+          "price": "1,00 €"
+        }
       ]
     }
   ]

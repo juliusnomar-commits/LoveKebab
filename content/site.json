@@ -79,7 +79,8 @@
     "thu": "11:00 – 22:00",
     "fri": "11:00 – 05:00",
     "sat": "11:00 – 05:00",
-    "closed": "Geschlossen"
+    "closed": "Geschlossen",
+    "sun": "12:00 – 21:00"
   },
   "days": {
     "mon": "Montag",
@@ -109,6 +110,8 @@
     "wingsPhoto": "images/menu-wings.png",
     "parmFriesPhoto": "images/menu-fries-parmesan-v2.png",
     "doenerPhoto": "images/menu-bowl-doner.png",
-    "duerumPhoto": "images/menu-wraps-durum.png"
+    "duerumPhoto": "images/menu-wraps-durum.png",
+    "storyPhoto4": "images/story-carousel-4.jpg",
+    "storyPhoto5": "images/story-carousel-5.jpg"
   }
 }
